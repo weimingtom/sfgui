@@ -41,7 +41,8 @@ namespace sfgui {
  * If you want to stop typing text in the widget, you must call the Deactivate()
  * function. <br />
  * <b>Important : you must call the CheckEvent function in the event loop. If you don't,
- * the widget will just be shown, but won't work</b> */
+ * the widget will just be shown, but won't work as he uses internally events to get the
+ * typed text, clicks...</b> */
 class TextEdit : public sfgui::Button {
 private:
 	std::string m_stdText;

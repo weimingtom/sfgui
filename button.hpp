@@ -35,6 +35,8 @@ namespace sfgui {
  * \brief A push button
  *
  * This class represents a push button graphic item. 
+ * It's certainly one of the most used graphic item, as it provides a simple way to give
+ * order to an application (like yes/no buttons...).
  * It provides some signals (call some useful callbacks) like clicked, mouseOver...
  */
 class Button : public Object
@@ -44,9 +46,11 @@ class Button : public Object
 	int m_textAlignment;
 	sfgui::Margin m_margin;
 	void updateTextPos();
+	void generalInit();
 
 	public:
 	Button(sf::RenderWindow *parentWindow);
+	Button(sf::RenderWindow *parentWindow, std::string themePath); 
 	~Button();
 	std::string getText() { /** Get the button text */ return m_text.GetText(); }
 	void SetText(std::string text);

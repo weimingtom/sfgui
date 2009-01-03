@@ -53,6 +53,7 @@ private:
 	void (*m_clickCallback)(); ///< Pointer to the click callback function
 	void (*m_mouseHoverCallback)(); /**< Pointer to the callback function called
 					when mouse is hover the button */
+	void generalInit(); 
 protected:
 	sf::RenderWindow *m_parentRenderWindow; ///< Pointer to the parent sf::RenderWindow
 	sf::Image *m_BackgroundImg; ///< Curent background image
@@ -62,6 +63,7 @@ protected:
 
 public:
 	Object(sf::RenderWindow *parentWindow);
+	Object(sf::RenderWindow *parent, std::string themePath);
 	~Object();
 	// throw sfgui::Error if error
 	void SetTheme(std::string); //set a background from an image path

@@ -26,6 +26,12 @@ sfgui::Button::Button(sf::RenderWindow *parentWindow) : Object(parentWindow) {
 	/**
 	 * Create a Button on the parent window.
 	 */
+	generalInit();
+}
+sfgui::Button::Button(sf::RenderWindow *parentWindow, std::string themePath) : Object(parentWindow, themePath) {
+	generalInit();
+}
+void sfgui::Button::generalInit() {
 	m_text.SetColor(sf::Color(255,255,255));
 	m_text.SetSize(30);
 	m_textAlignment = sfgui::Center;
@@ -40,7 +46,6 @@ void sfgui::Button::SetPosition(float x, float y) {
 	Object::SetPosition(x,y);
 	sf::Vector2<float> buttonSize(GetSize());
 	sf::Rect<float> textRect(m_text.GetRect());
-	std::cout<<"text : "<<textRect.GetWidth()<<"\t"<<textRect.GetHeight()<<"\n";
 	sf::Vector2<float> textPos;
 	if(m_textAlignment == sfgui::Left) {
 		textPos.x = x+m_margin.Left;

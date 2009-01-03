@@ -28,26 +28,54 @@
 sfgui::Object::Object(sf::RenderWindow *parentWindow) : m_parentRenderWindow(parentWindow) {
 	/**
 	 * Construct a simple graphic object */
-	m_BackgroundImg = new sf::Image;
-	m_mouseHoverCallback = NULL;
-	m_clickCallback = NULL;
-	 /** Load the default background images */
+	/** Load the default background images */
+	generalInit();
 	SetTheme("data/button/");
 }
+sfgui::Object::Object(sf::RenderWindow *parentWindow, std::string themePath) : m_parentRenderWindow(parentWindow) {
+	/** Construct a graphic object which uses a custom theme instead of the default
+	 * one */
+	generalInit();
+	SetTheme(themePath);
+}
+void sfgui::Object::generalInit() {
+	/** Initialise the parts shared by all constructors */
+	m_mouseHoverCallback = NULL;
+	m_clickCallback = NULL;
+}
 sfgui::Object::~Object() {
-	delete m_BackgroundImg;
+	/** Delete all the pointers, free the image map... */
+	if(m_Images.size() != 0) {
+		std::map<int, sf::Image *>::iterator it;
+		for(it=m_Images.begin(); it != m_Images.end(); it++) {
+			delete (*it).second;
+		}
+		m_Images.clear();
+	}
 }
 
 void sfgui::Object::SetTheme(std::string dir) {
 	/**
 	 * Load a background theme from a directory containing the right png images :
 	 * <ul>
-         * 	<li>button.png is the normal background</li>
+	 * 	<li>button.png is the normal background</li>
 	 * 	<li>button_clicked.png is the clicked background</li>
 	 * 	<li>button_hover.png is the background showed when mouse is above the
 	 * 	button</li>
 	 * </ul>
+	 * <b>Throws : </b>It throw a sfgui::Error object if there is an error
+	 * (generally when loading the picture).
 	 */
+	
+	//If a theme is already loaded, free all the images
+	if(m_Images.size() != 0) {
+		std::map<int, sf::Image *>::iterator it;
+		for(it=m_Images.begin(); it != m_Images.end(); it++) {
+			delete (*it).second;
+		}
+		m_Images.clear();
+	}
+
 	sf::Vector2<float> oldSize = GetSize();
 	sf::Image *Img = new sf::Image;
 	if(Img->LoadFromFile(dir+"button.png")) {

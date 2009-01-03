@@ -25,7 +25,7 @@
 #include <iostream>
 
 sf::RenderWindow App(sf::VideoMode(800, 600, 32), "SFML GUI");
-sfgui::Button Sprite(&App);
+sfgui::Button Sprite(&App,"data/button-test/");
 
 void clickedCallBack() {
 	static float size = 10;
@@ -44,7 +44,6 @@ int main() {
 	// Create the sprite
 	Sprite.SetText("The text");
 	Sprite.SetClickCallback(&clickedCallBack);
-	Sprite.SetTheme("data/button/");
 	Sprite.Resize(300, 50);
 
 	Sprite.SetPosition(200, 100);
