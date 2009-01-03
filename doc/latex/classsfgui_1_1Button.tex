@@ -1,0 +1,298 @@
+\hypertarget{classsfgui_1_1Button}{
+\section{sfgui::Button Class Reference}
+\label{classsfgui_1_1Button}\index{sfgui::Button@{sfgui::Button}}
+}
+A push button.  
+
+
+{\tt \#include $<$button.hpp$>$}
+
+Inheritance diagram for sfgui::Button:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=62pt]{classsfgui_1_1Button__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for sfgui::Button:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=106pt]{classsfgui_1_1Button__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classsfgui_1_1Button_05c78461b775a073bed1e218586defd7}{Button} (sf::RenderWindow $\ast$parentWindow)
+\item 
+\hyperlink{classsfgui_1_1Button_835b0cbc92ef98e4c884398e036d26ca}{$\sim$Button} ()
+\item 
+std::string \hyperlink{classsfgui_1_1Button_015166159ef486c5001c5b58e79abc2d}{getText} ()
+\item 
+void \hyperlink{classsfgui_1_1Button_48ddf97b9a9f77517f5bf70e93df2b80}{SetText} (std::string text)
+\item 
+std::string \hyperlink{classsfgui_1_1Button_f731f8fe61ce30a7e405d8d3a56c5f22}{GetText} ()
+\item 
+void \hyperlink{classsfgui_1_1Button_af73ff1983944ea0969bf5c7421725c5}{SetTextColor} (sf::Color \&)
+\item 
+sf::Color \hyperlink{classsfgui_1_1Button_7eca4b2322ce0785e64bd2932912b974}{GetTextColor} ()
+\item 
+void \hyperlink{classsfgui_1_1Button_eed26d1a50f825f24ef1f2a16ef0b425}{SetTextSize} (float)
+\item 
+float \hyperlink{classsfgui_1_1Button_ed3a5fc8690d92ee59483b5dd7de6dbf}{GetTextSize} ()
+\item 
+void \hyperlink{classsfgui_1_1Button_f1a92c908326f7bd9973da154854a8bd}{SetTextFont} (sf::Font \&)
+\item 
+sf::Font \hyperlink{classsfgui_1_1Button_8b3a0a7ac0482c039e11bb615a55e86b}{GetTextFont} ()
+\item 
+void \hyperlink{classsfgui_1_1Button_c1c0fe577ad7bfa1367ad406ae087bd1}{SetTextAlignment} (int)
+\item 
+void \hyperlink{classsfgui_1_1Button_af84ec76e02e12c55667b960d80cc90b}{SetTextMargin} (float)
+\item 
+void \hyperlink{classsfgui_1_1Button_94b8976462b04b1a0e63542dd49aa7c8}{SetTextLeftMargin} (float)
+\item 
+void \hyperlink{classsfgui_1_1Button_4a4b4c339d001a0578c5e70b01ef164b}{SetTextRightMargin} (float)
+\item 
+void \hyperlink{classsfgui_1_1Button_cd571ac750ad4f9f957da40fb1ae23d7}{SetTextTopMargin} (float)
+\item 
+void \hyperlink{classsfgui_1_1Button_18a553fdcfbcf42d7764d3e039a72708}{SetTextBottomMargin} (float)
+\item 
+void \hyperlink{classsfgui_1_1Button_4160a1abdec76e06db9b34b80f5fa12c}{SetPosition} (float x, float y)
+\item 
+void \hyperlink{classsfgui_1_1Button_be36461c2e85c67b6cc42f3a6cba0468}{Move} (float x, float y)
+\item 
+void \hyperlink{classsfgui_1_1Button_94dc6919349ff5ca9f334cce78afbe39}{Show} ()
+\end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classsfgui_1_1Button_1e1eade317f3b603011067e4997b0725}{updateTextPos} ()
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+sf::String \hyperlink{classsfgui_1_1Button_5a436a029fef79723eed0b024b5a7693}{m\_\-text}
+\item 
+int \hyperlink{classsfgui_1_1Button_b1ca3893cbff9b09f42e16377c0073f9}{m\_\-textAlignment}
+\item 
+\hyperlink{structsfgui_1_1Margin}{sfgui::Margin} \hyperlink{classsfgui_1_1Button_20ee48b44f31ad5b5de11dc3b00103a7}{m\_\-margin}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A push button. 
+
+This class represents a push button graphic item. It provides some signals (call some useful callbacks) like clicked, mouseOver... 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsfgui_1_1Button_05c78461b775a073bed1e218586defd7}{
+\index{sfgui::Button@{sfgui::Button}!Button@{Button}}
+\index{Button@{Button}!sfgui::Button@{sfgui::Button}}
+\subsubsection[Button]{\setlength{\rightskip}{0pt plus 5cm}sfgui::Button::Button (sf::RenderWindow $\ast$ {\em parentWindow})}}
+\label{classsfgui_1_1Button_05c78461b775a073bed1e218586defd7}
+
+
+
+
+Create a \hyperlink{classsfgui_1_1Button}{Button} on the parent window. \hypertarget{classsfgui_1_1Button_835b0cbc92ef98e4c884398e036d26ca}{
+\index{sfgui::Button@{sfgui::Button}!$\sim$Button@{$\sim$Button}}
+\index{$\sim$Button@{$\sim$Button}!sfgui::Button@{sfgui::Button}}
+\subsubsection[$\sim$Button]{\setlength{\rightskip}{0pt plus 5cm}sfgui::Button::$\sim$Button ()}}
+\label{classsfgui_1_1Button_835b0cbc92ef98e4c884398e036d26ca}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsfgui_1_1Button_1e1eade317f3b603011067e4997b0725}{
+\index{sfgui::Button@{sfgui::Button}!updateTextPos@{updateTextPos}}
+\index{updateTextPos@{updateTextPos}!sfgui::Button@{sfgui::Button}}
+\subsubsection[updateTextPos]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::updateTextPos ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Button_1e1eade317f3b603011067e4997b0725}
+
+
+
+
+This function is called internally when the position of the button is changed, when text changed (...) to adapt the text position so that it stays to the right alignment \hypertarget{classsfgui_1_1Button_015166159ef486c5001c5b58e79abc2d}{
+\index{sfgui::Button@{sfgui::Button}!getText@{getText}}
+\index{getText@{getText}!sfgui::Button@{sfgui::Button}}
+\subsubsection[getText]{\setlength{\rightskip}{0pt plus 5cm}std::string sfgui::Button::getText ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classsfgui_1_1Button_015166159ef486c5001c5b58e79abc2d}
+
+
+
+
+Get the button text \hypertarget{classsfgui_1_1Button_48ddf97b9a9f77517f5bf70e93df2b80}{
+\index{sfgui::Button@{sfgui::Button}!SetText@{SetText}}
+\index{SetText@{SetText}!sfgui::Button@{sfgui::Button}}
+\subsubsection[SetText]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::SetText (std::string {\em text})}}
+\label{classsfgui_1_1Button_48ddf97b9a9f77517f5bf70e93df2b80}
+
+
+
+
+Set the button text. \hypertarget{classsfgui_1_1Button_f731f8fe61ce30a7e405d8d3a56c5f22}{
+\index{sfgui::Button@{sfgui::Button}!GetText@{GetText}}
+\index{GetText@{GetText}!sfgui::Button@{sfgui::Button}}
+\subsubsection[GetText]{\setlength{\rightskip}{0pt plus 5cm}std::string sfgui::Button::GetText ()}}
+\label{classsfgui_1_1Button_f731f8fe61ce30a7e405d8d3a56c5f22}
+
+
+\hypertarget{classsfgui_1_1Button_af73ff1983944ea0969bf5c7421725c5}{
+\index{sfgui::Button@{sfgui::Button}!SetTextColor@{SetTextColor}}
+\index{SetTextColor@{SetTextColor}!sfgui::Button@{sfgui::Button}}
+\subsubsection[SetTextColor]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::SetTextColor (sf::Color \& {\em color})}}
+\label{classsfgui_1_1Button_af73ff1983944ea0969bf5c7421725c5}
+
+
+\hypertarget{classsfgui_1_1Button_7eca4b2322ce0785e64bd2932912b974}{
+\index{sfgui::Button@{sfgui::Button}!GetTextColor@{GetTextColor}}
+\index{GetTextColor@{GetTextColor}!sfgui::Button@{sfgui::Button}}
+\subsubsection[GetTextColor]{\setlength{\rightskip}{0pt plus 5cm}sf::Color sfgui::Button::GetTextColor ()}}
+\label{classsfgui_1_1Button_7eca4b2322ce0785e64bd2932912b974}
+
+
+\hypertarget{classsfgui_1_1Button_eed26d1a50f825f24ef1f2a16ef0b425}{
+\index{sfgui::Button@{sfgui::Button}!SetTextSize@{SetTextSize}}
+\index{SetTextSize@{SetTextSize}!sfgui::Button@{sfgui::Button}}
+\subsubsection[SetTextSize]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::SetTextSize (float {\em size})}}
+\label{classsfgui_1_1Button_eed26d1a50f825f24ef1f2a16ef0b425}
+
+
+
+
+Set size of the text \hypertarget{classsfgui_1_1Button_ed3a5fc8690d92ee59483b5dd7de6dbf}{
+\index{sfgui::Button@{sfgui::Button}!GetTextSize@{GetTextSize}}
+\index{GetTextSize@{GetTextSize}!sfgui::Button@{sfgui::Button}}
+\subsubsection[GetTextSize]{\setlength{\rightskip}{0pt plus 5cm}float sfgui::Button::GetTextSize ()}}
+\label{classsfgui_1_1Button_ed3a5fc8690d92ee59483b5dd7de6dbf}
+
+
+\hypertarget{classsfgui_1_1Button_f1a92c908326f7bd9973da154854a8bd}{
+\index{sfgui::Button@{sfgui::Button}!SetTextFont@{SetTextFont}}
+\index{SetTextFont@{SetTextFont}!sfgui::Button@{sfgui::Button}}
+\subsubsection[SetTextFont]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::SetTextFont (sf::Font \& {\em font})}}
+\label{classsfgui_1_1Button_f1a92c908326f7bd9973da154854a8bd}
+
+
+\hypertarget{classsfgui_1_1Button_8b3a0a7ac0482c039e11bb615a55e86b}{
+\index{sfgui::Button@{sfgui::Button}!GetTextFont@{GetTextFont}}
+\index{GetTextFont@{GetTextFont}!sfgui::Button@{sfgui::Button}}
+\subsubsection[GetTextFont]{\setlength{\rightskip}{0pt plus 5cm}sf::Font sfgui::Button::GetTextFont ()}}
+\label{classsfgui_1_1Button_8b3a0a7ac0482c039e11bb615a55e86b}
+
+
+\hypertarget{classsfgui_1_1Button_c1c0fe577ad7bfa1367ad406ae087bd1}{
+\index{sfgui::Button@{sfgui::Button}!SetTextAlignment@{SetTextAlignment}}
+\index{SetTextAlignment@{SetTextAlignment}!sfgui::Button@{sfgui::Button}}
+\subsubsection[SetTextAlignment]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::SetTextAlignment (int {\em al})}}
+\label{classsfgui_1_1Button_c1c0fe577ad7bfa1367ad406ae087bd1}
+
+
+
+
+This set the position of the text on the button. You should use one of the following constant value sfgui::LEFT, sfgui::RIGHT, sfgui::CENTER \hypertarget{classsfgui_1_1Button_af84ec76e02e12c55667b960d80cc90b}{
+\index{sfgui::Button@{sfgui::Button}!SetTextMargin@{SetTextMargin}}
+\index{SetTextMargin@{SetTextMargin}!sfgui::Button@{sfgui::Button}}
+\subsubsection[SetTextMargin]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::SetTextMargin (float {\em margin})}}
+\label{classsfgui_1_1Button_af84ec76e02e12c55667b960d80cc90b}
+
+
+
+
+Set the global margin. The text will be spaced from the button each border by a number of pixels. \hypertarget{classsfgui_1_1Button_94b8976462b04b1a0e63542dd49aa7c8}{
+\index{sfgui::Button@{sfgui::Button}!SetTextLeftMargin@{SetTextLeftMargin}}
+\index{SetTextLeftMargin@{SetTextLeftMargin}!sfgui::Button@{sfgui::Button}}
+\subsubsection[SetTextLeftMargin]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::SetTextLeftMargin (float {\em margin})}}
+\label{classsfgui_1_1Button_94b8976462b04b1a0e63542dd49aa7c8}
+
+
+
+
+Set the left margin. Text will be spaced from the left border of the button \hypertarget{classsfgui_1_1Button_4a4b4c339d001a0578c5e70b01ef164b}{
+\index{sfgui::Button@{sfgui::Button}!SetTextRightMargin@{SetTextRightMargin}}
+\index{SetTextRightMargin@{SetTextRightMargin}!sfgui::Button@{sfgui::Button}}
+\subsubsection[SetTextRightMargin]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::SetTextRightMargin (float {\em margin})}}
+\label{classsfgui_1_1Button_4a4b4c339d001a0578c5e70b01ef164b}
+
+
+
+
+Set the right margin. Text will be spaced form the right border of the button. \hypertarget{classsfgui_1_1Button_cd571ac750ad4f9f957da40fb1ae23d7}{
+\index{sfgui::Button@{sfgui::Button}!SetTextTopMargin@{SetTextTopMargin}}
+\index{SetTextTopMargin@{SetTextTopMargin}!sfgui::Button@{sfgui::Button}}
+\subsubsection[SetTextTopMargin]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::SetTextTopMargin (float {\em margin})}}
+\label{classsfgui_1_1Button_cd571ac750ad4f9f957da40fb1ae23d7}
+
+
+
+
+Set the top margin. Text will be spaced from the top border of the button. \hypertarget{classsfgui_1_1Button_18a553fdcfbcf42d7764d3e039a72708}{
+\index{sfgui::Button@{sfgui::Button}!SetTextBottomMargin@{SetTextBottomMargin}}
+\index{SetTextBottomMargin@{SetTextBottomMargin}!sfgui::Button@{sfgui::Button}}
+\subsubsection[SetTextBottomMargin]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::SetTextBottomMargin (float {\em margin})}}
+\label{classsfgui_1_1Button_18a553fdcfbcf42d7764d3e039a72708}
+
+
+
+
+set the bottom margin. Text will be spaced from the bottom border of the button \hypertarget{classsfgui_1_1Button_4160a1abdec76e06db9b34b80f5fa12c}{
+\index{sfgui::Button@{sfgui::Button}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!sfgui::Button@{sfgui::Button}}
+\subsubsection[SetPosition]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::SetPosition (float {\em x}, \/  float {\em y})}}
+\label{classsfgui_1_1Button_4160a1abdec76e06db9b34b80f5fa12c}
+
+
+
+
+Set the button position. Adjust the text position to keep the text in the choosen position (center, left, right...) \hypertarget{classsfgui_1_1Button_be36461c2e85c67b6cc42f3a6cba0468}{
+\index{sfgui::Button@{sfgui::Button}!Move@{Move}}
+\index{Move@{Move}!sfgui::Button@{sfgui::Button}}
+\subsubsection[Move]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::Move (float {\em x}, \/  float {\em y})}}
+\label{classsfgui_1_1Button_be36461c2e85c67b6cc42f3a6cba0468}
+
+
+
+
+Move the button and adjust the text position \hypertarget{classsfgui_1_1Button_94dc6919349ff5ca9f334cce78afbe39}{
+\index{sfgui::Button@{sfgui::Button}!Show@{Show}}
+\index{Show@{Show}!sfgui::Button@{sfgui::Button}}
+\subsubsection[Show]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::Show ()}}
+\label{classsfgui_1_1Button_94dc6919349ff5ca9f334cce78afbe39}
+
+
+
+
+Display the button on the parent window 
+
+Reimplemented in \hyperlink{classsfgui_1_1TextEdit_1ee03247816213b34caaff365b160de0}{sfgui::TextEdit}.
+
+\subsection{Member Data Documentation}
+\hypertarget{classsfgui_1_1Button_5a436a029fef79723eed0b024b5a7693}{
+\index{sfgui::Button@{sfgui::Button}!m\_\-text@{m\_\-text}}
+\index{m\_\-text@{m\_\-text}!sfgui::Button@{sfgui::Button}}
+\subsubsection[m\_\-text]{\setlength{\rightskip}{0pt plus 5cm}sf::String {\bf sfgui::Button::m\_\-text}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Button_5a436a029fef79723eed0b024b5a7693}
+
+
+\hypertarget{classsfgui_1_1Button_b1ca3893cbff9b09f42e16377c0073f9}{
+\index{sfgui::Button@{sfgui::Button}!m\_\-textAlignment@{m\_\-textAlignment}}
+\index{m\_\-textAlignment@{m\_\-textAlignment}!sfgui::Button@{sfgui::Button}}
+\subsubsection[m\_\-textAlignment]{\setlength{\rightskip}{0pt plus 5cm}int {\bf sfgui::Button::m\_\-textAlignment}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Button_b1ca3893cbff9b09f42e16377c0073f9}
+
+
+\hypertarget{classsfgui_1_1Button_20ee48b44f31ad5b5de11dc3b00103a7}{
+\index{sfgui::Button@{sfgui::Button}!m\_\-margin@{m\_\-margin}}
+\index{m\_\-margin@{m\_\-margin}!sfgui::Button@{sfgui::Button}}
+\subsubsection[m\_\-margin]{\setlength{\rightskip}{0pt plus 5cm}{\bf sfgui::Margin} {\bf sfgui::Button::m\_\-margin}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Button_20ee48b44f31ad5b5de11dc3b00103a7}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{button_8hpp}{button.hpp}\item 
+\hyperlink{button_8cpp}{button.cpp}\end{CompactItemize}

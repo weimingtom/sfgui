@@ -1,0 +1,274 @@
+\begin{theindex}
+
+  \item {$\sim $Button}
+    \subitem {sfgui::Button}, \hyperpage{12}
+  \item {$\sim $Object}
+    \subitem {sfgui::Object}, \hyperpage{18}
+
+  \indexspace
+
+  \item {Activate}
+    \subitem {sfgui::TextEdit}, \hyperpage{22}
+  \item {activated}
+    \subitem {sfgui::TextEdit}, \hyperpage{21}
+  \item {AddChar}
+    \subitem {sfgui::TextEdit}, \hyperpage{21}
+  \item {App}
+    \subitem {main.cpp}, \hyperpage{28}
+
+  \indexspace
+
+  \item {Bottom}
+    \subitem {sfgui::Margin}, \hyperpage{15}
+  \item {Button}
+    \subitem {sfgui::Button}, \hyperpage{12}
+  \item {button.cpp}, \hyperpage{25}
+  \item {button.hpp}, \hyperpage{26}
+
+  \indexspace
+
+  \item {Center}
+    \subitem {sfgui}, \hyperpage{10}
+  \item {CheckEvent}
+    \subitem {sfgui::Object}, \hyperpage{18}
+    \subitem {sfgui::TextEdit}, \hyperpage{22}
+  \item {Clicked}
+    \subitem {sfgui::Object}, \hyperpage{19}
+  \item {clickedCallBack}
+    \subitem {main.cpp}, \hyperpage{28}
+  \item {constantes.hpp}, \hyperpage{27}
+
+  \indexspace
+
+  \item {Deactivate}
+    \subitem {sfgui::TextEdit}, \hyperpage{22}
+  \item {deactivated}
+    \subitem {sfgui::TextEdit}, \hyperpage{21}
+  \item {DelChar}
+    \subitem {sfgui::TextEdit}, \hyperpage{21}
+
+  \indexspace
+
+  \item {GetText}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {getText}
+    \subitem {sfgui::Button}, \hyperpage{12}
+  \item {GetTextColor}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {GetTextFont}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {GetTextSize}
+    \subitem {sfgui::Button}, \hyperpage{13}
+
+  \indexspace
+
+  \item {Left}
+    \subitem {sfgui}, \hyperpage{10}
+    \subitem {sfgui::Margin}, \hyperpage{15}
+
+  \indexspace
+
+  \item {m\_\discretionary {-}{}{}activatedCallback}
+    \subitem {sfgui::TextEdit}, \hyperpage{23}
+  \item {m\_\discretionary {-}{}{}BackgroundImg}
+    \subitem {sfgui::Object}, \hyperpage{19}
+  \item {m\_\discretionary {-}{}{}clickCallback}
+    \subitem {sfgui::Object}, \hyperpage{19}
+  \item {m\_\discretionary {-}{}{}deactivatedCallback}
+    \subitem {sfgui::TextEdit}, \hyperpage{23}
+  \item {m\_\discretionary {-}{}{}Event}
+    \subitem {sfgui::Object}, \hyperpage{19}
+  \item {m\_\discretionary {-}{}{}itemActive}
+    \subitem {sfgui::TextEdit}, \hyperpage{23}
+  \item {m\_\discretionary {-}{}{}margin}
+    \subitem {sfgui::Button}, \hyperpage{14}
+  \item {m\_\discretionary {-}{}{}mouseHoverCallback}
+    \subitem {sfgui::Object}, \hyperpage{19}
+  \item {m\_\discretionary {-}{}{}nbCharToShow}
+    \subitem {sfgui::TextEdit}, \hyperpage{23}
+  \item {m\_\discretionary {-}{}{}parentRenderWindow}
+    \subitem {sfgui::Object}, \hyperpage{19}
+  \item {m\_\discretionary {-}{}{}returnPressedCallback}
+    \subitem {sfgui::TextEdit}, \hyperpage{23}
+  \item {m\_\discretionary {-}{}{}stdText}
+    \subitem {sfgui::TextEdit}, \hyperpage{23}
+  \item {m\_\discretionary {-}{}{}text}
+    \subitem {sfgui::Button}, \hyperpage{14}
+  \item {m\_\discretionary {-}{}{}textAlignment}
+    \subitem {sfgui::Button}, \hyperpage{14}
+  \item {m\_\discretionary {-}{}{}textChangedCallback}
+    \subitem {sfgui::TextEdit}, \hyperpage{23}
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{28}
+  \item {main.cpp}, \hyperpage{28}
+    \subitem {App}, \hyperpage{28}
+    \subitem {clickedCallBack}, \hyperpage{28}
+    \subitem {main}, \hyperpage{28}
+    \subitem {textChangeCallback}, \hyperpage{28}
+  \item {ManageMouse}
+    \subitem {sfgui::Object}, \hyperpage{18}
+  \item {margin.cpp}, \hyperpage{29}
+  \item {margin.hpp}, \hyperpage{30}
+  \item {MouseHover}
+    \subitem {sfgui::Object}, \hyperpage{19}
+  \item {Move}
+    \subitem {sfgui::Button}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Object}
+    \subitem {sfgui::Object}, \hyperpage{18}
+  \item {object.cpp}, \hyperpage{31}
+    \subitem {SetBackground}, \hyperpage{31}
+  \item {object.hpp}, \hyperpage{32}
+
+  \indexspace
+
+  \item {Right}
+    \subitem {sfgui}, \hyperpage{10}
+    \subitem {sfgui::Margin}, \hyperpage{15}
+
+  \indexspace
+
+  \item {SetActivatedCallback}
+    \subitem {sfgui::TextEdit}, \hyperpage{22}
+  \item {SetBackground}
+    \subitem {object.cpp}, \hyperpage{31}
+    \subitem {sfgui::Object}, \hyperpage{18}
+  \item {SetClickCallback}
+    \subitem {sfgui::Object}, \hyperpage{18}
+  \item {SetDeactivatedCallback}
+    \subitem {sfgui::TextEdit}, \hyperpage{22}
+  \item {SetMargin}
+    \subitem {sfgui::Margin}, \hyperpage{15}
+  \item {SetMouseHoverCallback}
+    \subitem {sfgui::Object}, \hyperpage{18}
+  \item {SetPosition}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {SetReturnPressedCallback}
+    \subitem {sfgui::TextEdit}, \hyperpage{22}
+  \item {SetText}
+    \subitem {sfgui::Button}, \hyperpage{12}
+    \subitem {sfgui::TextEdit}, \hyperpage{21}
+  \item {SetTextAlignment}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {SetTextBottomMargin}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {SetTextChangedCallback}
+    \subitem {sfgui::TextEdit}, \hyperpage{22}
+  \item {SetTextColor}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {SetTextFont}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {SetTextLeftMargin}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {SetTextMargin}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {SetTextRightMargin}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {SetTextSize}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {SetTextTopMargin}
+    \subitem {sfgui::Button}, \hyperpage{13}
+  \item {sfgui}, \hyperpage{9}
+    \subitem {Center}, \hyperpage{10}
+    \subitem {Left}, \hyperpage{10}
+    \subitem {Right}, \hyperpage{10}
+  \item {sfgui::Button}, \hyperpage{11}
+    \subitem {$\sim $Button}, \hyperpage{12}
+    \subitem {Button}, \hyperpage{12}
+    \subitem {GetText}, \hyperpage{13}
+    \subitem {getText}, \hyperpage{12}
+    \subitem {GetTextColor}, \hyperpage{13}
+    \subitem {GetTextFont}, \hyperpage{13}
+    \subitem {GetTextSize}, \hyperpage{13}
+    \subitem {m\_\discretionary {-}{}{}margin}, \hyperpage{14}
+    \subitem {m\_\discretionary {-}{}{}text}, \hyperpage{14}
+    \subitem {m\_\discretionary {-}{}{}textAlignment}, \hyperpage{14}
+    \subitem {Move}, \hyperpage{14}
+    \subitem {SetPosition}, \hyperpage{13}
+    \subitem {SetText}, \hyperpage{12}
+    \subitem {SetTextAlignment}, \hyperpage{13}
+    \subitem {SetTextBottomMargin}, \hyperpage{13}
+    \subitem {SetTextColor}, \hyperpage{13}
+    \subitem {SetTextFont}, \hyperpage{13}
+    \subitem {SetTextLeftMargin}, \hyperpage{13}
+    \subitem {SetTextMargin}, \hyperpage{13}
+    \subitem {SetTextRightMargin}, \hyperpage{13}
+    \subitem {SetTextSize}, \hyperpage{13}
+    \subitem {SetTextTopMargin}, \hyperpage{13}
+    \subitem {Show}, \hyperpage{14}
+    \subitem {updateTextPos}, \hyperpage{12}
+  \item {sfgui::Margin}, \hyperpage{15}
+    \subitem {Bottom}, \hyperpage{15}
+    \subitem {Left}, \hyperpage{15}
+    \subitem {Right}, \hyperpage{15}
+    \subitem {SetMargin}, \hyperpage{15}
+    \subitem {Top}, \hyperpage{15}
+  \item {sfgui::Object}, \hyperpage{17}
+    \subitem {$\sim $Object}, \hyperpage{18}
+    \subitem {CheckEvent}, \hyperpage{18}
+    \subitem {Clicked}, \hyperpage{19}
+    \subitem {m\_\discretionary {-}{}{}BackgroundImg}, \hyperpage{19}
+    \subitem {m\_\discretionary {-}{}{}clickCallback}, \hyperpage{19}
+    \subitem {m\_\discretionary {-}{}{}Event}, \hyperpage{19}
+    \subitem {m\_\discretionary {-}{}{}mouseHoverCallback}, 
+		\hyperpage{19}
+    \subitem {m\_\discretionary {-}{}{}parentRenderWindow}, 
+		\hyperpage{19}
+    \subitem {ManageMouse}, \hyperpage{18}
+    \subitem {MouseHover}, \hyperpage{19}
+    \subitem {Object}, \hyperpage{18}
+    \subitem {SetBackground}, \hyperpage{18}
+    \subitem {SetClickCallback}, \hyperpage{18}
+    \subitem {SetMouseHoverCallback}, \hyperpage{18}
+  \item {sfgui::TextEdit}, \hyperpage{20}
+    \subitem {Activate}, \hyperpage{22}
+    \subitem {activated}, \hyperpage{21}
+    \subitem {AddChar}, \hyperpage{21}
+    \subitem {CheckEvent}, \hyperpage{22}
+    \subitem {Deactivate}, \hyperpage{22}
+    \subitem {deactivated}, \hyperpage{21}
+    \subitem {DelChar}, \hyperpage{21}
+    \subitem {m\_\discretionary {-}{}{}activatedCallback}, 
+		\hyperpage{23}
+    \subitem {m\_\discretionary {-}{}{}deactivatedCallback}, 
+		\hyperpage{23}
+    \subitem {m\_\discretionary {-}{}{}itemActive}, \hyperpage{23}
+    \subitem {m\_\discretionary {-}{}{}nbCharToShow}, \hyperpage{23}
+    \subitem {m\_\discretionary {-}{}{}returnPressedCallback}, 
+		\hyperpage{23}
+    \subitem {m\_\discretionary {-}{}{}stdText}, \hyperpage{23}
+    \subitem {m\_\discretionary {-}{}{}textChangedCallback}, 
+		\hyperpage{23}
+    \subitem {SetActivatedCallback}, \hyperpage{22}
+    \subitem {SetDeactivatedCallback}, \hyperpage{22}
+    \subitem {SetReturnPressedCallback}, \hyperpage{22}
+    \subitem {SetText}, \hyperpage{21}
+    \subitem {SetTextChangedCallback}, \hyperpage{22}
+    \subitem {Show}, \hyperpage{22}
+    \subitem {textChanged}, \hyperpage{21}
+    \subitem {TextEdit}, \hyperpage{21}
+  \item {Show}
+    \subitem {sfgui::Button}, \hyperpage{14}
+    \subitem {sfgui::TextEdit}, \hyperpage{22}
+
+  \indexspace
+
+  \item {textChangeCallback}
+    \subitem {main.cpp}, \hyperpage{28}
+  \item {textChanged}
+    \subitem {sfgui::TextEdit}, \hyperpage{21}
+  \item {TextEdit}
+    \subitem {sfgui::TextEdit}, \hyperpage{21}
+  \item {textedit.cpp}, \hyperpage{33}
+  \item {textedit.hpp}, \hyperpage{34}
+  \item {Top}
+    \subitem {sfgui::Margin}, \hyperpage{15}
+
+  \indexspace
+
+  \item {updateTextPos}
+    \subitem {sfgui::Button}, \hyperpage{12}
+
+\end{theindex}

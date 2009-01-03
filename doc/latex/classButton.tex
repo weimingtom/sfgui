@@ -1,0 +1,133 @@
+\hypertarget{classButton}{
+\section{Button Class Reference}
+\label{classButton}\index{Button@{Button}}
+}
+A push button.  
+
+
+{\tt \#include $<$button.hpp$>$}
+
+Inheritance diagram for Button:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=46pt]{classButton__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for Button:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=46pt]{classButton__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classButton_f803adbf034e7b365b563ac1c837bf60}{Button} (sf::RenderWindow $\ast$parentWindow)
+\item 
+\hyperlink{classButton_2a001eb9c3cc8ae54768a850dd345002}{$\sim$Button} ()
+\item 
+std::string \hyperlink{classButton_fd57748d0bd0f5fa35d765052d281169}{getText} ()
+\item 
+void \hyperlink{classButton_e27547f223b15252190703b02631fe6e}{SetText} (std::string text)
+\item 
+void \hyperlink{classButton_1eca1f2d8b1948d54f6962a303773432}{SetPosition} (float x, float y)
+\item 
+void \hyperlink{classButton_4e1a77ff60e992d02841cd6de1585e2d}{Move} (float x, float y)
+\item 
+void \hyperlink{classButton_eb5dc1523ca4a12aea9be762abbeadda}{Show} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+sf::String \hyperlink{classButton_524d038c09c3f5f819d5cae310a591e9}{m\_\-text}
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A push button. 
+
+This class represents a push button graphic item. It provides some signals (call some useful callbacks) like clicked, mouseOver... 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classButton_f803adbf034e7b365b563ac1c837bf60}{
+\index{Button@{Button}!Button@{Button}}
+\index{Button@{Button}!Button@{Button}}
+\subsubsection[Button]{\setlength{\rightskip}{0pt plus 5cm}Button::Button (sf::RenderWindow $\ast$ {\em parentWindow})}}
+\label{classButton_f803adbf034e7b365b563ac1c837bf60}
+
+
+
+
+Create a \hyperlink{classButton}{Button} on the parent window. \hypertarget{classButton_2a001eb9c3cc8ae54768a850dd345002}{
+\index{Button@{Button}!$\sim$Button@{$\sim$Button}}
+\index{$\sim$Button@{$\sim$Button}!Button@{Button}}
+\subsubsection[$\sim$Button]{\setlength{\rightskip}{0pt plus 5cm}Button::$\sim$Button ()}}
+\label{classButton_2a001eb9c3cc8ae54768a850dd345002}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classButton_fd57748d0bd0f5fa35d765052d281169}{
+\index{Button@{Button}!getText@{getText}}
+\index{getText@{getText}!Button@{Button}}
+\subsubsection[getText]{\setlength{\rightskip}{0pt plus 5cm}std::string Button::getText ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classButton_fd57748d0bd0f5fa35d765052d281169}
+
+
+
+
+Get the button text \hypertarget{classButton_e27547f223b15252190703b02631fe6e}{
+\index{Button@{Button}!SetText@{SetText}}
+\index{SetText@{SetText}!Button@{Button}}
+\subsubsection[SetText]{\setlength{\rightskip}{0pt plus 5cm}void Button::SetText (std::string {\em text})}}
+\label{classButton_e27547f223b15252190703b02631fe6e}
+
+
+
+
+Set the button text. \hypertarget{classButton_1eca1f2d8b1948d54f6962a303773432}{
+\index{Button@{Button}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!Button@{Button}}
+\subsubsection[SetPosition]{\setlength{\rightskip}{0pt plus 5cm}void Button::SetPosition (float {\em x}, \/  float {\em y})}}
+\label{classButton_1eca1f2d8b1948d54f6962a303773432}
+
+
+
+
+Set the button position. Adjust the text position to keep the text in the choosen position (center, left, right...) \hypertarget{classButton_4e1a77ff60e992d02841cd6de1585e2d}{
+\index{Button@{Button}!Move@{Move}}
+\index{Move@{Move}!Button@{Button}}
+\subsubsection[Move]{\setlength{\rightskip}{0pt plus 5cm}void Button::Move (float {\em x}, \/  float {\em y})}}
+\label{classButton_4e1a77ff60e992d02841cd6de1585e2d}
+
+
+
+
+Move the button and adjust the text position \hypertarget{classButton_eb5dc1523ca4a12aea9be762abbeadda}{
+\index{Button@{Button}!Show@{Show}}
+\index{Show@{Show}!Button@{Button}}
+\subsubsection[Show]{\setlength{\rightskip}{0pt plus 5cm}void Button::Show ()}}
+\label{classButton_eb5dc1523ca4a12aea9be762abbeadda}
+
+
+
+
+Display the button on the parent window 
+
+\subsection{Member Data Documentation}
+\hypertarget{classButton_524d038c09c3f5f819d5cae310a591e9}{
+\index{Button@{Button}!m\_\-text@{m\_\-text}}
+\index{m\_\-text@{m\_\-text}!Button@{Button}}
+\subsubsection[m\_\-text]{\setlength{\rightskip}{0pt plus 5cm}sf::String {\bf Button::m\_\-text}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classButton_524d038c09c3f5f819d5cae310a591e9}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{button_8hpp}{button.hpp}\item 
+\hyperlink{button_8cpp}{button.cpp}\end{CompactItemize}

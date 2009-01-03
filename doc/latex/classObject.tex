@@ -1,0 +1,224 @@
+\hypertarget{classObject}{
+\section{Object Class Reference}
+\label{classObject}\index{Object@{Object}}
+}
+A simple graphic item.  
+
+
+{\tt \#include $<$object.hpp$>$}
+
+Inheritance diagram for Object:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=46pt]{classObject__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classObject_cefe027e1cec4c9de78b851bb42e2e66}{Object} (sf::RenderWindow $\ast$parentWindow)
+\item 
+\hyperlink{classObject_e8f5483f459e46687bd01e6f9977afd3}{$\sim$Object} ()
+\item 
+void \hyperlink{classObject_8e374c70b7dbaa03b2a3180490789d1d}{SetBackground} (std::string)
+\item 
+void \hyperlink{classObject_00d4be2d8b013240b29e50ca7599fe55}{SetBackground} (sf::Image \&)
+\item 
+void \hyperlink{classObject_aa81f5ed57ee0bca860654241a16e325}{SetBackground} (sf::Color \&)
+\item 
+void \hyperlink{classObject_1abd4bc0011cb25fe9ed940e554d6cbb}{SetBackground} (sf::Color \&, sf::Color \&)
+\item 
+void \hyperlink{classObject_b68977125b45e872852613463037cebb}{CheckEvent} (sf::Event Event)
+\item 
+void \hyperlink{classObject_68e5f5f024cf7f2db43bd2de010c118c}{SetClickCallback} (void($\ast$)())
+\item 
+void \hyperlink{classObject_82e1ba70ec0e2b9327af29764cd666eb}{SetMouseHoverCallback} (void($\ast$)())
+\item 
+void \hyperlink{classObject_d353628cfc37903c31e07f9179c7407f}{ManageMouse} ()
+\item 
+void \hyperlink{classObject_8342d588d9294226206106e142c30e51}{Clicked} ()
+\item 
+void \hyperlink{classObject_d3669e5b85439868eb7738f6d5a409ef}{MouseHover} ()
+\end{CompactItemize}
+\subsection*{Protected Attributes}
+\begin{CompactItemize}
+\item 
+sf::RenderWindow $\ast$ \hyperlink{classObject_a8afe2c64c045d58821a6af77803c630}{m\_\-parentRenderWindow}
+\begin{CompactList}\small\item\em Pointer to the parent sf::RenderWindow. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+void($\ast$ \hyperlink{classObject_f7caaefc35c7091fcaab49a102394239}{m\_\-clickCallback} )()
+\begin{CompactList}\small\item\em Pointer to the click callback function. \item\end{CompactList}\item 
+void($\ast$ \hyperlink{classObject_b26d3ace4076898316d25c7d056ab80f}{m\_\-mouseHoverCallback} )()
+\item 
+sf::Image $\ast$ \hyperlink{classObject_e961607134fe49c270e312f3107bf569}{m\_\-BackgroundImg}
+\begin{CompactList}\small\item\em Curent background image. \item\end{CompactList}\item 
+sf::Event \hyperlink{classObject_5ded1f794f837d393cf30fc8ecfceb37}{m\_\-Event}
+\begin{CompactList}\small\item\em Copy of the current sfml event. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+A simple graphic item. 
+
+This is a very simple object, which is rather useless. It's mostly present to be used as parent by other graphics items classes. This class create a sf::Sprite which represent a graphic item. There are some basic functions to set the general appearance like setBackground. This class can handle some common events which are possibly used by all widgets like clicks, mouse over... 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classObject_cefe027e1cec4c9de78b851bb42e2e66}{
+\index{Object@{Object}!Object@{Object}}
+\index{Object@{Object}!Object@{Object}}
+\subsubsection[Object]{\setlength{\rightskip}{0pt plus 5cm}Object::Object (sf::RenderWindow $\ast$ {\em parentWindow})}}
+\label{classObject_cefe027e1cec4c9de78b851bb42e2e66}
+
+
+Test de classe 
+
+Construct a simple graphic object \hypertarget{classObject_e8f5483f459e46687bd01e6f9977afd3}{
+\index{Object@{Object}!$\sim$Object@{$\sim$Object}}
+\index{$\sim$Object@{$\sim$Object}!Object@{Object}}
+\subsubsection[$\sim$Object]{\setlength{\rightskip}{0pt plus 5cm}Object::$\sim$Object ()}}
+\label{classObject_e8f5483f459e46687bd01e6f9977afd3}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classObject_8e374c70b7dbaa03b2a3180490789d1d}{
+\index{Object@{Object}!SetBackground@{SetBackground}}
+\index{SetBackground@{SetBackground}!Object@{Object}}
+\subsubsection[SetBackground]{\setlength{\rightskip}{0pt plus 5cm}void Object::SetBackground (std::string {\em path})}}
+\label{classObject_8e374c70b7dbaa03b2a3180490789d1d}
+
+
+
+
+Set a background from an image path \hypertarget{classObject_00d4be2d8b013240b29e50ca7599fe55}{
+\index{Object@{Object}!SetBackground@{SetBackground}}
+\index{SetBackground@{SetBackground}!Object@{Object}}
+\subsubsection[SetBackground]{\setlength{\rightskip}{0pt plus 5cm}void Object::SetBackground (sf::Image \& {\em Img})}}
+\label{classObject_00d4be2d8b013240b29e50ca7599fe55}
+
+
+
+
+Set a background from an existing sf::Image \hypertarget{classObject_aa81f5ed57ee0bca860654241a16e325}{
+\index{Object@{Object}!SetBackground@{SetBackground}}
+\index{SetBackground@{SetBackground}!Object@{Object}}
+\subsubsection[SetBackground]{\setlength{\rightskip}{0pt plus 5cm}void Object::SetBackground (sf::Color \& {\em color})}}
+\label{classObject_aa81f5ed57ee0bca860654241a16e325}
+
+
+
+
+Set a background color \hypertarget{classObject_1abd4bc0011cb25fe9ed940e554d6cbb}{
+\index{Object@{Object}!SetBackground@{SetBackground}}
+\index{SetBackground@{SetBackground}!Object@{Object}}
+\subsubsection[SetBackground]{\setlength{\rightskip}{0pt plus 5cm}void Object::SetBackground (sf::Color \&, \/  sf::Color \&)}}
+\label{classObject_1abd4bc0011cb25fe9ed940e554d6cbb}
+
+
+\hypertarget{classObject_b68977125b45e872852613463037cebb}{
+\index{Object@{Object}!CheckEvent@{CheckEvent}}
+\index{CheckEvent@{CheckEvent}!Object@{Object}}
+\subsubsection[CheckEvent]{\setlength{\rightskip}{0pt plus 5cm}void Object::CheckEvent (sf::Event {\em Event})}}
+\label{classObject_b68977125b45e872852613463037cebb}
+
+
+Callbacks 
+
+Call the callbacks functions if needed on the given Event. \hypertarget{classObject_68e5f5f024cf7f2db43bd2de010c118c}{
+\index{Object@{Object}!SetClickCallback@{SetClickCallback}}
+\index{SetClickCallback@{SetClickCallback}!Object@{Object}}
+\subsubsection[SetClickCallback]{\setlength{\rightskip}{0pt plus 5cm}void Object::SetClickCallback (void($\ast$)() {\em clickCallBack})}}
+\label{classObject_68e5f5f024cf7f2db43bd2de010c118c}
+
+
+
+
+Set a pointer to the callback function called when the user click on this object \hypertarget{classObject_82e1ba70ec0e2b9327af29764cd666eb}{
+\index{Object@{Object}!SetMouseHoverCallback@{SetMouseHoverCallback}}
+\index{SetMouseHoverCallback@{SetMouseHoverCallback}!Object@{Object}}
+\subsubsection[SetMouseHoverCallback]{\setlength{\rightskip}{0pt plus 5cm}void Object::SetMouseHoverCallback (void($\ast$)() {\em mouseHoverCallback})}}
+\label{classObject_82e1ba70ec0e2b9327af29764cd666eb}
+
+
+
+
+Set a pointer to the callback function called when the mouse is hover the button. \hypertarget{classObject_d353628cfc37903c31e07f9179c7407f}{
+\index{Object@{Object}!ManageMouse@{ManageMouse}}
+\index{ManageMouse@{ManageMouse}!Object@{Object}}
+\subsubsection[ManageMouse]{\setlength{\rightskip}{0pt plus 5cm}void Object::ManageMouse ()}}
+\label{classObject_d353628cfc37903c31e07f9179c7407f}
+
+
+
+
+Manage the mouse events. \hypertarget{classObject_8342d588d9294226206106e142c30e51}{
+\index{Object@{Object}!Clicked@{Clicked}}
+\index{Clicked@{Clicked}!Object@{Object}}
+\subsubsection[Clicked]{\setlength{\rightskip}{0pt plus 5cm}void Object::Clicked ()}}
+\label{classObject_8342d588d9294226206106e142c30e51}
+
+
+
+
+Call the click callback function. It's automatically called by checkEvent, but you can also call it yourself if needed. \hypertarget{classObject_d3669e5b85439868eb7738f6d5a409ef}{
+\index{Object@{Object}!MouseHover@{MouseHover}}
+\index{MouseHover@{MouseHover}!Object@{Object}}
+\subsubsection[MouseHover]{\setlength{\rightskip}{0pt plus 5cm}void Object::MouseHover ()}}
+\label{classObject_d3669e5b85439868eb7738f6d5a409ef}
+
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classObject_f7caaefc35c7091fcaab49a102394239}{
+\index{Object@{Object}!m\_\-clickCallback@{m\_\-clickCallback}}
+\index{m\_\-clickCallback@{m\_\-clickCallback}!Object@{Object}}
+\subsubsection[m\_\-clickCallback]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf Object::m\_\-clickCallback})()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classObject_f7caaefc35c7091fcaab49a102394239}
+
+
+Pointer to the click callback function. 
+
+\hypertarget{classObject_b26d3ace4076898316d25c7d056ab80f}{
+\index{Object@{Object}!m\_\-mouseHoverCallback@{m\_\-mouseHoverCallback}}
+\index{m\_\-mouseHoverCallback@{m\_\-mouseHoverCallback}!Object@{Object}}
+\subsubsection[m\_\-mouseHoverCallback]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf Object::m\_\-mouseHoverCallback})()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classObject_b26d3ace4076898316d25c7d056ab80f}
+
+
+Pointer to the callback function called when mouse is hover the button \hypertarget{classObject_e961607134fe49c270e312f3107bf569}{
+\index{Object@{Object}!m\_\-BackgroundImg@{m\_\-BackgroundImg}}
+\index{m\_\-BackgroundImg@{m\_\-BackgroundImg}!Object@{Object}}
+\subsubsection[m\_\-BackgroundImg]{\setlength{\rightskip}{0pt plus 5cm}sf::Image$\ast$ {\bf Object::m\_\-BackgroundImg}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classObject_e961607134fe49c270e312f3107bf569}
+
+
+Curent background image. 
+
+\hypertarget{classObject_5ded1f794f837d393cf30fc8ecfceb37}{
+\index{Object@{Object}!m\_\-Event@{m\_\-Event}}
+\index{m\_\-Event@{m\_\-Event}!Object@{Object}}
+\subsubsection[m\_\-Event]{\setlength{\rightskip}{0pt plus 5cm}sf::Event {\bf Object::m\_\-Event}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classObject_5ded1f794f837d393cf30fc8ecfceb37}
+
+
+Copy of the current sfml event. 
+
+\hypertarget{classObject_a8afe2c64c045d58821a6af77803c630}{
+\index{Object@{Object}!m\_\-parentRenderWindow@{m\_\-parentRenderWindow}}
+\index{m\_\-parentRenderWindow@{m\_\-parentRenderWindow}!Object@{Object}}
+\subsubsection[m\_\-parentRenderWindow]{\setlength{\rightskip}{0pt plus 5cm}sf::RenderWindow$\ast$ {\bf Object::m\_\-parentRenderWindow}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classObject_a8afe2c64c045d58821a6af77803c630}
+
+
+Pointer to the parent sf::RenderWindow. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{object_8hpp}{object.hpp}\item 
+\hyperlink{object_8cpp}{object.cpp}\end{CompactItemize}

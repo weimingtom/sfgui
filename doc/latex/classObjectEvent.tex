@@ -1,0 +1,142 @@
+\hypertarget{classObjectEvent}{
+\section{ObjectEvent Class Reference}
+\label{classObjectEvent}\index{ObjectEvent@{ObjectEvent}}
+}
+Event manager for \hyperlink{classObject}{Object} item (and inherited classes).  
+
+
+{\tt \#include $<$objectevent.hpp$>$}
+
+Collaboration diagram for ObjectEvent:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=72pt]{classObjectEvent__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classObjectEvent_1ca186fc94027fe25f106e8741a152c5}{ObjectEvent} (\hyperlink{classObject}{Object} $\ast$Obj, sf::Event $\ast$Event, sf::RenderWindow $\ast$RenderWindow)
+\item 
+\hyperlink{classObjectEvent_d934287161965254cb6109828987724d}{$\sim$ObjectEvent} ()
+\item 
+void \hyperlink{classObjectEvent_fc881fdc9cf9352370716c9240eecd4f}{Stop} ()
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+virtual void \hyperlink{classObjectEvent_5c69864ed57f567ef9cb85fae234726b}{Run} ()
+\item 
+void \hyperlink{classObjectEvent_c1fb2fa4a3def96157510f0828c598ac}{manageMouse} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+sf::Event $\ast$ \hyperlink{classObjectEvent_c03cec5b97d4a2038c6f75d7b679e997}{m\_\-Event}
+\begin{CompactList}\small\item\em SFML event manager class. \item\end{CompactList}\item 
+sf::RenderWindow $\ast$ \hyperlink{classObjectEvent_9a1b0ae1d8f82924abfa682e59f40eb8}{m\_\-RenderWindow}
+\item 
+\hyperlink{classObject}{Object} $\ast$ \hyperlink{classObjectEvent_4ef3c90c68494a5af8b740694a2a8f48}{m\_\-Object}
+\begin{CompactList}\small\item\em Pointer to the \hyperlink{classObject}{Object} on which events must be managed. \item\end{CompactList}\item 
+bool \hyperlink{classObjectEvent_507af79e039621e6c2dab1af54c8653b}{runThread}
+\begin{CompactList}\small\item\em Used to stop the thread. \item\end{CompactList}\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Event manager for \hyperlink{classObject}{Object} item (and inherited classes). 
+
+This class is the \hyperlink{classObject}{Object} event manager. It can handle all events provided to Objects, and is intented to be used as parent for other thread classes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classObjectEvent_1ca186fc94027fe25f106e8741a152c5}{
+\index{ObjectEvent@{ObjectEvent}!ObjectEvent@{ObjectEvent}}
+\index{ObjectEvent@{ObjectEvent}!ObjectEvent@{ObjectEvent}}
+\subsubsection[ObjectEvent]{\setlength{\rightskip}{0pt plus 5cm}ObjectEvent::ObjectEvent ({\bf Object} $\ast$ {\em Obj}, \/  sf::Event $\ast$ {\em Event}, \/  sf::RenderWindow $\ast$ {\em RenderWindow})}}
+\label{classObjectEvent_1ca186fc94027fe25f106e8741a152c5}
+
+
+
+
+Create an object event thread. You must call the \hyperlink{classObjectEvent_5c69864ed57f567ef9cb85fae234726b}{Run()} function to start the thread, and you can call the \hyperlink{classObjectEvent_fc881fdc9cf9352370716c9240eecd4f}{Stop()} function to stop it \hypertarget{classObjectEvent_d934287161965254cb6109828987724d}{
+\index{ObjectEvent@{ObjectEvent}!$\sim$ObjectEvent@{$\sim$ObjectEvent}}
+\index{$\sim$ObjectEvent@{$\sim$ObjectEvent}!ObjectEvent@{ObjectEvent}}
+\subsubsection[$\sim$ObjectEvent]{\setlength{\rightskip}{0pt plus 5cm}ObjectEvent::$\sim$ObjectEvent ()}}
+\label{classObjectEvent_d934287161965254cb6109828987724d}
+
+
+
+
+Stop the thread and destroy the object 
+
+\subsection{Member Function Documentation}
+\hypertarget{classObjectEvent_5c69864ed57f567ef9cb85fae234726b}{
+\index{ObjectEvent@{ObjectEvent}!Run@{Run}}
+\index{Run@{Run}!ObjectEvent@{ObjectEvent}}
+\subsubsection[Run]{\setlength{\rightskip}{0pt plus 5cm}virtual void ObjectEvent::Run ()\hspace{0.3cm}{\tt  \mbox{[}inline, private, virtual\mbox{]}}}}
+\label{classObjectEvent_5c69864ed57f567ef9cb85fae234726b}
+
+
+
+
+Run the thread. This function must be called if you want to manage events (and it should be the case if you use this class /) \hypertarget{classObjectEvent_c1fb2fa4a3def96157510f0828c598ac}{
+\index{ObjectEvent@{ObjectEvent}!manageMouse@{manageMouse}}
+\index{manageMouse@{manageMouse}!ObjectEvent@{ObjectEvent}}
+\subsubsection[manageMouse]{\setlength{\rightskip}{0pt plus 5cm}void ObjectEvent::manageMouse ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classObjectEvent_c1fb2fa4a3def96157510f0828c598ac}
+
+
+
+
+Manage the mouse events. \hypertarget{classObjectEvent_fc881fdc9cf9352370716c9240eecd4f}{
+\index{ObjectEvent@{ObjectEvent}!Stop@{Stop}}
+\index{Stop@{Stop}!ObjectEvent@{ObjectEvent}}
+\subsubsection[Stop]{\setlength{\rightskip}{0pt plus 5cm}void ObjectEvent::Stop ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
+\label{classObjectEvent_fc881fdc9cf9352370716c9240eecd4f}
+
+
+
+
+Stop the thread after the current action. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classObjectEvent_c03cec5b97d4a2038c6f75d7b679e997}{
+\index{ObjectEvent@{ObjectEvent}!m\_\-Event@{m\_\-Event}}
+\index{m\_\-Event@{m\_\-Event}!ObjectEvent@{ObjectEvent}}
+\subsubsection[m\_\-Event]{\setlength{\rightskip}{0pt plus 5cm}sf::Event$\ast$ {\bf ObjectEvent::m\_\-Event}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classObjectEvent_c03cec5b97d4a2038c6f75d7b679e997}
+
+
+SFML event manager class. 
+
+\hypertarget{classObjectEvent_9a1b0ae1d8f82924abfa682e59f40eb8}{
+\index{ObjectEvent@{ObjectEvent}!m\_\-RenderWindow@{m\_\-RenderWindow}}
+\index{m\_\-RenderWindow@{m\_\-RenderWindow}!ObjectEvent@{ObjectEvent}}
+\subsubsection[m\_\-RenderWindow]{\setlength{\rightskip}{0pt plus 5cm}sf::RenderWindow$\ast$ {\bf ObjectEvent::m\_\-RenderWindow}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classObjectEvent_9a1b0ae1d8f82924abfa682e59f40eb8}
+
+
+Parent window used to get informations on keyboard, mouse... \hypertarget{classObjectEvent_4ef3c90c68494a5af8b740694a2a8f48}{
+\index{ObjectEvent@{ObjectEvent}!m\_\-Object@{m\_\-Object}}
+\index{m\_\-Object@{m\_\-Object}!ObjectEvent@{ObjectEvent}}
+\subsubsection[m\_\-Object]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object}$\ast$ {\bf ObjectEvent::m\_\-Object}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classObjectEvent_4ef3c90c68494a5af8b740694a2a8f48}
+
+
+Pointer to the \hyperlink{classObject}{Object} on which events must be managed. 
+
+\hypertarget{classObjectEvent_507af79e039621e6c2dab1af54c8653b}{
+\index{ObjectEvent@{ObjectEvent}!runThread@{runThread}}
+\index{runThread@{runThread}!ObjectEvent@{ObjectEvent}}
+\subsubsection[runThread]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf ObjectEvent::runThread}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classObjectEvent_507af79e039621e6c2dab1af54c8653b}
+
+
+Used to stop the thread. 
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+\hyperlink{objectevent_8hpp}{objectevent.hpp}\item 
+\hyperlink{objectevent_8cpp}{objectevent.cpp}\end{CompactItemize}

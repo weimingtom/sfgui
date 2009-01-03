@@ -1,0 +1,123 @@
+\contentsline {chapter}{\numberline {1}Namespace Index}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Namespace List}{1}{section.1.1}
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}Class Hierarchy}{3}{section.2.1}
+\contentsline {chapter}{\numberline {3}Class Index}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Class List}{5}{section.3.1}
+\contentsline {chapter}{\numberline {4}File Index}{7}{chapter.4}
+\contentsline {section}{\numberline {4.1}File List}{7}{section.4.1}
+\contentsline {chapter}{\numberline {5}Namespace Documentation}{9}{chapter.5}
+\contentsline {section}{\numberline {5.1}sfgui Namespace Reference}{9}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Detailed Description}{9}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Enumeration Type Documentation}{10}{subsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.2.1}"@0}{10}{subsubsection.5.1.2.1}
+\contentsline {chapter}{\numberline {6}Class Documentation}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}sfgui::Button Class Reference}{11}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Detailed Description}{12}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Constructor \& Destructor Documentation}{12}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}Button}{12}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}$\sim $Button}{12}{subsubsection.6.1.2.2}
+\contentsline {subsection}{\numberline {6.1.3}Member Function Documentation}{12}{subsection.6.1.3}
+\contentsline {subsubsection}{\numberline {6.1.3.1}updateTextPos}{12}{subsubsection.6.1.3.1}
+\contentsline {subsubsection}{\numberline {6.1.3.2}getText}{12}{subsubsection.6.1.3.2}
+\contentsline {subsubsection}{\numberline {6.1.3.3}SetText}{13}{subsubsection.6.1.3.3}
+\contentsline {subsubsection}{\numberline {6.1.3.4}GetText}{13}{subsubsection.6.1.3.4}
+\contentsline {subsubsection}{\numberline {6.1.3.5}SetTextColor}{13}{subsubsection.6.1.3.5}
+\contentsline {subsubsection}{\numberline {6.1.3.6}GetTextColor}{13}{subsubsection.6.1.3.6}
+\contentsline {subsubsection}{\numberline {6.1.3.7}SetTextSize}{13}{subsubsection.6.1.3.7}
+\contentsline {subsubsection}{\numberline {6.1.3.8}GetTextSize}{13}{subsubsection.6.1.3.8}
+\contentsline {subsubsection}{\numberline {6.1.3.9}SetTextFont}{13}{subsubsection.6.1.3.9}
+\contentsline {subsubsection}{\numberline {6.1.3.10}GetTextFont}{13}{subsubsection.6.1.3.10}
+\contentsline {subsubsection}{\numberline {6.1.3.11}SetTextAlignment}{13}{subsubsection.6.1.3.11}
+\contentsline {subsubsection}{\numberline {6.1.3.12}SetTextMargin}{13}{subsubsection.6.1.3.12}
+\contentsline {subsubsection}{\numberline {6.1.3.13}SetTextLeftMargin}{13}{subsubsection.6.1.3.13}
+\contentsline {subsubsection}{\numberline {6.1.3.14}SetTextRightMargin}{13}{subsubsection.6.1.3.14}
+\contentsline {subsubsection}{\numberline {6.1.3.15}SetTextTopMargin}{13}{subsubsection.6.1.3.15}
+\contentsline {subsubsection}{\numberline {6.1.3.16}SetTextBottomMargin}{13}{subsubsection.6.1.3.16}
+\contentsline {subsubsection}{\numberline {6.1.3.17}SetPosition}{14}{subsubsection.6.1.3.17}
+\contentsline {subsubsection}{\numberline {6.1.3.18}Move}{14}{subsubsection.6.1.3.18}
+\contentsline {subsubsection}{\numberline {6.1.3.19}Show}{14}{subsubsection.6.1.3.19}
+\contentsline {subsection}{\numberline {6.1.4}Member Data Documentation}{14}{subsection.6.1.4}
+\contentsline {subsubsection}{\numberline {6.1.4.1}m\_\discretionary {-}{}{}text}{14}{subsubsection.6.1.4.1}
+\contentsline {subsubsection}{\numberline {6.1.4.2}m\_\discretionary {-}{}{}textAlignment}{14}{subsubsection.6.1.4.2}
+\contentsline {subsubsection}{\numberline {6.1.4.3}m\_\discretionary {-}{}{}margin}{14}{subsubsection.6.1.4.3}
+\contentsline {section}{\numberline {6.2}sfgui::Margin Struct Reference}{15}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Detailed Description}{15}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Member Function Documentation}{15}{subsection.6.2.2}
+\contentsline {subsubsection}{\numberline {6.2.2.1}SetMargin}{15}{subsubsection.6.2.2.1}
+\contentsline {subsection}{\numberline {6.2.3}Member Data Documentation}{15}{subsection.6.2.3}
+\contentsline {subsubsection}{\numberline {6.2.3.1}Left}{15}{subsubsection.6.2.3.1}
+\contentsline {subsubsection}{\numberline {6.2.3.2}Right}{15}{subsubsection.6.2.3.2}
+\contentsline {subsubsection}{\numberline {6.2.3.3}Top}{15}{subsubsection.6.2.3.3}
+\contentsline {subsubsection}{\numberline {6.2.3.4}Bottom}{16}{subsubsection.6.2.3.4}
+\contentsline {section}{\numberline {6.3}sfgui::Object Class Reference}{17}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Detailed Description}{18}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Constructor \& Destructor Documentation}{18}{subsection.6.3.2}
+\contentsline {subsubsection}{\numberline {6.3.2.1}Object}{18}{subsubsection.6.3.2.1}
+\contentsline {subsubsection}{\numberline {6.3.2.2}$\sim $Object}{18}{subsubsection.6.3.2.2}
+\contentsline {subsection}{\numberline {6.3.3}Member Function Documentation}{18}{subsection.6.3.3}
+\contentsline {subsubsection}{\numberline {6.3.3.1}SetBackground}{18}{subsubsection.6.3.3.1}
+\contentsline {subsubsection}{\numberline {6.3.3.2}SetBackground}{18}{subsubsection.6.3.3.2}
+\contentsline {subsubsection}{\numberline {6.3.3.3}SetBackground}{18}{subsubsection.6.3.3.3}
+\contentsline {subsubsection}{\numberline {6.3.3.4}SetBackground}{18}{subsubsection.6.3.3.4}
+\contentsline {subsubsection}{\numberline {6.3.3.5}CheckEvent}{18}{subsubsection.6.3.3.5}
+\contentsline {subsubsection}{\numberline {6.3.3.6}SetClickCallback}{18}{subsubsection.6.3.3.6}
+\contentsline {subsubsection}{\numberline {6.3.3.7}SetMouseHoverCallback}{18}{subsubsection.6.3.3.7}
+\contentsline {subsubsection}{\numberline {6.3.3.8}ManageMouse}{19}{subsubsection.6.3.3.8}
+\contentsline {subsubsection}{\numberline {6.3.3.9}Clicked}{19}{subsubsection.6.3.3.9}
+\contentsline {subsubsection}{\numberline {6.3.3.10}MouseHover}{19}{subsubsection.6.3.3.10}
+\contentsline {subsection}{\numberline {6.3.4}Member Data Documentation}{19}{subsection.6.3.4}
+\contentsline {subsubsection}{\numberline {6.3.4.1}m\_\discretionary {-}{}{}clickCallback}{19}{subsubsection.6.3.4.1}
+\contentsline {subsubsection}{\numberline {6.3.4.2}m\_\discretionary {-}{}{}mouseHoverCallback}{19}{subsubsection.6.3.4.2}
+\contentsline {subsubsection}{\numberline {6.3.4.3}m\_\discretionary {-}{}{}parentRenderWindow}{19}{subsubsection.6.3.4.3}
+\contentsline {subsubsection}{\numberline {6.3.4.4}m\_\discretionary {-}{}{}BackgroundImg}{19}{subsubsection.6.3.4.4}
+\contentsline {subsubsection}{\numberline {6.3.4.5}m\_\discretionary {-}{}{}Event}{19}{subsubsection.6.3.4.5}
+\contentsline {section}{\numberline {6.4}sfgui::TextEdit Class Reference}{20}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Detailed Description}{21}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Constructor \& Destructor Documentation}{21}{subsection.6.4.2}
+\contentsline {subsubsection}{\numberline {6.4.2.1}TextEdit}{21}{subsubsection.6.4.2.1}
+\contentsline {subsection}{\numberline {6.4.3}Member Function Documentation}{21}{subsection.6.4.3}
+\contentsline {subsubsection}{\numberline {6.4.3.1}textChanged}{21}{subsubsection.6.4.3.1}
+\contentsline {subsubsection}{\numberline {6.4.3.2}deactivated}{21}{subsubsection.6.4.3.2}
+\contentsline {subsubsection}{\numberline {6.4.3.3}activated}{21}{subsubsection.6.4.3.3}
+\contentsline {subsubsection}{\numberline {6.4.3.4}SetText}{21}{subsubsection.6.4.3.4}
+\contentsline {subsubsection}{\numberline {6.4.3.5}AddChar}{21}{subsubsection.6.4.3.5}
+\contentsline {subsubsection}{\numberline {6.4.3.6}DelChar}{22}{subsubsection.6.4.3.6}
+\contentsline {subsubsection}{\numberline {6.4.3.7}Activate}{22}{subsubsection.6.4.3.7}
+\contentsline {subsubsection}{\numberline {6.4.3.8}Deactivate}{22}{subsubsection.6.4.3.8}
+\contentsline {subsubsection}{\numberline {6.4.3.9}CheckEvent}{22}{subsubsection.6.4.3.9}
+\contentsline {subsubsection}{\numberline {6.4.3.10}SetTextChangedCallback}{22}{subsubsection.6.4.3.10}
+\contentsline {subsubsection}{\numberline {6.4.3.11}SetReturnPressedCallback}{22}{subsubsection.6.4.3.11}
+\contentsline {subsubsection}{\numberline {6.4.3.12}SetActivatedCallback}{22}{subsubsection.6.4.3.12}
+\contentsline {subsubsection}{\numberline {6.4.3.13}SetDeactivatedCallback}{22}{subsubsection.6.4.3.13}
+\contentsline {subsubsection}{\numberline {6.4.3.14}Show}{22}{subsubsection.6.4.3.14}
+\contentsline {subsection}{\numberline {6.4.4}Member Data Documentation}{23}{subsection.6.4.4}
+\contentsline {subsubsection}{\numberline {6.4.4.1}m\_\discretionary {-}{}{}stdText}{23}{subsubsection.6.4.4.1}
+\contentsline {subsubsection}{\numberline {6.4.4.2}m\_\discretionary {-}{}{}nbCharToShow}{23}{subsubsection.6.4.4.2}
+\contentsline {subsubsection}{\numberline {6.4.4.3}m\_\discretionary {-}{}{}itemActive}{23}{subsubsection.6.4.4.3}
+\contentsline {subsubsection}{\numberline {6.4.4.4}m\_\discretionary {-}{}{}textChangedCallback}{23}{subsubsection.6.4.4.4}
+\contentsline {subsubsection}{\numberline {6.4.4.5}m\_\discretionary {-}{}{}deactivatedCallback}{23}{subsubsection.6.4.4.5}
+\contentsline {subsubsection}{\numberline {6.4.4.6}m\_\discretionary {-}{}{}activatedCallback}{23}{subsubsection.6.4.4.6}
+\contentsline {subsubsection}{\numberline {6.4.4.7}m\_\discretionary {-}{}{}returnPressedCallback}{23}{subsubsection.6.4.4.7}
+\contentsline {chapter}{\numberline {7}File Documentation}{25}{chapter.7}
+\contentsline {section}{\numberline {7.1}button.cpp File Reference}{25}{section.7.1}
+\contentsline {section}{\numberline {7.2}button.hpp File Reference}{26}{section.7.2}
+\contentsline {section}{\numberline {7.3}constantes.hpp File Reference}{27}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Detailed Description}{27}{subsection.7.3.1}
+\contentsline {section}{\numberline {7.4}main.cpp File Reference}{28}{section.7.4}
+\contentsline {subsection}{\numberline {7.4.1}Function Documentation}{28}{subsection.7.4.1}
+\contentsline {subsubsection}{\numberline {7.4.1.1}App}{28}{subsubsection.7.4.1.1}
+\contentsline {subsubsection}{\numberline {7.4.1.2}clickedCallBack}{28}{subsubsection.7.4.1.2}
+\contentsline {subsubsection}{\numberline {7.4.1.3}main}{28}{subsubsection.7.4.1.3}
+\contentsline {subsubsection}{\numberline {7.4.1.4}textChangeCallback}{28}{subsubsection.7.4.1.4}
+\contentsline {subsection}{\numberline {7.4.2}Variable Documentation}{28}{subsection.7.4.2}
+\contentsline {subsubsection}{\numberline {7.4.2.1}App}{28}{subsubsection.7.4.2.1}
+\contentsline {section}{\numberline {7.5}margin.cpp File Reference}{29}{section.7.5}
+\contentsline {section}{\numberline {7.6}margin.hpp File Reference}{30}{section.7.6}
+\contentsline {subsection}{\numberline {7.6.1}Detailed Description}{30}{subsection.7.6.1}
+\contentsline {section}{\numberline {7.7}object.cpp File Reference}{31}{section.7.7}
+\contentsline {subsection}{\numberline {7.7.1}Function Documentation}{31}{subsection.7.7.1}
+\contentsline {subsubsection}{\numberline {7.7.1.1}SetBackground}{31}{subsubsection.7.7.1.1}
+\contentsline {section}{\numberline {7.8}object.hpp File Reference}{32}{section.7.8}
+\contentsline {section}{\numberline {7.9}textedit.cpp File Reference}{33}{section.7.9}
+\contentsline {section}{\numberline {7.10}textedit.hpp File Reference}{34}{section.7.10}
