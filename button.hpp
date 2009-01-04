@@ -47,6 +47,7 @@ class Button : public Object
 	sfgui::Margin m_margin;
 	void updateTextPos();
 	void generalInit();
+	sf::Font *m_font;
 
 	public:
 	Button(sf::RenderWindow *parentWindow);

@@ -32,10 +32,16 @@ sfgui::Button::Button(sf::RenderWindow *parentWindow, std::string themePath) : O
 	generalInit();
 }
 void sfgui::Button::generalInit() {
+	m_font = new sf::Font;
 	m_text.SetColor(sf::Color(255,255,255));
 	m_text.SetSize(30);
 	m_textAlignment = sfgui::Center;
 	m_margin.SetMargin(2);
+	if (!m_font->LoadFromFile("data/VeraMono.ttf"))
+	{
+	}
+		std::cout<<"erreur";
+	m_text.SetFont(*m_font);	
 }
 sfgui::Button::~Button() {
 }
@@ -84,8 +90,6 @@ void sfgui::Button::SetText(std::string text) {
 	 * Set the button text.
 	 */
 	m_text = sf::String(text);
-	// Default SFML Font
-	m_text.SetFont(sf::Font::GetDefaultFont());
 	updateTextPos();
 }
 std::string sfgui::Button::GetText() {
@@ -99,6 +103,11 @@ sf::Color sfgui::Button::GetTextColor() {
 	return m_text.GetColor();
 }
 void sfgui::Button::SetTextFont(sf::Font &font) {
+	/** Set the text font.
+	 * <b>Warning : </b> For some inherited widets (such as TextEdit) a non
+	 * monospaced font will cause problems (like text getting out of the font...).
+	 * It is because SFML doesn't provide function to get charachter width (so it is
+	 * based on a constant one, wich is get from one character). */
 	m_text.SetFont(font);
 }
 sf::Font sfgui::Button::GetTextFont() {

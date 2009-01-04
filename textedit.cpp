@@ -29,7 +29,6 @@ sfgui::TextEdit::TextEdit(sf::RenderWindow *parentWindow) : Button(parentWindow)
 	m_textChangedCallback = NULL;
 	m_returnPressedCallback = NULL;
 
-	m_text.SetFont(sf::Font::GetDefaultFont());
 	m_text.SetSize(20);
 	Resize(300,30);
 	SetTextLeftMargin(1);
@@ -45,15 +44,13 @@ void sfgui::TextEdit::Resize(float w, float h) {
 	sizeChanged();
 }
 void sfgui::TextEdit::sizeChanged() {
-	m_nbCharToShow=0;
-	while(m_text.GetRect().GetWidth() < GetSize().x-(m_margin.Left+m_margin.Right)) {
-		m_nbCharToShow++;
-		std::string text = m_text.GetText();
-		m_text.SetText(text+"a");
-		std::cout<<"m_text : "<<m_text.GetRect().GetWidth()<<"\t"<<"this : "<<GetSize().x<<std::endl;
-	}
+	/** If the size change, this function calculate the new max showable number of
+	 * chars, update the text position. 
+	 * FIXME : To non monospaced fonts, the max number of size is not correctly
+	 * calculated, as it is based on the width of one character. */
+	m_text.SetText("a");
+	m_nbCharToShow = GetSize().x/m_text.GetRect().GetWidth();
 	m_text.SetText("");
-	std::cout<<"max : "<<m_nbCharToShow << std::endl;
 	updateTextPos();
 }
 void sfgui::TextEdit::Activate() {
