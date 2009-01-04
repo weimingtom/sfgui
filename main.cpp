@@ -52,7 +52,6 @@ int main() {
 
 	sfgui::TextEdit But(&App);
 	But.SetPosition(100,400);
-	But.SetTheme("data/button/");
 	But.SetTextChangedCallback(&textChangeCallback);
 	But.Resize(200, 40);
 	// Start game loop

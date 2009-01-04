@@ -46,7 +46,6 @@ namespace sfgui {
 class TextEdit : public sfgui::Button {
 private:
 	std::string m_stdText;
-	int m_nbCharToShow; /**< The maximum number of char which the widget can show */
 	bool m_itemActive; /**< If true, user can enter text (textedit has focus), if
 	false, it is disabled */
 
@@ -58,7 +57,6 @@ private:
 	void textChanged();  
 	void deactivated();
 	void activated();
-	void sizeChanged();
 public:
 	TextEdit(sf::RenderWindow *parentWindow);
 	void SetText(std::string &);

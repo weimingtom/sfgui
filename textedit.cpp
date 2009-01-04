@@ -1,5 +1,5 @@
 /****************************
- * Auteur :Tanguy Arnaud
+ * Auteur :Tanguy Arnaud <arn.tanguy@gmail.com>
  * Date :
  * Version : 1.0
  *
@@ -35,29 +35,18 @@ sfgui::TextEdit::TextEdit(sf::RenderWindow *parentWindow) : Button(parentWindow)
 	SetTextBottomMargin(10);
 	SetTextAlignment(sfgui::Left);
 
-	// How many char max ?
-	sizeChanged();
+	updateTextPos();
 }
 
 void sfgui::TextEdit::Resize(float w, float h) {
 	sfgui::Button::Resize(w, h);
-	sizeChanged();
-}
-void sfgui::TextEdit::sizeChanged() {
-	/** If the size change, this function calculate the new max showable number of
-	 * chars, update the text position. 
-	 * FIXME : To non monospaced fonts, the max number of size is not correctly
-	 * calculated, as it is based on the width of one character. */
-	m_text.SetText("a");
-	m_nbCharToShow = GetSize().x/m_text.GetRect().GetWidth();
-	m_text.SetText("");
 	updateTextPos();
 }
 void sfgui::TextEdit::Activate() {
 	/** Activate the TextEdit. When the TextEdit is activated, all pressed keys are
 	 * added to the TextEdit string */
-	m_itemActive = true;//
-	activated();        //
+	m_itemActive = true;
+	activated();        
 }
 void sfgui::TextEdit::Deactivate() {
 	/** Deactivate the Textedit. Key you press will no longer be added to the
@@ -143,10 +132,26 @@ void sfgui::TextEdit::SetDeactivatedCallback(void(*deactivatedCallback)()) {
 void sfgui::TextEdit::textChanged() {
 	/** If the text is modified, this function is called. It updates the sfString on the screen,
 	 * and it call the textChanged callback (if exists) */
-	int index = m_stdText.size() - m_nbCharToShow;
-	std::string truncatedStr = m_stdText.substr((index >= 0) ? index : 0, m_nbCharToShow);
-	m_text.SetText(truncatedStr);
+
+	//XXX : A little heavy, if someone have a better idea, please contact me...
+	//This add characters to m_text until it reach the TextEdit size. 
+	std::string trucatedStrInv;
+	for(int i=m_stdText.size(); i>=0; i--) {
+		trucatedStrInv.push_back(m_stdText[i]);
+		m_text.SetText(trucatedStrInv);
+		if(m_text.GetRect().GetWidth() >= GetSize().x-(m_margin.Right+m_margin.Left+5)) {
+			break;
+		}
+	}
+	//But the resulting text is inversed, so put it in the right order
+	std::string trucatedStr; trucatedStr.reserve(trucatedStrInv.size());
+	for(int i=trucatedStrInv.size(); i>0; i--) {
+		trucatedStr.push_back(trucatedStrInv[i]);
+	}
+	m_text.SetText(trucatedStr);
 	updateTextPos();
+	
+	//Call the callback function
 	if(m_textChangedCallback != NULL) {
 		(*m_textChangedCallback)(m_stdText);
 	}
