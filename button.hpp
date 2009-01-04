@@ -42,34 +42,11 @@ namespace sfgui {
 class Button : public Object
 {
 	protected:
-	sf::String m_text; 
-	int m_textAlignment;
-	sfgui::Margin m_margin;
-	void updateTextPos();
 	void generalInit();
-	sf::Font *m_font;
 
 	public:
 	Button(sf::RenderWindow *parentWindow);
 	Button(sf::RenderWindow *parentWindow, std::string themePath); 
-	~Button();
-	std::string getText() { /** Get the button text */ return m_text.GetText(); }
-	void SetText(std::string text);
-	std::string GetText();
-	void SetTextColor(sf::Color &);
-	sf::Color GetTextColor();
-	void SetTextSize(float);
-	float GetTextSize();
-	void SetTextFont(sf::Font &);
-	sf::Font GetTextFont();
-	void SetTextAlignment(int);
-	void SetTextMargin(float);
-	void SetTextLeftMargin(float);
-	void SetTextRightMargin(float);
-	void SetTextTopMargin(float);
-	void SetTextBottomMargin(float);
-	void SetPosition(float x, float y);
-	void Move(float x, float y);
 	void Show();	
 };
 }

@@ -22,7 +22,7 @@
 
 #include "textedit.hpp"
 
-sfgui::TextEdit::TextEdit(sf::RenderWindow *parentWindow) : Button(parentWindow) {
+sfgui::TextEdit::TextEdit(sf::RenderWindow *parentWindow) : Object(parentWindow) {
 	m_stdText.reserve(20);
 	m_activatedCallback = NULL;
 	m_deactivatedCallback = NULL;
@@ -31,7 +31,8 @@ sfgui::TextEdit::TextEdit(sf::RenderWindow *parentWindow) : Button(parentWindow)
 
 	m_text.SetSize(20);
 	Resize(300,30);
-	SetTextLeftMargin(1);
+	SetTextLeftMargin(4);
+	SetTextRightMargin(4);
 	SetTextBottomMargin(10);
 	SetTextAlignment(sfgui::Left);
 
@@ -39,7 +40,7 @@ sfgui::TextEdit::TextEdit(sf::RenderWindow *parentWindow) : Button(parentWindow)
 }
 
 void sfgui::TextEdit::Resize(float w, float h) {
-	sfgui::Button::Resize(w, h);
+	sfgui::Object::Resize(w, h);
 	updateTextPos();
 }
 void sfgui::TextEdit::Activate() {

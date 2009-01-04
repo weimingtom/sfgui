@@ -43,7 +43,7 @@ namespace sfgui {
  * <b>Important : you must call the CheckEvent function in the event loop. If you don't,
  * the widget will just be shown, but won't work as he uses internally events to get the
  * typed text, clicks...</b> */
-class TextEdit : public sfgui::Button {
+class TextEdit : public sfgui::Object {
 private:
 	std::string m_stdText;
 	bool m_itemActive; /**< If true, user can enter text (textedit has focus), if

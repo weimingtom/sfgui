@@ -11,7 +11,14 @@ Inheritance diagram for sfgui::Object:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=62pt]{classsfgui_1_1Object__inherit__graph}
+\includegraphics[width=149pt]{classsfgui_1_1Object__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for sfgui::Object:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=65pt]{classsfgui_1_1Object__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -26,6 +33,38 @@ Inheritance diagram for sfgui::Object:\nopagebreak
 void \hyperlink{classsfgui_1_1Object_96e00c4db6358d27ad806c0053e343a1}{SetTheme} (std::string)
 \item 
 void \hyperlink{classsfgui_1_1Object_b3477443fde0d86be5e32f5c1dcd7b01}{SetBackground} (int background)
+\item 
+void \hyperlink{classsfgui_1_1Object_64c05d85588778a652d11c7a1daf8db0}{SetText} (std::string text)
+\item 
+std::string \hyperlink{classsfgui_1_1Object_070ede7cda0e7b3cab312aac5013a206}{GetText} ()
+\item 
+void \hyperlink{classsfgui_1_1Object_88f1c97f50dd466417309f0776dce452}{SetTextColor} (sf::Color \&)
+\item 
+sf::Color \hyperlink{classsfgui_1_1Object_df734af2a7ca4ad600fe8bff51ed06cc}{GetTextColor} ()
+\item 
+void \hyperlink{classsfgui_1_1Object_01fb5dcac8bac061999ce661d13f296e}{SetTextSize} (float)
+\item 
+float \hyperlink{classsfgui_1_1Object_a6fae4cfa68982563c49b8b13b11966b}{GetTextSize} ()
+\item 
+void \hyperlink{classsfgui_1_1Object_41801231361e4866d99ce7d4ef32e53d}{SetTextFont} (sf::Font \&)
+\item 
+sf::Font \hyperlink{classsfgui_1_1Object_5f1d579d8ebba512fb983622552fe40f}{GetTextFont} ()
+\item 
+void \hyperlink{classsfgui_1_1Object_191bba44abbc751fd80e6f19ad6aba5b}{SetTextAlignment} (int)
+\item 
+void \hyperlink{classsfgui_1_1Object_f71c39eb2dfd2eb76e9be9e5dad606d9}{SetTextMargin} (float)
+\item 
+void \hyperlink{classsfgui_1_1Object_28408aa0cf50c8da37a79215755c01d9}{SetTextLeftMargin} (float)
+\item 
+void \hyperlink{classsfgui_1_1Object_dcea61673771a680fc47e4b838c2a59e}{SetTextRightMargin} (float)
+\item 
+void \hyperlink{classsfgui_1_1Object_6c3eb411a957d05707d858ded4cd951c}{SetTextTopMargin} (float)
+\item 
+void \hyperlink{classsfgui_1_1Object_db61eb19249fbbd28462cc79ca17b738}{SetTextBottomMargin} (float)
+\item 
+void \hyperlink{classsfgui_1_1Object_664c57bd35504a7d00963980d68dd022}{SetPosition} (float x, float y)
+\item 
+void \hyperlink{classsfgui_1_1Object_70b15fba99da515808d3da7d8042f458}{Move} (float x, float y)
 \item 
 void \hyperlink{classsfgui_1_1Object_cd9dbf2abe79e04c22f281bccb8bdb0e}{CheckEvent} (sf::Event Event)
 \item 
@@ -49,8 +88,21 @@ enum \hyperlink{classsfgui_1_1Object_8a7d7ae20a88b7ef8a104f7e6c8596ce}{ButtonSta
 \hyperlink{classsfgui_1_1Object_8a7d7ae20a88b7ef8a104f7e6c8596ce9befc9dbae9107e3e7546af33a139df9}{BackgroundHover}
  \}
 \end{CompactItemize}
+\subsection*{Protected Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classsfgui_1_1Object_27d9eb8b653f263f76b612cd77512321}{updateTextPos} ()
+\end{CompactItemize}
 \subsection*{Protected Attributes}
 \begin{CompactItemize}
+\item 
+sf::String \hyperlink{classsfgui_1_1Object_b63c033215c2f6f1d64645e3c6f0153b}{m\_\-text}
+\item 
+sf::Font $\ast$ \hyperlink{classsfgui_1_1Object_20ec4624e3d9b8e3cebeb71ec97fd104}{m\_\-font}
+\item 
+int \hyperlink{classsfgui_1_1Object_7cfb56995f2140319df705fb1b146d36}{m\_\-textAlignment}
+\item 
+\hyperlink{structsfgui_1_1Margin}{sfgui::Margin} \hyperlink{classsfgui_1_1Object_b7afeee103f0cfc0c045effa8527a4b4}{m\_\-margin}
 \item 
 sf::RenderWindow $\ast$ \hyperlink{classsfgui_1_1Object_518ad23f1c9aab6fd9b346d708c503a8}{m\_\-parentRenderWindow}
 \begin{CompactList}\small\item\em Pointer to the parent sf::RenderWindow. \item\end{CompactList}\item 
@@ -77,7 +129,7 @@ void($\ast$ \hyperlink{classsfgui_1_1Object_ddff61a2d47a7b25e05aa5b6311417ea}{m\
 \subsection{Detailed Description}
 A simple graphic item. 
 
-This is a very simple object, which is rather useless. It's mostly present to be used as parent by other graphics items classes. This class create a sf::Sprite which represent a graphic item. There are some basic functions to set the general appearance like setBackground. This class can handle some common events which are possibly used by all widgets like clicks, mouse over... 
+This is a very simple object, which is rather useless (you can create a basic pushbutton, but not more). It's mostly present to be used as parent by other graphics items classes. This class create a sf::Sprite which represent a graphic item. There are some basic functions to set the general appearance like setBackground. This class can handle some common events which are possibly used by all widgets like clicks, mouse hover... 
 
 \subsection{Member Enumeration Documentation}
 \hypertarget{classsfgui_1_1Object_8a7d7ae20a88b7ef8a104f7e6c8596ce}{
@@ -115,7 +167,7 @@ BackgroundHover}
 \label{classsfgui_1_1Object_f03d0a10a3f8f71c58f56cf896e95f82}
 
 
-Test de classe 
+
 
 Construct a simple graphic object
 
@@ -128,7 +180,7 @@ Load the default background images \hypertarget{classsfgui_1_1Object_6d0f96eda1f
 
 
 
-Construct a graphic object which uses a custom theme instead of the default one \hypertarget{classsfgui_1_1Object_7d923592a63a854c77ce4edcb21e40ba}{
+Construct a graphic object which uses a custom theme instead of the default one. Instead of changing the theme by SetTheme, it's recomanded to use this constructor, as it directly loads the right images (it avoid loading images twices). \hypertarget{classsfgui_1_1Object_7d923592a63a854c77ce4edcb21e40ba}{
 \index{sfgui::Object@{sfgui::Object}!$\sim$Object@{$\sim$Object}}
 \index{$\sim$Object@{$\sim$Object}!sfgui::Object@{sfgui::Object}}
 \subsubsection[$\sim$Object]{\setlength{\rightskip}{0pt plus 5cm}sfgui::Object::$\sim$Object ()}}
@@ -151,7 +203,16 @@ Delete all the pointers, free the image map...
 
 Initialise the parts shared by all constructors 
 
-Reimplemented in \hyperlink{classsfgui_1_1Button_59849e58ed4c46061d71f7172cab4e4e}{sfgui::Button}.\hypertarget{classsfgui_1_1Object_96e00c4db6358d27ad806c0053e343a1}{
+Reimplemented in \hyperlink{classsfgui_1_1Button_59849e58ed4c46061d71f7172cab4e4e}{sfgui::Button}.\hypertarget{classsfgui_1_1Object_27d9eb8b653f263f76b612cd77512321}{
+\index{sfgui::Object@{sfgui::Object}!updateTextPos@{updateTextPos}}
+\index{updateTextPos@{updateTextPos}!sfgui::Object@{sfgui::Object}}
+\subsubsection[updateTextPos]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::updateTextPos ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Object_27d9eb8b653f263f76b612cd77512321}
+
+
+
+
+This function is called internally when the position of the button is changed, when text changed (...) to adapt the text position so that it stays to the right alignment \hypertarget{classsfgui_1_1Object_96e00c4db6358d27ad806c0053e343a1}{
 \index{sfgui::Object@{sfgui::Object}!SetTheme@{SetTheme}}
 \index{SetTheme@{SetTheme}!sfgui::Object@{sfgui::Object}}
 \subsubsection[SetTheme]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTheme (std::string {\em dir})}}
@@ -174,9 +235,145 @@ Load a background theme from a directory containing the right png images : \begi
 Set a background from an image which is already loaded int this object. {\bf Throws : }when an error occurs, like image index doesn't exists, it throw a \hyperlink{classsfgui_1_1Error}{sfgui::Error} \begin{Desc}
 \item[Parameters:]
 \begin{description}
-\item[{\em background}]It is the num of the background. It must one of the followings values : \hyperlink{classsfgui_1_1Object_8a7d7ae20a88b7ef8a104f7e6c8596cee8211d79a1f35d08db2b31a914bddc38}{Object::BackgroundNormal}, \hyperlink{classsfgui_1_1Object_8a7d7ae20a88b7ef8a104f7e6c8596ce03b529b6f0fee7ab7cc0033441180b67}{Object::BackgroundClicked}, \hyperlink{classsfgui_1_1Object_8a7d7ae20a88b7ef8a104f7e6c8596ce9befc9dbae9107e3e7546af33a139df9}{Object::BackgroundHover} \end{description}
+\item[{\em background}]It is the num of the background. It must one of the followings values : \hyperlink{classsfgui_1_1Object_8a7d7ae20a88b7ef8a104f7e6c8596cee8211d79a1f35d08db2b31a914bddc38}{Object::BackgroundNormal}, \hyperlink{classsfgui_1_1Object_8a7d7ae20a88b7ef8a104f7e6c8596ce03b529b6f0fee7ab7cc0033441180b67}{Object::BackgroundClicked}, \hyperlink{classsfgui_1_1Object_8a7d7ae20a88b7ef8a104f7e6c8596ce9befc9dbae9107e3e7546af33a139df9}{Object::BackgroundHover} ... \end{description}
 \end{Desc}
-\hypertarget{classsfgui_1_1Object_cd9dbf2abe79e04c22f281bccb8bdb0e}{
+\begin{Desc}
+\item[See also:]\hyperlink{classsfgui_1_1Object_8a7d7ae20a88b7ef8a104f7e6c8596ce}{sfgui::Object::ButtonStates} for the complete list of backgrounds values \end{Desc}
+\hypertarget{classsfgui_1_1Object_64c05d85588778a652d11c7a1daf8db0}{
+\index{sfgui::Object@{sfgui::Object}!SetText@{SetText}}
+\index{SetText@{SetText}!sfgui::Object@{sfgui::Object}}
+\subsubsection[SetText]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetText (std::string {\em text})}}
+\label{classsfgui_1_1Object_64c05d85588778a652d11c7a1daf8db0}
+
+
+
+
+Set the button text. \hypertarget{classsfgui_1_1Object_070ede7cda0e7b3cab312aac5013a206}{
+\index{sfgui::Object@{sfgui::Object}!GetText@{GetText}}
+\index{GetText@{GetText}!sfgui::Object@{sfgui::Object}}
+\subsubsection[GetText]{\setlength{\rightskip}{0pt plus 5cm}std::string sfgui::Object::GetText ()}}
+\label{classsfgui_1_1Object_070ede7cda0e7b3cab312aac5013a206}
+
+
+\hypertarget{classsfgui_1_1Object_88f1c97f50dd466417309f0776dce452}{
+\index{sfgui::Object@{sfgui::Object}!SetTextColor@{SetTextColor}}
+\index{SetTextColor@{SetTextColor}!sfgui::Object@{sfgui::Object}}
+\subsubsection[SetTextColor]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTextColor (sf::Color \& {\em color})}}
+\label{classsfgui_1_1Object_88f1c97f50dd466417309f0776dce452}
+
+
+\hypertarget{classsfgui_1_1Object_df734af2a7ca4ad600fe8bff51ed06cc}{
+\index{sfgui::Object@{sfgui::Object}!GetTextColor@{GetTextColor}}
+\index{GetTextColor@{GetTextColor}!sfgui::Object@{sfgui::Object}}
+\subsubsection[GetTextColor]{\setlength{\rightskip}{0pt plus 5cm}sf::Color sfgui::Object::GetTextColor ()}}
+\label{classsfgui_1_1Object_df734af2a7ca4ad600fe8bff51ed06cc}
+
+
+\hypertarget{classsfgui_1_1Object_01fb5dcac8bac061999ce661d13f296e}{
+\index{sfgui::Object@{sfgui::Object}!SetTextSize@{SetTextSize}}
+\index{SetTextSize@{SetTextSize}!sfgui::Object@{sfgui::Object}}
+\subsubsection[SetTextSize]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTextSize (float {\em size})}}
+\label{classsfgui_1_1Object_01fb5dcac8bac061999ce661d13f296e}
+
+
+
+
+Set size of the text \hypertarget{classsfgui_1_1Object_a6fae4cfa68982563c49b8b13b11966b}{
+\index{sfgui::Object@{sfgui::Object}!GetTextSize@{GetTextSize}}
+\index{GetTextSize@{GetTextSize}!sfgui::Object@{sfgui::Object}}
+\subsubsection[GetTextSize]{\setlength{\rightskip}{0pt plus 5cm}float sfgui::Object::GetTextSize ()}}
+\label{classsfgui_1_1Object_a6fae4cfa68982563c49b8b13b11966b}
+
+
+\hypertarget{classsfgui_1_1Object_41801231361e4866d99ce7d4ef32e53d}{
+\index{sfgui::Object@{sfgui::Object}!SetTextFont@{SetTextFont}}
+\index{SetTextFont@{SetTextFont}!sfgui::Object@{sfgui::Object}}
+\subsubsection[SetTextFont]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTextFont (sf::Font \& {\em font})}}
+\label{classsfgui_1_1Object_41801231361e4866d99ce7d4ef32e53d}
+
+
+
+
+Set the text font. {\bf Warning : } For some inherited widets (such as \hyperlink{classsfgui_1_1TextEdit}{TextEdit}) a non monospaced font will cause problems (like text getting out of the font...). It is because SFML doesn't provide function to get charachter width (so it is based on a constant one, wich is get from one character). \hypertarget{classsfgui_1_1Object_5f1d579d8ebba512fb983622552fe40f}{
+\index{sfgui::Object@{sfgui::Object}!GetTextFont@{GetTextFont}}
+\index{GetTextFont@{GetTextFont}!sfgui::Object@{sfgui::Object}}
+\subsubsection[GetTextFont]{\setlength{\rightskip}{0pt plus 5cm}sf::Font sfgui::Object::GetTextFont ()}}
+\label{classsfgui_1_1Object_5f1d579d8ebba512fb983622552fe40f}
+
+
+\hypertarget{classsfgui_1_1Object_191bba44abbc751fd80e6f19ad6aba5b}{
+\index{sfgui::Object@{sfgui::Object}!SetTextAlignment@{SetTextAlignment}}
+\index{SetTextAlignment@{SetTextAlignment}!sfgui::Object@{sfgui::Object}}
+\subsubsection[SetTextAlignment]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTextAlignment (int {\em al})}}
+\label{classsfgui_1_1Object_191bba44abbc751fd80e6f19ad6aba5b}
+
+
+
+
+This set the position of the text on the button. You should use one of the following constant value sfgui::LEFT, sfgui::RIGHT, sfgui::CENTER \hypertarget{classsfgui_1_1Object_f71c39eb2dfd2eb76e9be9e5dad606d9}{
+\index{sfgui::Object@{sfgui::Object}!SetTextMargin@{SetTextMargin}}
+\index{SetTextMargin@{SetTextMargin}!sfgui::Object@{sfgui::Object}}
+\subsubsection[SetTextMargin]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTextMargin (float {\em margin})}}
+\label{classsfgui_1_1Object_f71c39eb2dfd2eb76e9be9e5dad606d9}
+
+
+
+
+Set the global margin. The text will be spaced from the button each border by a number of pixels. \hypertarget{classsfgui_1_1Object_28408aa0cf50c8da37a79215755c01d9}{
+\index{sfgui::Object@{sfgui::Object}!SetTextLeftMargin@{SetTextLeftMargin}}
+\index{SetTextLeftMargin@{SetTextLeftMargin}!sfgui::Object@{sfgui::Object}}
+\subsubsection[SetTextLeftMargin]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTextLeftMargin (float {\em margin})}}
+\label{classsfgui_1_1Object_28408aa0cf50c8da37a79215755c01d9}
+
+
+
+
+Set the left margin. Text will be spaced from the left border of the button \hypertarget{classsfgui_1_1Object_dcea61673771a680fc47e4b838c2a59e}{
+\index{sfgui::Object@{sfgui::Object}!SetTextRightMargin@{SetTextRightMargin}}
+\index{SetTextRightMargin@{SetTextRightMargin}!sfgui::Object@{sfgui::Object}}
+\subsubsection[SetTextRightMargin]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTextRightMargin (float {\em margin})}}
+\label{classsfgui_1_1Object_dcea61673771a680fc47e4b838c2a59e}
+
+
+
+
+Set the right margin. Text will be spaced form the right border of the button. \hypertarget{classsfgui_1_1Object_6c3eb411a957d05707d858ded4cd951c}{
+\index{sfgui::Object@{sfgui::Object}!SetTextTopMargin@{SetTextTopMargin}}
+\index{SetTextTopMargin@{SetTextTopMargin}!sfgui::Object@{sfgui::Object}}
+\subsubsection[SetTextTopMargin]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTextTopMargin (float {\em margin})}}
+\label{classsfgui_1_1Object_6c3eb411a957d05707d858ded4cd951c}
+
+
+
+
+Set the top margin. Text will be spaced from the top border of the button. \hypertarget{classsfgui_1_1Object_db61eb19249fbbd28462cc79ca17b738}{
+\index{sfgui::Object@{sfgui::Object}!SetTextBottomMargin@{SetTextBottomMargin}}
+\index{SetTextBottomMargin@{SetTextBottomMargin}!sfgui::Object@{sfgui::Object}}
+\subsubsection[SetTextBottomMargin]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTextBottomMargin (float {\em margin})}}
+\label{classsfgui_1_1Object_db61eb19249fbbd28462cc79ca17b738}
+
+
+
+
+set the bottom margin. Text will be spaced from the bottom border of the button \hypertarget{classsfgui_1_1Object_664c57bd35504a7d00963980d68dd022}{
+\index{sfgui::Object@{sfgui::Object}!SetPosition@{SetPosition}}
+\index{SetPosition@{SetPosition}!sfgui::Object@{sfgui::Object}}
+\subsubsection[SetPosition]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetPosition (float {\em x}, \/  float {\em y})}}
+\label{classsfgui_1_1Object_664c57bd35504a7d00963980d68dd022}
+
+
+
+
+Set the button position. Adjust the text position to keep the text in the choosen position (center, left, right...) \hypertarget{classsfgui_1_1Object_70b15fba99da515808d3da7d8042f458}{
+\index{sfgui::Object@{sfgui::Object}!Move@{Move}}
+\index{Move@{Move}!sfgui::Object@{sfgui::Object}}
+\subsubsection[Move]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::Move (float {\em x}, \/  float {\em y})}}
+\label{classsfgui_1_1Object_70b15fba99da515808d3da7d8042f458}
+
+
+
+
+Move the button and adjust the text position \hypertarget{classsfgui_1_1Object_cd9dbf2abe79e04c22f281bccb8bdb0e}{
 \index{sfgui::Object@{sfgui::Object}!CheckEvent@{CheckEvent}}
 \index{CheckEvent@{CheckEvent}!sfgui::Object@{sfgui::Object}}
 \subsubsection[CheckEvent]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::CheckEvent (sf::Event {\em Event})}}
@@ -260,7 +457,35 @@ Pointer to the click callback function.
 \label{classsfgui_1_1Object_ddff61a2d47a7b25e05aa5b6311417ea}
 
 
-Pointer to the callback function called when mouse is hover the button \hypertarget{classsfgui_1_1Object_518ad23f1c9aab6fd9b346d708c503a8}{
+Pointer to the callback function called when mouse is hover the button \hypertarget{classsfgui_1_1Object_b63c033215c2f6f1d64645e3c6f0153b}{
+\index{sfgui::Object@{sfgui::Object}!m\_\-text@{m\_\-text}}
+\index{m\_\-text@{m\_\-text}!sfgui::Object@{sfgui::Object}}
+\subsubsection[m\_\-text]{\setlength{\rightskip}{0pt plus 5cm}sf::String {\bf sfgui::Object::m\_\-text}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Object_b63c033215c2f6f1d64645e3c6f0153b}
+
+
+\hypertarget{classsfgui_1_1Object_20ec4624e3d9b8e3cebeb71ec97fd104}{
+\index{sfgui::Object@{sfgui::Object}!m\_\-font@{m\_\-font}}
+\index{m\_\-font@{m\_\-font}!sfgui::Object@{sfgui::Object}}
+\subsubsection[m\_\-font]{\setlength{\rightskip}{0pt plus 5cm}sf::Font$\ast$ {\bf sfgui::Object::m\_\-font}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Object_20ec4624e3d9b8e3cebeb71ec97fd104}
+
+
+\hypertarget{classsfgui_1_1Object_7cfb56995f2140319df705fb1b146d36}{
+\index{sfgui::Object@{sfgui::Object}!m\_\-textAlignment@{m\_\-textAlignment}}
+\index{m\_\-textAlignment@{m\_\-textAlignment}!sfgui::Object@{sfgui::Object}}
+\subsubsection[m\_\-textAlignment]{\setlength{\rightskip}{0pt plus 5cm}int {\bf sfgui::Object::m\_\-textAlignment}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Object_7cfb56995f2140319df705fb1b146d36}
+
+
+\hypertarget{classsfgui_1_1Object_b7afeee103f0cfc0c045effa8527a4b4}{
+\index{sfgui::Object@{sfgui::Object}!m\_\-margin@{m\_\-margin}}
+\index{m\_\-margin@{m\_\-margin}!sfgui::Object@{sfgui::Object}}
+\subsubsection[m\_\-margin]{\setlength{\rightskip}{0pt plus 5cm}{\bf sfgui::Margin} {\bf sfgui::Object::m\_\-margin}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Object_b7afeee103f0cfc0c045effa8527a4b4}
+
+
+\hypertarget{classsfgui_1_1Object_518ad23f1c9aab6fd9b346d708c503a8}{
 \index{sfgui::Object@{sfgui::Object}!m\_\-parentRenderWindow@{m\_\-parentRenderWindow}}
 \index{m\_\-parentRenderWindow@{m\_\-parentRenderWindow}!sfgui::Object@{sfgui::Object}}
 \subsubsection[m\_\-parentRenderWindow]{\setlength{\rightskip}{0pt plus 5cm}sf::RenderWindow$\ast$ {\bf sfgui::Object::m\_\-parentRenderWindow}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}

@@ -1,6 +1,3 @@
-/**
- * Test de classe
- */
 /****************************
  * Auteur :Tanguy Arnaud
  * Date :
@@ -34,7 +31,9 @@ sfgui::Object::Object(sf::RenderWindow *parentWindow) : m_parentRenderWindow(par
 }
 sfgui::Object::Object(sf::RenderWindow *parentWindow, std::string themePath) : m_parentRenderWindow(parentWindow) {
 	/** Construct a graphic object which uses a custom theme instead of the default
-	 * one */
+	 * one. Instead of changing the theme by SetTheme, it's recomanded to use this
+	 * constructor, as it directly loads the right images (it avoid loading images
+	 * twices). */
 	generalInit();
 	SetTheme(themePath);
 }
@@ -53,6 +52,133 @@ sfgui::Object::~Object() {
 			delete (*it).second;
 		}
 		m_Images.clear();
+	}
+}
+
+void sfgui::Object::SetPosition(float x, float y) {
+	/** Set the button position. Adjust the text position to keep the text in the
+	 * choosen position (center, left, right...) */
+	sf::Sprite::SetPosition(x,y);
+	sf::Vector2<float> buttonSize(GetSize());
+	sf::Rect<float> textRect(m_text.GetRect());
+	sf::Vector2<float> textPos;
+	if(m_textAlignment == sfgui::Left) {
+		textPos.x = x+m_margin.Left;
+		textPos.y = y+m_margin.Top+buttonSize.y/2 - textRect.GetHeight()/2;
+	}
+	else if(m_textAlignment == sfgui::Right) {
+		textPos.x = x+buttonSize.x-(textRect.GetWidth()+m_margin.Right);
+		textPos.y = y+m_margin.Top+buttonSize.y/2 - (textRect.GetHeight()/2 + m_margin.Bottom);
+	}
+	else {
+		// If not set or is sfgui::CENTER, center the text
+		textPos.x = x+m_margin.Left+buttonSize.x/2 - (textRect.GetWidth()/2+m_margin.Right);
+		textPos.y = y+m_margin.Top+buttonSize.y/2 - (textRect.GetHeight()/2+m_margin.Bottom);
+	}
+	m_text.SetPosition(textPos);
+}
+void sfgui::Object::Move(float x, float y) {
+	/** Move the button and adjust the text position */
+	SetPosition(GetPosition().x + x, GetPosition().y + y);
+}
+void sfgui::Object::updateTextPos() {
+	/** This function is called internally when the position of the button is
+	 * changed, when text changed (...) to adapt the text position so that it stays
+	 * to the right alignment */
+	SetPosition(GetPosition().x, GetPosition().y);
+}
+
+void sfgui::Object::SetText(std::string text) {
+	/**
+	 * Set the button text.
+	 */
+	m_text = sf::String(text);
+	updateTextPos();
+}
+std::string sfgui::Object::GetText() {
+	return m_text.GetText();
+}
+void sfgui::Object::SetTextColor(sf::Color &color) {
+	m_text.SetColor(color);
+}
+sf::Color sfgui::Object::GetTextColor() {
+	return m_text.GetColor();
+}
+void sfgui::Object::SetTextFont(sf::Font &font) {
+	/** Set the text font.
+	 * <b>Warning : </b> For some inherited widets (such as TextEdit) a non
+	 * monospaced font will cause problems (like text getting out of the font...).
+	 * It is because SFML doesn't provide function to get charachter width (so it is
+	 * based on a constant one, wich is get from one character). */
+	m_text.SetFont(font);
+}
+sf::Font sfgui::Object::GetTextFont() {
+	return m_text.GetFont();
+}
+void sfgui::Object::SetTextSize(float size) {
+	/** Set size of the text */
+	m_text.SetSize(size);
+	updateTextPos();
+}
+float sfgui::Object::GetTextSize() {
+	return m_text.GetSize();
+}
+
+void sfgui::Object::SetTextAlignment(int al) {
+	/** This set the position of the text on the button. You should use one of the
+	 * following constant value sfgui::LEFT, sfgui::RIGHT, sfgui::CENTER */
+	m_textAlignment  = al;
+	updateTextPos();
+}
+
+void sfgui::Object::SetTextMargin(float margin) {
+	/** Set the global margin. The text will be spaced from the button each border by a
+	 * number of pixels. */
+	if(margin*2 < GetSize().x && margin*2 < GetSize().y) {
+		m_margin.SetMargin(margin);
+		updateTextPos();
+	} else {
+		std::cout<<"Error : margin not set, it is bigger than the object !";
+	}
+}
+void sfgui::Object::SetTextLeftMargin(float margin) {
+	/** Set the left margin. Text will be spaced from the left border of the button
+	 * */
+	if(margin < GetSize().x) {
+		m_margin.Left = margin;
+		updateTextPos();
+	} else {
+		std::cerr<<"Error : margin not set, it is bigger than the object !";
+	}
+}
+void sfgui::Object::SetTextRightMargin(float margin) {
+	/** Set the right margin. Text will be spaced form the right border of the
+	 * button. */
+	if(margin < GetSize().x) {
+		m_margin.Right = margin;
+		updateTextPos();
+	} else {
+		std::cerr<<"Error : margin not set, it is bigger than the object !";
+	}
+}
+void sfgui::Object::SetTextTopMargin(float margin) {
+	/** Set the top margin. Text will be spaced from the top border of the button.
+	 * */
+	if(margin < GetSize().y) {
+		m_margin.Top = margin;
+		updateTextPos();
+	} else {
+		std::cerr<<"Error : margin not set, it is bigger than the object !";
+	}
+}
+void sfgui::Object::SetTextBottomMargin(float margin) {
+	/** set the bottom margin. Text will be spaced from the bottom border of the
+	 * button */
+	if(margin < GetSize().y) {
+		m_margin.Bottom = margin;
+		updateTextPos();
+	} else {
+		std::cerr<<"Error : margin not set, it is bigger than the object !";
 	}
 }
 
@@ -107,7 +233,8 @@ void sfgui::Object::SetBackground(int background) {
 	 * throw a sfgui::Error 
 	 * \param background It is the num of the background. It must one of the
 	 * followings values : Object::BackgroundNormal, Object::BackgroundClicked,
-	 * Object::BackgroundHover */
+	 * Object::BackgroundHover ... \see sfgui::Object::ButtonStates for the complete
+	 * list of backgrounds values*/
 	if(m_Images.count(background) == 0) {
 		throw sfgui::Error(("Warning : there is no image for index ")+background);
 	} else {

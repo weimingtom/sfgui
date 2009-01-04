@@ -1,6 +1,8 @@
-<area shape="rect" href="$button_8hpp.html" title="/home/arnaud/programmation/sfml/sfgui/button.hpp" alt="" coords="217,84,572,111">
-<area shape="rect" href="$object_8cpp.html" title="/home/arnaud/programmation/sfml/sfgui/object.cpp" alt="" coords="596,84,945,111">
+<area shape="rect" href="$button_8hpp.html" title="/home/arnaud/programmation/sfml/sfgui/button.hpp" alt="" coords="272,84,627,111">
+<area shape="rect" href="$checkbox_8hpp.html" title="Class which provides checkbox buttons." alt="" coords="760,84,1131,111">
+<area shape="rect" href="$object_8cpp.html" title="/home/arnaud/programmation/sfml/sfgui/object.cpp" alt="" coords="1155,84,1504,111">
 <area shape="rect" href="$button_8cpp.html" title="/home/arnaud/programmation/sfml/sfgui/button.cpp" alt="" coords="5,161,357,188">
 <area shape="rect" href="$main_8cpp.html" title="/home/arnaud/programmation/sfml/sfgui/main.cpp" alt="" coords="223,239,567,265">
 <area shape="rect" href="$textedit_8hpp.html" title="/home/arnaud/programmation/sfml/sfgui/textedit.hpp" alt="" coords="432,161,792,188">
 <area shape="rect" href="$textedit_8cpp.html" title="/home/arnaud/programmation/sfml/sfgui/textedit.cpp" alt="" coords="591,239,951,265">
+<area shape="rect" href="$checkbox_8cpp.html" title="/home/arnaud/programmation/sfml/sfgui/checkbox.cpp" alt="" coords="816,161,1187,188">
