@@ -26,6 +26,8 @@ Collaboration diagram for sfgui::Button:\nopagebreak
 \item 
 \hyperlink{classsfgui_1_1Button_05c78461b775a073bed1e218586defd7}{Button} (sf::RenderWindow $\ast$parentWindow)
 \item 
+\hyperlink{classsfgui_1_1Button_5189b70c8f868718f79c7e119e0b9b32}{Button} (sf::RenderWindow $\ast$parentWindow, std::string themePath)
+\item 
 \hyperlink{classsfgui_1_1Button_835b0cbc92ef98e4c884398e036d26ca}{$\sim$Button} ()
 \item 
 std::string \hyperlink{classsfgui_1_1Button_015166159ef486c5001c5b58e79abc2d}{getText} ()
@@ -68,6 +70,8 @@ void \hyperlink{classsfgui_1_1Button_94dc6919349ff5ca9f334cce78afbe39}{Show} ()
 \begin{CompactItemize}
 \item 
 void \hyperlink{classsfgui_1_1Button_1e1eade317f3b603011067e4997b0725}{updateTextPos} ()
+\item 
+void \hyperlink{classsfgui_1_1Button_59849e58ed4c46061d71f7172cab4e4e}{generalInit} ()
 \end{CompactItemize}
 \subsection*{Protected Attributes}
 \begin{CompactItemize}
@@ -77,13 +81,15 @@ sf::String \hyperlink{classsfgui_1_1Button_5a436a029fef79723eed0b024b5a7693}{m\_
 int \hyperlink{classsfgui_1_1Button_b1ca3893cbff9b09f42e16377c0073f9}{m\_\-textAlignment}
 \item 
 \hyperlink{structsfgui_1_1Margin}{sfgui::Margin} \hyperlink{classsfgui_1_1Button_20ee48b44f31ad5b5de11dc3b00103a7}{m\_\-margin}
+\item 
+sf::Font $\ast$ \hyperlink{classsfgui_1_1Button_d3a2e16539c17bbbbaad6050a3a96de3}{m\_\-font}
 \end{CompactItemize}
 
 
 \subsection{Detailed Description}
 A push button. 
 
-This class represents a push button graphic item. It provides some signals (call some useful callbacks) like clicked, mouseOver... 
+This class represents a push button graphic item. It's certainly one of the most used graphic item, as it provides a simple way to give order to an application (like yes/no buttons...). It provides some signals (call some useful callbacks) like clicked, mouseOver... 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classsfgui_1_1Button_05c78461b775a073bed1e218586defd7}{
@@ -95,7 +101,14 @@ This class represents a push button graphic item. It provides some signals (call
 
 
 
-Create a \hyperlink{classsfgui_1_1Button}{Button} on the parent window. \hypertarget{classsfgui_1_1Button_835b0cbc92ef98e4c884398e036d26ca}{
+Create a \hyperlink{classsfgui_1_1Button}{Button} on the parent window. \hypertarget{classsfgui_1_1Button_5189b70c8f868718f79c7e119e0b9b32}{
+\index{sfgui::Button@{sfgui::Button}!Button@{Button}}
+\index{Button@{Button}!sfgui::Button@{sfgui::Button}}
+\subsubsection[Button]{\setlength{\rightskip}{0pt plus 5cm}sfgui::Button::Button (sf::RenderWindow $\ast$ {\em parentWindow}, \/  std::string {\em themePath})}}
+\label{classsfgui_1_1Button_5189b70c8f868718f79c7e119e0b9b32}
+
+
+\hypertarget{classsfgui_1_1Button_835b0cbc92ef98e4c884398e036d26ca}{
 \index{sfgui::Button@{sfgui::Button}!$\sim$Button@{$\sim$Button}}
 \index{$\sim$Button@{$\sim$Button}!sfgui::Button@{sfgui::Button}}
 \subsubsection[$\sim$Button]{\setlength{\rightskip}{0pt plus 5cm}sfgui::Button::$\sim$Button ()}}
@@ -114,7 +127,16 @@ Create a \hyperlink{classsfgui_1_1Button}{Button} on the parent window. \hyperta
 
 
 
-This function is called internally when the position of the button is changed, when text changed (...) to adapt the text position so that it stays to the right alignment \hypertarget{classsfgui_1_1Button_015166159ef486c5001c5b58e79abc2d}{
+This function is called internally when the position of the button is changed, when text changed (...) to adapt the text position so that it stays to the right alignment \hypertarget{classsfgui_1_1Button_59849e58ed4c46061d71f7172cab4e4e}{
+\index{sfgui::Button@{sfgui::Button}!generalInit@{generalInit}}
+\index{generalInit@{generalInit}!sfgui::Button@{sfgui::Button}}
+\subsubsection[generalInit]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Button::generalInit ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Button_59849e58ed4c46061d71f7172cab4e4e}
+
+
+
+
+Reimplemented from \hyperlink{classsfgui_1_1Object_d2750b3d51a3a208739ed6c0c57df6aa}{sfgui::Object}.\hypertarget{classsfgui_1_1Button_015166159ef486c5001c5b58e79abc2d}{
 \index{sfgui::Button@{sfgui::Button}!getText@{getText}}
 \index{getText@{getText}!sfgui::Button@{sfgui::Button}}
 \subsubsection[getText]{\setlength{\rightskip}{0pt plus 5cm}std::string sfgui::Button::getText ()\hspace{0.3cm}{\tt  \mbox{[}inline\mbox{]}}}}
@@ -176,7 +198,9 @@ Set size of the text \hypertarget{classsfgui_1_1Button_ed3a5fc8690d92ee59483b5dd
 \label{classsfgui_1_1Button_f1a92c908326f7bd9973da154854a8bd}
 
 
-\hypertarget{classsfgui_1_1Button_8b3a0a7ac0482c039e11bb615a55e86b}{
+
+
+Set the text font. {\bf Warning : } For some inherited widets (such as \hyperlink{classsfgui_1_1TextEdit}{TextEdit}) a non monospaced font will cause problems (like text getting out of the font...). It is because SFML doesn't provide function to get charachter width (so it is based on a constant one, wich is get from one character). \hypertarget{classsfgui_1_1Button_8b3a0a7ac0482c039e11bb615a55e86b}{
 \index{sfgui::Button@{sfgui::Button}!GetTextFont@{GetTextFont}}
 \index{GetTextFont@{GetTextFont}!sfgui::Button@{sfgui::Button}}
 \subsubsection[GetTextFont]{\setlength{\rightskip}{0pt plus 5cm}sf::Font sfgui::Button::GetTextFont ()}}
@@ -290,9 +314,16 @@ Reimplemented in \hyperlink{classsfgui_1_1TextEdit_1ee03247816213b34caaff365b160
 \label{classsfgui_1_1Button_20ee48b44f31ad5b5de11dc3b00103a7}
 
 
+\hypertarget{classsfgui_1_1Button_d3a2e16539c17bbbbaad6050a3a96de3}{
+\index{sfgui::Button@{sfgui::Button}!m\_\-font@{m\_\-font}}
+\index{m\_\-font@{m\_\-font}!sfgui::Button@{sfgui::Button}}
+\subsubsection[m\_\-font]{\setlength{\rightskip}{0pt plus 5cm}sf::Font$\ast$ {\bf sfgui::Button::m\_\-font}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Button_d3a2e16539c17bbbbaad6050a3a96de3}
+
+
 
 
 The documentation for this class was generated from the following files:\begin{CompactItemize}
 \item 
-\hyperlink{button_8hpp}{button.hpp}\item 
-\hyperlink{button_8cpp}{button.cpp}\end{CompactItemize}
+/home/arnaud/programmation/sfml/sfgui/\hyperlink{button_8hpp}{button.hpp}\item 
+/home/arnaud/programmation/sfml/sfgui/\hyperlink{button_8cpp}{button.cpp}\end{CompactItemize}

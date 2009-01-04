@@ -37,7 +37,7 @@ namespace sfgui {
  * This class represents a push button graphic item. 
  * It's certainly one of the most used graphic item, as it provides a simple way to give
  * order to an application (like yes/no buttons...).
- * It provides some signals (call some useful callbacks) like clicked, mouseOver...
+ * It provides some signals (call some useful callbacks) like clicked, mouseHover...
  */
 class Button : public Object
 {

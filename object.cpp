@@ -42,9 +42,11 @@ void sfgui::Object::generalInit() {
 	/** Initialise the parts shared by all constructors */
 	m_mouseHoverCallback = NULL;
 	m_clickCallback = NULL;
+	m_font = new sf::Font(sf::Font::GetDefaultFont());
 }
 sfgui::Object::~Object() {
 	/** Delete all the pointers, free the image map... */
+	delete m_font;
 	if(m_Images.size() != 0) {
 		std::map<int, sf::Image *>::iterator it;
 		for(it=m_Images.begin(); it != m_Images.end(); it++) {

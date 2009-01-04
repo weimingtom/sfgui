@@ -53,6 +53,8 @@ Collaboration diagram for sfgui::TextEdit:</div>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#16ffefa7f0c0d6e01275b8a2afa5975e">SetText</a> (std::string &amp;)</td></tr>
 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#58afd20cc7cec80bf02603cc5e47143a">Resize</a> (float, float)</td></tr>
+
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#203952f38ce3bd68695597fee4b4397b">AddChar</a> (char)</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#dc95dab7bac1c41d0cebff1268f80c22">DelChar</a> (int)</td></tr>
@@ -83,8 +85,6 @@ Collaboration diagram for sfgui::TextEdit:</div>
 <tr><td colspan="2"><br><h2>Private Attributes</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#08de851a32aa8dd650e33dfcb376bfd8">m_stdText</a></td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#648ee4daef549d909bef251aa2f12b40">m_nbCharToShow</a></td></tr>
-
 <tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#8ffa5546b2fd4901837b13a118f9beef">m_itemActive</a></td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#a6d415ef1daf7f9fdf0dec3d71cb8eab">m_textChangedCallback</a> )(std::string &amp;)</td></tr>
@@ -104,7 +104,7 @@ This class provides a single line text entry widget. Thanks to this class, the u
 <p>
 If you want to enter text, you must have the item activated. You can activate it by calling the <a class="el" href="classsfgui_1_1TextEdit.html#bcd256e053ae8f13a5c7f919f79c03c9">Activate()</a> function (when user click on the <a class="el" href="classsfgui_1_1TextEdit.html" title="A single line text entry.">TextEdit</a>, this function is automatically called). <br>
  If you want to stop typing text in the widget, you must call the <a class="el" href="classsfgui_1_1TextEdit.html#49b0919fd6c43c35913f8a46a6788270">Deactivate()</a> function. <br>
- <b>Important : you must call the CheckEvent function in the event loop. If you don't, the widget will just be shown, but won't work</b> <hr><h2>Constructor &amp; Destructor Documentation</h2>
+ <b>Important : you must call the CheckEvent function in the event loop. If you don't, the widget will just be shown, but won't work as he uses internally events to get the typed text, clicks...</b> <hr><h2>Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" name="c6f2d938ccf876f05a9a9c47060c6093"></a><!-- doxytag: member="sfgui::TextEdit::TextEdit" ref="c6f2d938ccf876f05a9a9c47060c6093" args="(sf::RenderWindow *parentWindow)" -->
 <div class="memitem">
 <div class="memproto">
@@ -205,6 +205,35 @@ If the text is modified, this function is called. It updates the sfString on the
 
 <p>
 Set the text on the <a class="el" href="classsfgui_1_1TextEdit.html" title="A single line text entry.">TextEdit</a> 
+</div>
+</div><p>
+<a class="anchor" name="58afd20cc7cec80bf02603cc5e47143a"></a><!-- doxytag: member="sfgui::TextEdit::Resize" ref="58afd20cc7cec80bf02603cc5e47143a" args="(float, float)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sfgui::TextEdit::Resize           </td>
+          <td>(</td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&nbsp;</td>
+          <td class="paramname"> <em>h</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
 </div>
 </div><p>
 <a class="anchor" name="203952f38ce3bd68695597fee4b4397b"></a><!-- doxytag: member="sfgui::TextEdit::AddChar" ref="203952f38ce3bd68695597fee4b4397b" args="(char)" -->
@@ -444,21 +473,6 @@ Show the <a class="el" href="classsfgui_1_1TextEdit.html" title="A single line t
 
 </div>
 </div><p>
-<a class="anchor" name="648ee4daef549d909bef251aa2f12b40"></a><!-- doxytag: member="sfgui::TextEdit::m_nbCharToShow" ref="648ee4daef549d909bef251aa2f12b40" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="classsfgui_1_1TextEdit.html#648ee4daef549d909bef251aa2f12b40">sfgui::TextEdit::m_nbCharToShow</a><code> [private]</code>          </td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>
-
-</div>
-</div><p>
 <a class="anchor" name="8ffa5546b2fd4901837b13a118f9beef"></a><!-- doxytag: member="sfgui::TextEdit::m_itemActive" ref="8ffa5546b2fd4901837b13a118f9beef" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -535,9 +549,9 @@ If true, user can enter text (textedit has focus), if false, it is disabled
 </div>
 </div><p>
 <hr>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="textedit_8hpp.html">textedit.hpp</a><li><a class="el" href="textedit_8cpp.html">textedit.cpp</a></ul>
+<li>/home/arnaud/programmation/sfml/sfgui/<a class="el" href="textedit_8hpp.html">textedit.hpp</a><li>/home/arnaud/programmation/sfml/sfgui/<a class="el" href="textedit_8cpp.html">textedit.cpp</a></ul>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sat Jan 3 13:09:42 2009 for SFML Gui by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sun Jan 4 18:39:47 2009 for SFML Gui by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
 </body>

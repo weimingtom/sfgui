@@ -37,17 +37,11 @@ void sfgui::Button::generalInit() {
 	m_text.SetSize(30);
 	m_textAlignment = sfgui::Center;
 	m_margin.SetMargin(2);
-//	if (!m_font->LoadFromFile("data/VeraMono.ttf"))
-//	{
-//		throw sfgui::Error("Not fonts loaded, font doesn't exists or a problem
-//		have occured during loading it");
-//	}
-//	m_text.SetFont(*m_font);	
 	*m_font = sf::Font::GetDefaultFont();
 	m_text.SetFont(*m_font);
-
 }
 sfgui::Button::~Button() {
+	delete m_font;
 }
 
 void sfgui::Button::SetPosition(float x, float y) {

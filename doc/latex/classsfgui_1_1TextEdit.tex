@@ -28,6 +28,8 @@ Collaboration diagram for sfgui::TextEdit:\nopagebreak
 \item 
 void \hyperlink{classsfgui_1_1TextEdit_16ffefa7f0c0d6e01275b8a2afa5975e}{SetText} (std::string \&)
 \item 
+void \hyperlink{classsfgui_1_1TextEdit_58afd20cc7cec80bf02603cc5e47143a}{Resize} (float, float)
+\item 
 void \hyperlink{classsfgui_1_1TextEdit_203952f38ce3bd68695597fee4b4397b}{AddChar} (char)
 \item 
 void \hyperlink{classsfgui_1_1TextEdit_dc95dab7bac1c41d0cebff1268f80c22}{DelChar} (int)
@@ -62,8 +64,6 @@ void \hyperlink{classsfgui_1_1TextEdit_c009c601675801f2039d8f526e6fc921}{activat
 \item 
 std::string \hyperlink{classsfgui_1_1TextEdit_08de851a32aa8dd650e33dfcb376bfd8}{m\_\-stdText}
 \item 
-int \hyperlink{classsfgui_1_1TextEdit_648ee4daef549d909bef251aa2f12b40}{m\_\-nbCharToShow}
-\item 
 bool \hyperlink{classsfgui_1_1TextEdit_8ffa5546b2fd4901837b13a118f9beef}{m\_\-itemActive}
 \item 
 void($\ast$ \hyperlink{classsfgui_1_1TextEdit_a6d415ef1daf7f9fdf0dec3d71cb8eab}{m\_\-textChangedCallback} )(std::string \&)
@@ -85,7 +85,7 @@ This class provides a single line text entry widget. Thanks to this class, the u
 
 If you want to enter text, you must have the item activated. You can activate it by calling the \hyperlink{classsfgui_1_1TextEdit_bcd256e053ae8f13a5c7f919f79c03c9}{Activate()} function (when user click on the \hyperlink{classsfgui_1_1TextEdit}{TextEdit}, this function is automatically called). \par
  If you want to stop typing text in the widget, you must call the \hyperlink{classsfgui_1_1TextEdit_49b0919fd6c43c35913f8a46a6788270}{Deactivate()} function. \par
- {\bf Important : you must call the CheckEvent function in the event loop. If you don't, the widget will just be shown, but won't work} 
+ {\bf Important : you must call the CheckEvent function in the event loop. If you don't, the widget will just be shown, but won't work as he uses internally events to get the typed text, clicks...} 
 
 \subsection{Constructor \& Destructor Documentation}
 \hypertarget{classsfgui_1_1TextEdit_c6f2d938ccf876f05a9a9c47060c6093}{
@@ -130,7 +130,14 @@ If the text is modified, this function is called. It updates the sfString on the
 
 
 
-Set the text on the \hyperlink{classsfgui_1_1TextEdit}{TextEdit} \hypertarget{classsfgui_1_1TextEdit_203952f38ce3bd68695597fee4b4397b}{
+Set the text on the \hyperlink{classsfgui_1_1TextEdit}{TextEdit} \hypertarget{classsfgui_1_1TextEdit_58afd20cc7cec80bf02603cc5e47143a}{
+\index{sfgui::TextEdit@{sfgui::TextEdit}!Resize@{Resize}}
+\index{Resize@{Resize}!sfgui::TextEdit@{sfgui::TextEdit}}
+\subsubsection[Resize]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::Resize (float {\em w}, \/  float {\em h})}}
+\label{classsfgui_1_1TextEdit_58afd20cc7cec80bf02603cc5e47143a}
+
+
+\hypertarget{classsfgui_1_1TextEdit_203952f38ce3bd68695597fee4b4397b}{
 \index{sfgui::TextEdit@{sfgui::TextEdit}!AddChar@{AddChar}}
 \index{AddChar@{AddChar}!sfgui::TextEdit@{sfgui::TextEdit}}
 \subsubsection[AddChar]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::AddChar (char {\em ch})}}
@@ -234,13 +241,6 @@ Reimplemented from \hyperlink{classsfgui_1_1Button_94dc6919349ff5ca9f334cce78afb
 \label{classsfgui_1_1TextEdit_08de851a32aa8dd650e33dfcb376bfd8}
 
 
-\hypertarget{classsfgui_1_1TextEdit_648ee4daef549d909bef251aa2f12b40}{
-\index{sfgui::TextEdit@{sfgui::TextEdit}!m\_\-nbCharToShow@{m\_\-nbCharToShow}}
-\index{m\_\-nbCharToShow@{m\_\-nbCharToShow}!sfgui::TextEdit@{sfgui::TextEdit}}
-\subsubsection[m\_\-nbCharToShow]{\setlength{\rightskip}{0pt plus 5cm}int {\bf sfgui::TextEdit::m\_\-nbCharToShow}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
-\label{classsfgui_1_1TextEdit_648ee4daef549d909bef251aa2f12b40}
-
-
 \hypertarget{classsfgui_1_1TextEdit_8ffa5546b2fd4901837b13a118f9beef}{
 \index{sfgui::TextEdit@{sfgui::TextEdit}!m\_\-itemActive@{m\_\-itemActive}}
 \index{m\_\-itemActive@{m\_\-itemActive}!sfgui::TextEdit@{sfgui::TextEdit}}
@@ -280,5 +280,5 @@ If true, user can enter text (textedit has focus), if false, it is disabled \hyp
 
 The documentation for this class was generated from the following files:\begin{CompactItemize}
 \item 
-\hyperlink{textedit_8hpp}{textedit.hpp}\item 
-\hyperlink{textedit_8cpp}{textedit.cpp}\end{CompactItemize}
+/home/arnaud/programmation/sfml/sfgui/\hyperlink{textedit_8hpp}{textedit.hpp}\item 
+/home/arnaud/programmation/sfml/sfgui/\hyperlink{textedit_8cpp}{textedit.cpp}\end{CompactItemize}

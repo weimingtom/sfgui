@@ -44,6 +44,8 @@ Inheritance diagram for sfgui::Object:</div>
 <tr><td colspan="2"><br><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1Object.html#f03d0a10a3f8f71c58f56cf896e95f82">Object</a> (sf::RenderWindow *parentWindow)</td></tr>
 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1Object.html#6d0f96eda1f89ba15d34471cfa42a0e4">Object</a> (sf::RenderWindow *parent, std::string themePath)</td></tr>
+
 <tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1Object.html#7d923592a63a854c77ce4edcb21e40ba">~Object</a> ()</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1Object.html#96e00c4db6358d27ad806c0053e343a1">SetTheme</a> (std::string)</td></tr>
@@ -82,6 +84,9 @@ Inheritance diagram for sfgui::Object:</div>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">sf::Event&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1Object.html#bd45c91f926c930806870ce8acbb955e">m_Event</a></td></tr>
 
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Copy of the current sfml event.  <a href="#bd45c91f926c930806870ce8acbb955e"></a><br></td></tr>
+<tr><td colspan="2"><br><h2>Private Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1Object.html#d2750b3d51a3a208739ed6c0c57df6aa">generalInit</a> ()</td></tr>
+
 <tr><td colspan="2"><br><h2>Private Attributes</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1Object.html#5917de9750aa3c8d282899ee83f835b4">m_clickCallback</a> )()</td></tr>
 
@@ -142,6 +147,37 @@ Construct a simple graphic object<p>
 Load the default background images 
 </div>
 </div><p>
+<a class="anchor" name="6d0f96eda1f89ba15d34471cfa42a0e4"></a><!-- doxytag: member="sfgui::Object::Object" ref="6d0f96eda1f89ba15d34471cfa42a0e4" args="(sf::RenderWindow *parent, std::string themePath)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">sfgui::Object::Object           </td>
+          <td>(</td>
+          <td class="paramtype">sf::RenderWindow *&nbsp;</td>
+          <td class="paramname"> <em>parent</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&nbsp;</td>
+          <td class="paramname"> <em>themePath</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+Construct a graphic object which uses a custom theme instead of the default one 
+</div>
+</div><p>
 <a class="anchor" name="7d923592a63a854c77ce4edcb21e40ba"></a><!-- doxytag: member="sfgui::Object::~Object" ref="7d923592a63a854c77ce4edcb21e40ba" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -159,9 +195,34 @@ Load the default background images
 
 <p>
 
+<p>
+Delete all the pointers, free the image map... 
 </div>
 </div><p>
 <hr><h2>Member Function Documentation</h2>
+<a class="anchor" name="d2750b3d51a3a208739ed6c0c57df6aa"></a><!-- doxytag: member="sfgui::Object::generalInit" ref="d2750b3d51a3a208739ed6c0c57df6aa" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sfgui::Object::generalInit           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+Initialise the parts shared by all constructors 
+<p>Reimplemented in <a class="el" href="classsfgui_1_1Button.html#59849e58ed4c46061d71f7172cab4e4e">sfgui::Button</a>.</p>
+
+</div>
+</div><p>
 <a class="anchor" name="96e00c4db6358d27ad806c0053e343a1"></a><!-- doxytag: member="sfgui::Object::SetTheme" ref="96e00c4db6358d27ad806c0053e343a1" args="(std::string)" -->
 <div class="memitem">
 <div class="memproto">
@@ -189,7 +250,7 @@ button_clicked.png is the clicked background </li>
 <li>
 button_hover.png is the background showed when mouse is above the button </li>
 </ul>
-
+<b>Throws : </b>It throw a <a class="el" href="classsfgui_1_1Error.html">sfgui::Error</a> object if there is an error (generally when loading the picture). 
 </div>
 </div><p>
 <a class="anchor" name="b3477443fde0d86be5e32f5c1dcd7b01"></a><!-- doxytag: member="sfgui::Object::SetBackground" ref="b3477443fde0d86be5e32f5c1dcd7b01" args="(int background)" -->
@@ -471,9 +532,9 @@ Copy of the current sfml event.
 </div>
 </div><p>
 <hr>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="object_8hpp.html">object.hpp</a><li><a class="el" href="object_8cpp.html">object.cpp</a></ul>
+<li>/home/arnaud/programmation/sfml/sfgui/<a class="el" href="object_8hpp.html">object.hpp</a><li>/home/arnaud/programmation/sfml/sfgui/<a class="el" href="object_8cpp.html">object.cpp</a></ul>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sat Jan 3 13:09:42 2009 for SFML Gui by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sun Jan 4 18:39:47 2009 for SFML Gui by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
 </body>

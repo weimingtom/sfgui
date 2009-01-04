@@ -130,7 +130,7 @@ void sfgui::TextEdit::SetDeactivatedCallback(void(*deactivatedCallback)()) {
 	m_deactivatedCallback = deactivatedCallback;
 }
 void sfgui::TextEdit::textChanged() {
-	/** If the text is modified, this function is called. It updates the sfString on the screen,
+	/** If the text is modified, this function is called. It updates the sf::String on the screen,
 	 * and it call the textChanged callback (if exists) */
 
 	//XXX : A little heavy, if someone have a better idea, please contact me...

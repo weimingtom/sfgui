@@ -19,6 +19,8 @@ Inheritance diagram for sfgui::Object:\nopagebreak
 \item 
 \hyperlink{classsfgui_1_1Object_f03d0a10a3f8f71c58f56cf896e95f82}{Object} (sf::RenderWindow $\ast$parentWindow)
 \item 
+\hyperlink{classsfgui_1_1Object_6d0f96eda1f89ba15d34471cfa42a0e4}{Object} (sf::RenderWindow $\ast$parent, std::string themePath)
+\item 
 \hyperlink{classsfgui_1_1Object_7d923592a63a854c77ce4edcb21e40ba}{$\sim$Object} ()
 \item 
 void \hyperlink{classsfgui_1_1Object_96e00c4db6358d27ad806c0053e343a1}{SetTheme} (std::string)
@@ -58,6 +60,11 @@ std::map$<$ int, sf::Image $\ast$ $>$ \hyperlink{classsfgui_1_1Object_6d7907f767
 \item 
 sf::Event \hyperlink{classsfgui_1_1Object_bd45c91f926c930806870ce8acbb955e}{m\_\-Event}
 \begin{CompactList}\small\item\em Copy of the current sfml event. \item\end{CompactList}\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classsfgui_1_1Object_d2750b3d51a3a208739ed6c0c57df6aa}{generalInit} ()
+\end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
 \item 
@@ -112,7 +119,16 @@ Test de classe
 
 Construct a simple graphic object
 
-Load the default background images \hypertarget{classsfgui_1_1Object_7d923592a63a854c77ce4edcb21e40ba}{
+Load the default background images \hypertarget{classsfgui_1_1Object_6d0f96eda1f89ba15d34471cfa42a0e4}{
+\index{sfgui::Object@{sfgui::Object}!Object@{Object}}
+\index{Object@{Object}!sfgui::Object@{sfgui::Object}}
+\subsubsection[Object]{\setlength{\rightskip}{0pt plus 5cm}sfgui::Object::Object (sf::RenderWindow $\ast$ {\em parent}, \/  std::string {\em themePath})}}
+\label{classsfgui_1_1Object_6d0f96eda1f89ba15d34471cfa42a0e4}
+
+
+
+
+Construct a graphic object which uses a custom theme instead of the default one \hypertarget{classsfgui_1_1Object_7d923592a63a854c77ce4edcb21e40ba}{
 \index{sfgui::Object@{sfgui::Object}!$\sim$Object@{$\sim$Object}}
 \index{$\sim$Object@{$\sim$Object}!sfgui::Object@{sfgui::Object}}
 \subsubsection[$\sim$Object]{\setlength{\rightskip}{0pt plus 5cm}sfgui::Object::$\sim$Object ()}}
@@ -121,8 +137,21 @@ Load the default background images \hypertarget{classsfgui_1_1Object_7d923592a63
 
 
 
+Delete all the pointers, free the image map... 
+
 \subsection{Member Function Documentation}
-\hypertarget{classsfgui_1_1Object_96e00c4db6358d27ad806c0053e343a1}{
+\hypertarget{classsfgui_1_1Object_d2750b3d51a3a208739ed6c0c57df6aa}{
+\index{sfgui::Object@{sfgui::Object}!generalInit@{generalInit}}
+\index{generalInit@{generalInit}!sfgui::Object@{sfgui::Object}}
+\subsubsection[generalInit]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::generalInit ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1Object_d2750b3d51a3a208739ed6c0c57df6aa}
+
+
+
+
+Initialise the parts shared by all constructors 
+
+Reimplemented in \hyperlink{classsfgui_1_1Button_59849e58ed4c46061d71f7172cab4e4e}{sfgui::Button}.\hypertarget{classsfgui_1_1Object_96e00c4db6358d27ad806c0053e343a1}{
 \index{sfgui::Object@{sfgui::Object}!SetTheme@{SetTheme}}
 \index{SetTheme@{SetTheme}!sfgui::Object@{sfgui::Object}}
 \subsubsection[SetTheme]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTheme (std::string {\em dir})}}
@@ -133,7 +162,7 @@ Load the default background images \hypertarget{classsfgui_1_1Object_7d923592a63
 
 Load a background theme from a directory containing the right png images : \begin{itemize}
 \item button.png is the normal background \item button\_\-clicked.png is the clicked background \item button\_\-hover.png is the background showed when mouse is above the button \end{itemize}
-\hypertarget{classsfgui_1_1Object_b3477443fde0d86be5e32f5c1dcd7b01}{
+{\bf Throws : }It throw a \hyperlink{classsfgui_1_1Error}{sfgui::Error} object if there is an error (generally when loading the picture). \hypertarget{classsfgui_1_1Object_b3477443fde0d86be5e32f5c1dcd7b01}{
 \index{sfgui::Object@{sfgui::Object}!SetBackground@{SetBackground}}
 \index{SetBackground@{SetBackground}!sfgui::Object@{sfgui::Object}}
 \subsubsection[SetBackground]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetBackground (int {\em background})}}
@@ -269,5 +298,5 @@ Copy of the current sfml event.
 
 The documentation for this class was generated from the following files:\begin{CompactItemize}
 \item 
-\hyperlink{object_8hpp}{object.hpp}\item 
-\hyperlink{object_8cpp}{object.cpp}\end{CompactItemize}
+/home/arnaud/programmation/sfml/sfgui/\hyperlink{object_8hpp}{object.hpp}\item 
+/home/arnaud/programmation/sfml/sfgui/\hyperlink{object_8cpp}{object.cpp}\end{CompactItemize}

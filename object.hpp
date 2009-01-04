@@ -59,6 +59,7 @@ protected:
 	sf::Image *m_BackgroundImg; ///< Curent background image
 	std::map<int, sf::Image *> m_Images;
 	enum ButtonStates {BackgroundNormal, BackgroundClicked, BackgroundHover}; 
+	sf::Font *m_font;
 	sf::Event m_Event; ///< Copy of the current sfml event 
 
 public:
