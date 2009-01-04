@@ -51,10 +51,10 @@ int main() {
 	Sprite.SetTextRightMargin(20);
 
 	sfgui::TextEdit But(&App);
-	But.SetPosition(400,400);
+	But.SetPosition(100,400);
 	But.SetTheme("data/button/");
 	But.SetTextChangedCallback(&textChangeCallback);
-	But.Resize(400, 40);
+	But.Resize(200, 40);
 	// Start game loop
 	while (App.IsOpened())
 	{

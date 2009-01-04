@@ -35,12 +35,32 @@ sfgui::TextEdit::TextEdit(sf::RenderWindow *parentWindow) : Button(parentWindow)
 	SetTextLeftMargin(1);
 	SetTextBottomMargin(10);
 	SetTextAlignment(sfgui::Left);
+
+	// How many char max ?
+	sizeChanged();
+}
+
+void sfgui::TextEdit::Resize(float w, float h) {
+	sfgui::Button::Resize(w, h);
+	sizeChanged();
+}
+void sfgui::TextEdit::sizeChanged() {
+	m_nbCharToShow=0;
+	while(m_text.GetRect().GetWidth() < GetSize().x-(m_margin.Left+m_margin.Right)) {
+		m_nbCharToShow++;
+		std::string text = m_text.GetText();
+		m_text.SetText(text+"a");
+		std::cout<<"m_text : "<<m_text.GetRect().GetWidth()<<"\t"<<"this : "<<GetSize().x<<std::endl;
+	}
+	m_text.SetText("");
+	std::cout<<"max : "<<m_nbCharToShow << std::endl;
+	updateTextPos();
 }
 void sfgui::TextEdit::Activate() {
 	/** Activate the TextEdit. When the TextEdit is activated, all pressed keys are
 	 * added to the TextEdit string */
-	m_itemActive = true;
-	activated();
+	m_itemActive = true;//
+	activated();        //
 }
 void sfgui::TextEdit::Deactivate() {
 	/** Deactivate the Textedit. Key you press will no longer be added to the
@@ -126,7 +146,9 @@ void sfgui::TextEdit::SetDeactivatedCallback(void(*deactivatedCallback)()) {
 void sfgui::TextEdit::textChanged() {
 	/** If the text is modified, this function is called. It updates the sfString on the screen,
 	 * and it call the textChanged callback (if exists) */
-	m_text.SetText(m_stdText);
+	int index = m_stdText.size() - m_nbCharToShow;
+	std::string truncatedStr = m_stdText.substr((index >= 0) ? index : 0, m_nbCharToShow);
+	m_text.SetText(truncatedStr);
 	updateTextPos();
 	if(m_textChangedCallback != NULL) {
 		(*m_textChangedCallback)(m_stdText);

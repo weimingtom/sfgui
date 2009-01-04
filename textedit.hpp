@@ -58,9 +58,11 @@ private:
 	void textChanged();  
 	void deactivated();
 	void activated();
+	void sizeChanged();
 public:
 	TextEdit(sf::RenderWindow *parentWindow);
 	void SetText(std::string &);
+	void Resize(float, float);
 
 	void AddChar(char);
 	void DelChar(int);
