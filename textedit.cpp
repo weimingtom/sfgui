@@ -41,7 +41,7 @@ sfgui::TextEdit::TextEdit(sf::RenderWindow *parentWindow) : Object(parentWindow)
 
 void sfgui::TextEdit::Resize(float w, float h) {
 	sfgui::Object::Resize(w, h);
-	updateTextPos();
+	updateTextRect();
 }
 void sfgui::TextEdit::Activate() {
 	/** Activate the TextEdit. When the TextEdit is activated, all pressed keys are
@@ -80,10 +80,11 @@ void sfgui::TextEdit::DelChar(int pos) {
 	}
 }
 
-void sfgui::TextEdit::SetText(std::string &text) {
+void sfgui::TextEdit::SetText(std::string text) {
 	/** Set the text on the TextEdit */
 	m_stdText = text;
-	//FIXME : Ne pas oublier de coder l'ajout à la sf::String
+	m_cursorPosition = m_stdText.size();
+	textChanged();
 }
 void sfgui::TextEdit::Show() {
 	/** Show the TextEdit on the parent window */
@@ -169,6 +170,8 @@ void sfgui::TextEdit::SetCharDeletedCallback(void(*callback)(unsigned int, char)
 void sfgui::TextEdit::updateTextRect() {
 	//XXX : A little heavy, if someone have a better idea, please contact me...
 	//This add characters to m_text until it reach the TextEdit size. 
+	
+	std::cout	<< "ouf" << std::endl;
 	std::string trucatedStrInv;
 	for(int i=m_stdText.size(); i>=0; i--) {
 		trucatedStrInv.push_back(m_stdText[i]);
@@ -183,6 +186,8 @@ void sfgui::TextEdit::updateTextRect() {
 		trucatedStr.push_back(trucatedStrInv[i]);
 	}
 	m_text.SetText(trucatedStr);
+
+	std::cout	<< "bon, alors ?" << std::endl;
 	updateTextPos();
 }
 void sfgui::TextEdit::textChanged() {

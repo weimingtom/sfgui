@@ -64,7 +64,7 @@ private:
 	void updateTextRect();
 public:
 	TextEdit(sf::RenderWindow *parentWindow);
-	void SetText(std::string &);
+	void SetText(std::string );
 	void Resize(float, float);
 
 	void AddChar(char);

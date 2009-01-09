@@ -55,10 +55,11 @@ int main() {
 	Sprite.SetTextRightMargin(20);
 
 	sfgui::TextEdit But(&App);
+	But.SetText("Texte de base");
 	But.SetPosition(100,400);
 	But.SetTextChangedCallback(&textChangeCallback);
 	But.SetCharDeletedCallback(&textDeletedCallback);
-	But.Resize(200, 40);
+	But.Resize(100, 40);
 
 	sfgui::Checkbox Chek(&App);
 	Chek.SetTheme("data/button/");
