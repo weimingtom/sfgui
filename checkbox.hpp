@@ -34,6 +34,7 @@
 
 #include "object.hpp"
 
+namespace sfgui {
 /**
  * \brief Class which provides checkbox buttons
  *
@@ -42,10 +43,14 @@
  */
 class Checkbox : public sfgui::Object
 {
+	private:
+		bool m_state; ///< The curent state of the checkbox (clicked or not)
 	public:
 		Checkbox(sf::RenderWindow *parentWindow);
 		Checkbox(sf::RenderWindow *parentWindow, std::string text, bool state=false);
+		void Show();
 };
+}
 
 
 #endif

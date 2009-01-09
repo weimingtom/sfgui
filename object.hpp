@@ -98,6 +98,7 @@ public:
 
 	void SetPosition(float x, float y);
 	void Move(float x, float y);
+	void Show();	
 
 	/** Callbacks **/
 	void CheckEvent(sf::Event Event);

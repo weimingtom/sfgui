@@ -22,6 +22,7 @@
 
 #include "button.hpp"
 #include "textedit.hpp"
+#include "checkbox.hpp"
 #include <iostream>
 
 sf::RenderWindow App(sf::VideoMode(800, 600, 32), "SFML GUI");
@@ -35,6 +36,9 @@ void clickedCallBack() {
 }
 void textChangeCallback(std::string &sr) {
 	std::cerr<<"Modif : " << sr << "\n";
+}
+void textDeletedCallback(unsigned int pos, char str) {
+	std::cerr<<"Deleted at "<<pos<<" char : "<<str<<std::endl;
 }
 int main() {
 
@@ -53,7 +57,14 @@ int main() {
 	sfgui::TextEdit But(&App);
 	But.SetPosition(100,400);
 	But.SetTextChangedCallback(&textChangeCallback);
+	But.SetCharDeletedCallback(&textDeletedCallback);
 	But.Resize(200, 40);
+
+	sfgui::Checkbox Chek(&App);
+	Chek.SetTheme("data/button/");
+	Chek.SetPosition(100,100);
+	Chek.Resize(30,30);
+
 	// Start game loop
 	while (App.IsOpened())
 	{
@@ -63,6 +74,7 @@ int main() {
 		{
 			Sprite.CheckEvent(Event);
 			But.CheckEvent(Event);
+			Chek.CheckEvent(Event);
 			// Close window : exit
 			if (Event.Type == sf::Event::Closed) {
 				App.Close();
@@ -88,6 +100,7 @@ int main() {
 		// Display sprite in our window
 		Sprite.Show();
 		But.Show();
+		Chek.Show();
 		// Display window contents on screen
 		App.Display();
 	}

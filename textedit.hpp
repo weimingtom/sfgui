@@ -48,15 +48,20 @@ private:
 	std::string m_stdText;
 	bool m_itemActive; /**< If true, user can enter text (textedit has focus), if
 	false, it is disabled */
+	unsigned int m_cursorPosition; /**< Position of the cursor in the string **/
 
 	void (*m_textChangedCallback)(std::string &); //< The textchanged callback function pointer
 	void (*m_deactivatedCallback)(); //< Callback called when the TextEdit is deactivated
 	void (*m_activatedCallback)(); //< Callback called when the TextEdit is activated
 	void (*m_returnPressedCallback)(); //< The return key pressed callback function pointer
+	void (*m_charDeletedCallback)(unsigned int, char); //< When a character is deleted, use this callback
 
 	void textChanged();  
+	void charDeleted(unsigned int, char);
 	void deactivated();
 	void activated();
+
+	void updateTextRect();
 public:
 	TextEdit(sf::RenderWindow *parentWindow);
 	void SetText(std::string &);
@@ -73,10 +78,10 @@ public:
 	void SetReturnPressedCallback(void(*)());
 	void SetActivatedCallback(void(*)());
 	void SetDeactivatedCallback(void(*)());
+	void SetCharDeletedCallback(void(*)(unsigned int, char));
 
 	void Show();
 };
 }
-
 #endif
 

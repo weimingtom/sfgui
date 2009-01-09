@@ -22,11 +22,18 @@
 
 #include "checkbox.hpp"
 
-Checkbox::Checkbox(sf::RenderWindow *parentWindow) : sfgui::Object(parentWindow) {
+sfgui::Checkbox::Checkbox(sf::RenderWindow *parentWindow) : Object(parentWindow) {
+	SetTheme("data/checkbox/");
+	Resize(300,300);
+}
+void sfgui::Checkbox::Show() {
+	m_parentRenderWindow->Draw(*this);
+	m_parentRenderWindow->Draw(m_text);
 }
 
-Checkbox::Checkbox(sf::RenderWindow *parentWindow, std::string text, bool state) : sfgui::Object(parentWindow) {
+sfgui::Checkbox::Checkbox(sf::RenderWindow *parentWindow, std::string text, bool state) : sfgui::Object(parentWindow) {
 	std::cout<<text;
 	if(state) {
 	};
 }
+

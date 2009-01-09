@@ -32,21 +32,13 @@ sfgui::Button::Button(sf::RenderWindow *parentWindow, std::string themePath) : O
 	generalInit();
 }
 void sfgui::Button::generalInit() {
-	m_font = new sf::Font;
 	m_text.SetColor(sf::Color(255,255,255));
 	m_text.SetSize(30);
 	m_textAlignment = sfgui::Center;
 	m_margin.SetMargin(2);
-	*m_font = sf::Font::GetDefaultFont();
-	m_text.SetFont(*m_font);
 }
 
 
-void sfgui::Button::Show() {
-	/** Display the button on the parent window */
-	m_parentRenderWindow->Draw(*this);
-	m_parentRenderWindow->Draw(m_text);
-}
 
 
 

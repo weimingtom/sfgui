@@ -47,7 +47,6 @@ class Button : public Object
 	public:
 	Button(sf::RenderWindow *parentWindow);
 	Button(sf::RenderWindow *parentWindow, std::string themePath); 
-	void Show();	
 };
 }
 

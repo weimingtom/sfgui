@@ -58,13 +58,24 @@ void sfgui::TextEdit::Deactivate() {
 
 void sfgui::TextEdit::AddChar(char ch) {
 	/** Add one char at the end of the current string */
-	m_stdText.push_back(ch);
+	//Old function
+	//m_stdText.push_back(ch);
+	//m_cursorPosition++;
+	//textChanged();
+	//m_stdText.push_back(ch);
+	std::string strToAdd(1,ch);
+	m_stdText.insert(m_cursorPosition, strToAdd);
+	m_cursorPosition++;
 	textChanged();
 }
 void sfgui::TextEdit::DelChar(int pos) {
 	/** Delete one char from position pos */
 	if(!m_stdText.empty()) {
+		charDeleted(pos, m_stdText[pos]);
 		m_stdText.erase(pos, 1);
+		if(m_cursorPosition>m_stdText.size()) {
+			m_cursorPosition = m_stdText.size();
+		}
 		textChanged();
 	}
 }
@@ -106,6 +117,24 @@ void sfgui::TextEdit::CheckEvent(sf::Event event) {
 				AddChar(',');
 			else if(m_Event.Key.Code == sf::Key::SemiColon) 
 				AddChar(';');
+			else if(m_Event.Key.Code == sf::Key::Delete) {
+				//Delete the char under cursor
+				std::cerr<<m_cursorPosition<<std::endl;
+				DelChar(m_cursorPosition);
+			}
+			else if(m_Event.Key.Code == sf::Key::Left) {
+				//If left key, move the cursor left, and the text if
+				//needed
+				if(m_cursorPosition-1 < m_stdText.size()) {
+					m_cursorPosition--;
+				}
+				updateTextRect();
+			}
+			else if(m_Event.Key.Code == sf::Key::Right) {
+				if(m_cursorPosition+1 <= m_stdText.size())
+					m_cursorPosition++;
+				updateTextRect();
+			}
 			else
 				AddChar(m_Event.Key.Code);
 		}
@@ -130,10 +159,14 @@ void sfgui::TextEdit::SetDeactivatedCallback(void(*deactivatedCallback)()) {
 	 **/
 	m_deactivatedCallback = deactivatedCallback;
 }
-void sfgui::TextEdit::textChanged() {
-	/** If the text is modified, this function is called. It updates the sf::String on the screen,
-	 * and it call the textChanged callback (if exists) */
-
+void sfgui::TextEdit::SetCharDeletedCallback(void(*callback)(unsigned int, char)) {
+	/** Set the callback called when a character is deleted in the TextEdit. 
+	 * The callbacks is called whith two params : the position of the deleted char,
+	 * and the char itself
+	 **/
+	m_charDeletedCallback = callback;
+}
+void sfgui::TextEdit::updateTextRect() {
 	//XXX : A little heavy, if someone have a better idea, please contact me...
 	//This add characters to m_text until it reach the TextEdit size. 
 	std::string trucatedStrInv;
@@ -151,10 +184,20 @@ void sfgui::TextEdit::textChanged() {
 	}
 	m_text.SetText(trucatedStr);
 	updateTextPos();
+}
+void sfgui::TextEdit::textChanged() {
+	/** If the text is modified, this function is called. It updates the sf::String on the screen,
+	 * and it call the textChanged callback (if exists) */
+	updateTextRect();
 	
 	//Call the callback function
 	if(m_textChangedCallback != NULL) {
 		(*m_textChangedCallback)(m_stdText);
+	}
+}
+void sfgui::TextEdit::charDeleted(unsigned int pos, char ch) {
+	if(m_charDeletedCallback != 0) {
+		(*m_charDeletedCallback)(pos, ch);
 	}
 }
 void sfgui::TextEdit::activated() {

@@ -87,6 +87,11 @@ void sfgui::Object::updateTextPos() {
 	 * to the right alignment */
 	SetPosition(GetPosition().x, GetPosition().y);
 }
+void sfgui::Object::Show() {
+	/** Display the object on the parent window */
+	m_parentRenderWindow->Draw(*this);
+	m_parentRenderWindow->Draw(m_text);
+}
 
 void sfgui::Object::SetText(std::string text) {
 	/**
@@ -191,8 +196,6 @@ void sfgui::Object::SetTheme(std::string dir) {
 	 * 	<li>button_hover.png is the background showed when mouse is above the
 	 * 	button</li>
 	 * </ul>
-	 * <b>Throws : </b>It throw a sfgui::Error object if there is an error
-	 * (generally when loading the picture).
 	 */
 	
 	//If a theme is already loaded, free all the images
@@ -206,22 +209,22 @@ void sfgui::Object::SetTheme(std::string dir) {
 
 	sf::Vector2<float> oldSize = GetSize();
 	sf::Image *Img = new sf::Image;
-	if(Img->LoadFromFile(dir+"button.png")) {
+	if(Img->LoadFromFile(dir+"normal.png")) {
 		m_Images[BackgroundNormal] = Img;
 	} else {
-		throw sfgui::Error(("Warning : Unable to load file "+dir+"button.png").c_str());
+		std::cerr<<"Warning : Unable to load file "+dir+"button.png";
 	}
 	Img = new sf::Image;
-	if(Img->LoadFromFile(dir+"button_clicked.png")) {
+	if(Img->LoadFromFile(dir+"clicked.png")) {
 		m_Images[BackgroundClicked] = Img ;
 	} else {
-		throw sfgui::Error(("Warning : Unable to load file "+dir+"button_clicked.png").c_str());
+		std::cerr<<"Warning : Unable to load file "+dir+"button_clicked.png";
 	}
 	Img = new sf::Image;
-	if(Img->LoadFromFile(dir+"button_hover.png")) {
+	if(Img->LoadFromFile(dir+"hover.png")) {
 		m_Images[BackgroundHover] = Img ;
 	} else {
-		throw sfgui::Error(("Warning : Unable to load file "+dir+"button_hover.png").c_str());
+		std::cerr<<"Warning : Unable to load file "+dir+"button_hover.png";
 	}
 	m_BackgroundImg = m_Images[BackgroundNormal];
 	SetImage(*m_BackgroundImg);
