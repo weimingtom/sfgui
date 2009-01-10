@@ -59,6 +59,7 @@ int main() {
 	But.SetTextChangedCallback(&textChangeCallback);
 	But.SetCharDeletedCallback(&textDeletedCallback);
 	But.Resize(100, 40);
+	But.SetMode(sfgui::TextEdit::ModePassword);
 
 	sfgui::Checkbox Chek(&App);
 	Chek.SetPosition(100,100);

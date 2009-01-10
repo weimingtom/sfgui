@@ -1,0 +1,215 @@
+\hypertarget{classsfgui_1_1Checkbox}{
+\section{sfgui::Checkbox Class Reference}
+\label{classsfgui_1_1Checkbox}\index{sfgui::Checkbox@{sfgui::Checkbox}}
+}
+Class which provides checkbox buttons.  
+
+
+{\tt \#include $<$checkbox.hpp$>$}
+
+Inheritance diagram for sfgui::Checkbox:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=67pt]{classsfgui_1_1Checkbox__inherit__graph}
+\end{center}
+\end{figure}
+Collaboration diagram for sfgui::Checkbox:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=68pt]{classsfgui_1_1Checkbox__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{CompactItemize}
+\item 
+\hyperlink{classsfgui_1_1Checkbox_72e99b59f2cd8182a205f4040bedc5c7}{Checkbox} (sf::RenderWindow $\ast$parentWindow)
+\item 
+\hyperlink{classsfgui_1_1Checkbox_61f0b87c25055871c7900bf711a1adff}{Checkbox} (sf::RenderWindow $\ast$parentWindow, std::string text, bool state=false)
+\item 
+void \hyperlink{classsfgui_1_1Checkbox_0028c58d4579845c1bdf3cae7ec9af5a}{Show} ()
+\item 
+void \hyperlink{classsfgui_1_1Checkbox_d618a9010bef60b8ea2f11f893320fb8}{CheckEvent} (sf::Event)
+\item 
+void \hyperlink{classsfgui_1_1Checkbox_87db2a071f8c0bb8dd8124a2ff22940b}{SetCheckedCallback} (void($\ast$)())
+\item 
+void \hyperlink{classsfgui_1_1Checkbox_327bd2236295963fa29cc482d89bba33}{SetUncheckedCallback} (void($\ast$)())
+\item 
+void \hyperlink{classsfgui_1_1Checkbox_a49cffa3e2bef0e96105cd9a9103e294}{ManageMouse} ()
+\item 
+void \hyperlink{classsfgui_1_1Checkbox_9dc5f05d2f6d960d9fd50c77be3b7d6f}{Clicked} ()
+\item 
+bool \hyperlink{classsfgui_1_1Checkbox_d38e389867fdfdc63d2c05955c9a2e72}{IsChecked} ()
+\item 
+void \hyperlink{classsfgui_1_1Checkbox_f5e56a1a1c49ff8437118061f709871b}{SetState} (bool)
+\end{CompactItemize}
+\subsection*{Private Member Functions}
+\begin{CompactItemize}
+\item 
+void \hyperlink{classsfgui_1_1Checkbox_79ad5f7de619782ce22c3657e82ce077}{checked} ()
+\item 
+void \hyperlink{classsfgui_1_1Checkbox_f593cc2c1b79231410a2b2f5d70ef034}{unchecked} ()
+\end{CompactItemize}
+\subsection*{Private Attributes}
+\begin{CompactItemize}
+\item 
+bool \hyperlink{classsfgui_1_1Checkbox_ce642ae51c0d2aee08ba05be73c5bf06}{m\_\-state}
+\begin{CompactList}\small\item\em The curent state of the checkbox (clicked or not). \item\end{CompactList}\item 
+void($\ast$ \hyperlink{classsfgui_1_1Checkbox_a597f2897aa340d538d399d0bdcaf26c}{m\_\-checkedCallback} )()
+\item 
+void($\ast$ \hyperlink{classsfgui_1_1Checkbox_c2420a43e7e62ae3cb0023e8392d3cfd}{m\_\-uncheckedCallback} )()
+\end{CompactItemize}
+
+
+\subsection{Detailed Description}
+Class which provides checkbox buttons. 
+
+A checkbox is a special sort of button. When you click on it, the state is changed. When you click again, the states becomes the default one. It can be usefull for asking multiple-choice question. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classsfgui_1_1Checkbox_72e99b59f2cd8182a205f4040bedc5c7}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!Checkbox@{Checkbox}}
+\index{Checkbox@{Checkbox}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[Checkbox]{\setlength{\rightskip}{0pt plus 5cm}sfgui::Checkbox::Checkbox (sf::RenderWindow $\ast$ {\em parentWindow})}}
+\label{classsfgui_1_1Checkbox_72e99b59f2cd8182a205f4040bedc5c7}
+
+
+\hypertarget{classsfgui_1_1Checkbox_61f0b87c25055871c7900bf711a1adff}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!Checkbox@{Checkbox}}
+\index{Checkbox@{Checkbox}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[Checkbox]{\setlength{\rightskip}{0pt plus 5cm}sfgui::Checkbox::Checkbox (sf::RenderWindow $\ast$ {\em parentWindow}, \/  std::string {\em text}, \/  bool {\em state} = {\tt false})}}
+\label{classsfgui_1_1Checkbox_61f0b87c25055871c7900bf711a1adff}
+
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classsfgui_1_1Checkbox_0028c58d4579845c1bdf3cae7ec9af5a}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!Show@{Show}}
+\index{Show@{Show}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[Show]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Checkbox::Show ()}}
+\label{classsfgui_1_1Checkbox_0028c58d4579845c1bdf3cae7ec9af5a}
+
+
+
+
+Reimplemented from \hyperlink{classsfgui_1_1Object_cdf7f9b5f731e49e0e13e55de704805d}{sfgui::Object}.\hypertarget{classsfgui_1_1Checkbox_d618a9010bef60b8ea2f11f893320fb8}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!CheckEvent@{CheckEvent}}
+\index{CheckEvent@{CheckEvent}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[CheckEvent]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Checkbox::CheckEvent (sf::Event {\em Event})}}
+\label{classsfgui_1_1Checkbox_d618a9010bef60b8ea2f11f893320fb8}
+
+
+
+
+Call the callbacks functions if needed on the given Event. 
+
+Reimplemented from \hyperlink{classsfgui_1_1Object_cd9dbf2abe79e04c22f281bccb8bdb0e}{sfgui::Object}.\hypertarget{classsfgui_1_1Checkbox_87db2a071f8c0bb8dd8124a2ff22940b}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!SetCheckedCallback@{SetCheckedCallback}}
+\index{SetCheckedCallback@{SetCheckedCallback}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[SetCheckedCallback]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Checkbox::SetCheckedCallback (void($\ast$)() {\em checkedCallback})}}
+\label{classsfgui_1_1Checkbox_87db2a071f8c0bb8dd8124a2ff22940b}
+
+
+
+
+Set the callback function called when the state is changed to checked \hypertarget{classsfgui_1_1Checkbox_327bd2236295963fa29cc482d89bba33}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!SetUncheckedCallback@{SetUncheckedCallback}}
+\index{SetUncheckedCallback@{SetUncheckedCallback}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[SetUncheckedCallback]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Checkbox::SetUncheckedCallback (void($\ast$)() {\em uncheckedCallback})}}
+\label{classsfgui_1_1Checkbox_327bd2236295963fa29cc482d89bba33}
+
+
+
+
+Set the callback function called when the state is changed to unchecked \hypertarget{classsfgui_1_1Checkbox_a49cffa3e2bef0e96105cd9a9103e294}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!ManageMouse@{ManageMouse}}
+\index{ManageMouse@{ManageMouse}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[ManageMouse]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Checkbox::ManageMouse ()}}
+\label{classsfgui_1_1Checkbox_a49cffa3e2bef0e96105cd9a9103e294}
+
+
+
+
+Manage the mouse events. 
+
+Reimplemented from \hyperlink{classsfgui_1_1Object_3332575d988f9eee589f57b2ad516593}{sfgui::Object}.\hypertarget{classsfgui_1_1Checkbox_9dc5f05d2f6d960d9fd50c77be3b7d6f}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!Clicked@{Clicked}}
+\index{Clicked@{Clicked}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[Clicked]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Checkbox::Clicked ()}}
+\label{classsfgui_1_1Checkbox_9dc5f05d2f6d960d9fd50c77be3b7d6f}
+
+
+
+
+Switch the TextBox state. 
+
+Reimplemented from \hyperlink{classsfgui_1_1Object_da7f84701d318ce93fe59cc2f571eaf2}{sfgui::Object}.\hypertarget{classsfgui_1_1Checkbox_d38e389867fdfdc63d2c05955c9a2e72}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!IsChecked@{IsChecked}}
+\index{IsChecked@{IsChecked}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[IsChecked]{\setlength{\rightskip}{0pt plus 5cm}bool sfgui::Checkbox::IsChecked ()}}
+\label{classsfgui_1_1Checkbox_d38e389867fdfdc63d2c05955c9a2e72}
+
+
+
+
+Returns the current state : true if checked, false if not. \hypertarget{classsfgui_1_1Checkbox_f5e56a1a1c49ff8437118061f709871b}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!SetState@{SetState}}
+\index{SetState@{SetState}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[SetState]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Checkbox::SetState (bool {\em state})}}
+\label{classsfgui_1_1Checkbox_f5e56a1a1c49ff8437118061f709871b}
+
+
+
+
+Set the CheckBox state : true for checked, false for unchecked \hypertarget{classsfgui_1_1Checkbox_79ad5f7de619782ce22c3657e82ce077}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!checked@{checked}}
+\index{checked@{checked}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[checked]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Checkbox::checked ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1Checkbox_79ad5f7de619782ce22c3657e82ce077}
+
+
+
+
+Automatically called. Call the checkedCallback if it exists. \hypertarget{classsfgui_1_1Checkbox_f593cc2c1b79231410a2b2f5d70ef034}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!unchecked@{unchecked}}
+\index{unchecked@{unchecked}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[unchecked]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Checkbox::unchecked ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1Checkbox_f593cc2c1b79231410a2b2f5d70ef034}
+
+
+
+
+Automatically called. Call the uncheckedCallback if it exists. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classsfgui_1_1Checkbox_ce642ae51c0d2aee08ba05be73c5bf06}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!m\_\-state@{m\_\-state}}
+\index{m\_\-state@{m\_\-state}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[m\_\-state]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf sfgui::Checkbox::m\_\-state}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1Checkbox_ce642ae51c0d2aee08ba05be73c5bf06}
+
+
+The curent state of the checkbox (clicked or not). 
+
+\hypertarget{classsfgui_1_1Checkbox_a597f2897aa340d538d399d0bdcaf26c}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!m\_\-checkedCallback@{m\_\-checkedCallback}}
+\index{m\_\-checkedCallback@{m\_\-checkedCallback}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[m\_\-checkedCallback]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf sfgui::Checkbox::m\_\-checkedCallback})()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1Checkbox_a597f2897aa340d538d399d0bdcaf26c}
+
+
+\hypertarget{classsfgui_1_1Checkbox_c2420a43e7e62ae3cb0023e8392d3cfd}{
+\index{sfgui::Checkbox@{sfgui::Checkbox}!m\_\-uncheckedCallback@{m\_\-uncheckedCallback}}
+\index{m\_\-uncheckedCallback@{m\_\-uncheckedCallback}!sfgui::Checkbox@{sfgui::Checkbox}}
+\subsubsection[m\_\-uncheckedCallback]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf sfgui::Checkbox::m\_\-uncheckedCallback})()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1Checkbox_c2420a43e7e62ae3cb0023e8392d3cfd}
+
+
+
+
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+/home/arnaud/programmation/sfml/sfgui/\hyperlink{checkbox_8hpp}{checkbox.hpp}\item 
+/home/arnaud/programmation/sfml/sfgui/\hyperlink{checkbox_8cpp}{checkbox.cpp}\end{CompactItemize}

@@ -24,6 +24,7 @@
 
 sfgui::TextEdit::TextEdit(sf::RenderWindow *parentWindow) : Object(parentWindow) {
 	m_stdText.reserve(20);
+	m_showStars=false;
 	m_activatedCallback = NULL;
 	m_deactivatedCallback = NULL;
 	m_textChangedCallback = NULL;
@@ -93,6 +94,15 @@ void sfgui::TextEdit::Show() {
 }
 
 
+void sfgui::TextEdit::SetMode(int mode) {
+	if(mode == ModePassword) {
+		m_showStars = true;
+		updateTextRect();
+	} else if (mode == ModeNormal) {
+		m_showStars = false;
+		updateTextRect();
+	}
+}
 /*============ Callbacks and events ==================*/
 void sfgui::TextEdit::CheckEvent(sf::Event event) {
 	/** Manage the events : call the needed callbacks functions */
@@ -175,7 +185,12 @@ void sfgui::TextEdit::updateTextRect() {
 	unsigned int i= m_cursorPosition;
 	do {
 		std::cout<<"i : "<<i<<std::endl;
-		trucatedStrInv.push_back(m_stdText[i]);
+		if (m_showStars) {
+			std::cout<<"show stars";
+			trucatedStrInv.push_back('*');
+		} else {
+			trucatedStrInv.push_back(m_stdText[i]);
+		}
 		m_text.SetText(trucatedStrInv);
 		if(m_text.GetRect().GetWidth() >= GetSize().x-(m_margin.Right+m_margin.Left+5)) {
 			break;

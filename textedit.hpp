@@ -61,6 +61,9 @@ public:
 	void SetActivatedCallback(void(*)());
 	void SetDeactivatedCallback(void(*)());
 	void SetCharDeletedCallback(void(*)(unsigned int, char));
+	
+	enum Mode { ModePassword, ModeNormal };
+	void SetMode(int mode);
 
 	void Show();
 
@@ -69,6 +72,7 @@ private:
 	bool m_itemActive; /**< If true, user can enter text (textedit has focus), if
 	false, it is disabled */
 	unsigned int m_cursorPosition; /**< Position of the cursor in the string **/
+	bool m_showStars; /**< Used to know if text must be replaced by stars */
 
 	void (*m_textChangedCallback)(std::string &); //< The textchanged callback function pointer
 	void (*m_deactivatedCallback)(); //< Callback called when the TextEdit is deactivated
