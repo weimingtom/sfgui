@@ -22,12 +22,11 @@
 
 /*!
  * \file 
- * \brief Description not set 
+ * \brief 
  * \author TANGUY Arnaud <arn.tanguy@gmail.com>
  * \date 2009 
  * \version 0.1
  *
- * The big description for doxygen
  */
 
 

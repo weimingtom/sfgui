@@ -92,6 +92,7 @@ void sfgui::TextEdit::Show() {
 	m_parentRenderWindow->Draw(m_text);
 }
 
+
 /*============ Callbacks and events ==================*/
 void sfgui::TextEdit::CheckEvent(sf::Event event) {
 	/** Manage the events : call the needed callbacks functions */

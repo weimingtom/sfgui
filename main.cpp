@@ -28,17 +28,17 @@
 sf::RenderWindow App(sf::VideoMode(800, 600, 32), "SFML GUI");
 sfgui::Button Sprite(&App,"data/button-test/");
 
-void clickedCallBack() {
-	static float size = 10;
-	Sprite.SetTextSize(size);
-	size++;
-	std::cerr<<"The button text is : " << Sprite.GetText();
-}
 void textChangeCallback(std::string &sr) {
 	std::cerr<<"Modif : " << sr << "\n";
 }
 void textDeletedCallback(unsigned int pos, char str) {
 	std::cerr<<"Deleted at "<<pos<<" char : "<<str<<std::endl;
+}
+void checkedCallback(){
+	std::cout<<"checked"<<std::endl;
+}
+void uncheckedCallback(){
+	std::cout<<"unchecked"<<std::endl;
 }
 int main() {
 
@@ -47,7 +47,6 @@ int main() {
 
 	// Create the sprite
 	Sprite.SetText("The text");
-	Sprite.SetClickCallback(&clickedCallBack);
 	Sprite.Resize(300, 50);
 
 	Sprite.SetPosition(200, 100);
@@ -62,8 +61,10 @@ int main() {
 	But.Resize(100, 40);
 
 	sfgui::Checkbox Chek(&App);
-	Chek.SetTheme("data/button/");
 	Chek.SetPosition(100,100);
+	Chek.SetState(true);
+	Chek.SetCheckedCallback(&checkedCallback);
+	Chek.SetUncheckedCallback(&uncheckedCallback);
 	Chek.Resize(30,30);
 
 	// Start game loop

@@ -26,7 +26,7 @@ Collaboration diagram for sfgui::TextEdit:\nopagebreak
 \item 
 \hyperlink{classsfgui_1_1TextEdit_c6f2d938ccf876f05a9a9c47060c6093}{TextEdit} (sf::RenderWindow $\ast$parentWindow)
 \item 
-void \hyperlink{classsfgui_1_1TextEdit_16ffefa7f0c0d6e01275b8a2afa5975e}{SetText} (std::string \&)
+void \hyperlink{classsfgui_1_1TextEdit_c6f06a7dc81611a50226e10287e87e1e}{SetText} (std::string)
 \item 
 void \hyperlink{classsfgui_1_1TextEdit_58afd20cc7cec80bf02603cc5e47143a}{Resize} (float, float)
 \item 
@@ -48,6 +48,8 @@ void \hyperlink{classsfgui_1_1TextEdit_68bda298b3563eb960e77c3712664db8}{SetActi
 \item 
 void \hyperlink{classsfgui_1_1TextEdit_6d75bcac8949d08513caa72e898e9b43}{SetDeactivatedCallback} (void($\ast$)())
 \item 
+void \hyperlink{classsfgui_1_1TextEdit_02d743ef07c871b2ce4666083157628c}{SetCharDeletedCallback} (void($\ast$)(unsigned int, char))
+\item 
 void \hyperlink{classsfgui_1_1TextEdit_1ee03247816213b34caaff365b160de0}{Show} ()
 \end{CompactItemize}
 \subsection*{Private Member Functions}
@@ -55,9 +57,13 @@ void \hyperlink{classsfgui_1_1TextEdit_1ee03247816213b34caaff365b160de0}{Show} (
 \item 
 void \hyperlink{classsfgui_1_1TextEdit_04bf790d96e0014479cc791691ecbade}{textChanged} ()
 \item 
+void \hyperlink{classsfgui_1_1TextEdit_8c3d822835999b2b0a38c1ef95eca4ff}{charDeleted} (unsigned int, char)
+\item 
 void \hyperlink{classsfgui_1_1TextEdit_c5ff761e3933294b46892db32e62b9f6}{deactivated} ()
 \item 
 void \hyperlink{classsfgui_1_1TextEdit_c009c601675801f2039d8f526e6fc921}{activated} ()
+\item 
+void \hyperlink{classsfgui_1_1TextEdit_cd1f4ab301db3775216a85066859a647}{updateTextRect} ()
 \end{CompactItemize}
 \subsection*{Private Attributes}
 \begin{CompactItemize}
@@ -66,6 +72,8 @@ std::string \hyperlink{classsfgui_1_1TextEdit_08de851a32aa8dd650e33dfcb376bfd8}{
 \item 
 bool \hyperlink{classsfgui_1_1TextEdit_8ffa5546b2fd4901837b13a118f9beef}{m\_\-itemActive}
 \item 
+unsigned int \hyperlink{classsfgui_1_1TextEdit_9392f92ba9efe59f56801ec3c0e52ccb}{m\_\-cursorPosition}
+\item 
 void($\ast$ \hyperlink{classsfgui_1_1TextEdit_a6d415ef1daf7f9fdf0dec3d71cb8eab}{m\_\-textChangedCallback} )(std::string \&)
 \item 
 void($\ast$ \hyperlink{classsfgui_1_1TextEdit_bfa97d7c95f54cc91600375242fe1ea6}{m\_\-deactivatedCallback} )()
@@ -73,6 +81,8 @@ void($\ast$ \hyperlink{classsfgui_1_1TextEdit_bfa97d7c95f54cc91600375242fe1ea6}{
 void($\ast$ \hyperlink{classsfgui_1_1TextEdit_9cf910f9fca635f595d6a8963d7e30d1}{m\_\-activatedCallback} )()
 \item 
 void($\ast$ \hyperlink{classsfgui_1_1TextEdit_d86f9eaadf1313214631b2de009abf55}{m\_\-returnPressedCallback} )()
+\item 
+void($\ast$ \hyperlink{classsfgui_1_1TextEdit_1538508447c54b9f997fc8a68eb5c097}{m\_\-charDeletedCallback} )(unsigned int, char)
 \end{CompactItemize}
 
 
@@ -98,39 +108,18 @@ If you want to enter text, you must have the item activated. You can activate it
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classsfgui_1_1TextEdit_04bf790d96e0014479cc791691ecbade}{
-\index{sfgui::TextEdit@{sfgui::TextEdit}!textChanged@{textChanged}}
-\index{textChanged@{textChanged}!sfgui::TextEdit@{sfgui::TextEdit}}
-\subsubsection[textChanged]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::textChanged ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
-\label{classsfgui_1_1TextEdit_04bf790d96e0014479cc791691ecbade}
-
-
-
-
-If the text is modified, this function is called. It updates the sf::String on the screen, and it call the textChanged callback (if exists) \hypertarget{classsfgui_1_1TextEdit_c5ff761e3933294b46892db32e62b9f6}{
-\index{sfgui::TextEdit@{sfgui::TextEdit}!deactivated@{deactivated}}
-\index{deactivated@{deactivated}!sfgui::TextEdit@{sfgui::TextEdit}}
-\subsubsection[deactivated]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::deactivated ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
-\label{classsfgui_1_1TextEdit_c5ff761e3933294b46892db32e62b9f6}
-
-
-\hypertarget{classsfgui_1_1TextEdit_c009c601675801f2039d8f526e6fc921}{
-\index{sfgui::TextEdit@{sfgui::TextEdit}!activated@{activated}}
-\index{activated@{activated}!sfgui::TextEdit@{sfgui::TextEdit}}
-\subsubsection[activated]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::activated ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
-\label{classsfgui_1_1TextEdit_c009c601675801f2039d8f526e6fc921}
-
-
-\hypertarget{classsfgui_1_1TextEdit_16ffefa7f0c0d6e01275b8a2afa5975e}{
+\hypertarget{classsfgui_1_1TextEdit_c6f06a7dc81611a50226e10287e87e1e}{
 \index{sfgui::TextEdit@{sfgui::TextEdit}!SetText@{SetText}}
 \index{SetText@{SetText}!sfgui::TextEdit@{sfgui::TextEdit}}
-\subsubsection[SetText]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::SetText (std::string \& {\em text})}}
-\label{classsfgui_1_1TextEdit_16ffefa7f0c0d6e01275b8a2afa5975e}
+\subsubsection[SetText]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::SetText (std::string {\em text})}}
+\label{classsfgui_1_1TextEdit_c6f06a7dc81611a50226e10287e87e1e}
 
 
 
 
-Set the text on the \hyperlink{classsfgui_1_1TextEdit}{TextEdit} \hypertarget{classsfgui_1_1TextEdit_58afd20cc7cec80bf02603cc5e47143a}{
+Set the text on the \hyperlink{classsfgui_1_1TextEdit}{TextEdit} 
+
+Reimplemented from \hyperlink{classsfgui_1_1Object_64c05d85588778a652d11c7a1daf8db0}{sfgui::Object}.\hypertarget{classsfgui_1_1TextEdit_58afd20cc7cec80bf02603cc5e47143a}{
 \index{sfgui::TextEdit@{sfgui::TextEdit}!Resize@{Resize}}
 \index{Resize@{Resize}!sfgui::TextEdit@{sfgui::TextEdit}}
 \subsubsection[Resize]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::Resize (float {\em w}, \/  float {\em h})}}
@@ -180,9 +169,9 @@ Deactivate the Textedit. Key you press will no longer be added to the \hyperlink
 \label{classsfgui_1_1TextEdit_af6d4be3633d3eb8bcc7a1007e324da8}
 
 
-Callbacks 
 
-Call the callbacks functions if needed on the given Event. 
+
+Manage the events : call the needed callbacks functions 
 
 Reimplemented from \hyperlink{classsfgui_1_1Object_cd9dbf2abe79e04c22f281bccb8bdb0e}{sfgui::Object}.\hypertarget{classsfgui_1_1TextEdit_2c80f417ea995a6452fcb47740701e1e}{
 \index{sfgui::TextEdit@{sfgui::TextEdit}!SetTextChangedCallback@{SetTextChangedCallback}}
@@ -220,7 +209,16 @@ Set the callback called when the \hyperlink{classsfgui_1_1TextEdit}{TextEdit} is
 
 
 
-Set the callback called when the \hyperlink{classsfgui_1_1TextEdit}{TextEdit} is deactivated (ie hasn't focus). \hypertarget{classsfgui_1_1TextEdit_1ee03247816213b34caaff365b160de0}{
+Set the callback called when the \hyperlink{classsfgui_1_1TextEdit}{TextEdit} is deactivated (ie hasn't focus). \hypertarget{classsfgui_1_1TextEdit_02d743ef07c871b2ce4666083157628c}{
+\index{sfgui::TextEdit@{sfgui::TextEdit}!SetCharDeletedCallback@{SetCharDeletedCallback}}
+\index{SetCharDeletedCallback@{SetCharDeletedCallback}!sfgui::TextEdit@{sfgui::TextEdit}}
+\subsubsection[SetCharDeletedCallback]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::SetCharDeletedCallback (void($\ast$)(unsigned int, char) {\em callback})}}
+\label{classsfgui_1_1TextEdit_02d743ef07c871b2ce4666083157628c}
+
+
+
+
+Set the callback called when a character is deleted in the \hyperlink{classsfgui_1_1TextEdit}{TextEdit}. The callbacks is called whith two params : the position of the deleted char, and the char itself \hypertarget{classsfgui_1_1TextEdit_1ee03247816213b34caaff365b160de0}{
 \index{sfgui::TextEdit@{sfgui::TextEdit}!Show@{Show}}
 \index{Show@{Show}!sfgui::TextEdit@{sfgui::TextEdit}}
 \subsubsection[Show]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::Show ()}}
@@ -230,6 +228,45 @@ Set the callback called when the \hyperlink{classsfgui_1_1TextEdit}{TextEdit} is
 
 
 Show the \hyperlink{classsfgui_1_1TextEdit}{TextEdit} on the parent window 
+
+Reimplemented from \hyperlink{classsfgui_1_1Object_cdf7f9b5f731e49e0e13e55de704805d}{sfgui::Object}.\hypertarget{classsfgui_1_1TextEdit_04bf790d96e0014479cc791691ecbade}{
+\index{sfgui::TextEdit@{sfgui::TextEdit}!textChanged@{textChanged}}
+\index{textChanged@{textChanged}!sfgui::TextEdit@{sfgui::TextEdit}}
+\subsubsection[textChanged]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::textChanged ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1TextEdit_04bf790d96e0014479cc791691ecbade}
+
+
+
+
+If the text is modified, this function is called. It updates the sf::String on the screen, and it call the textChanged callback (if exists) \hypertarget{classsfgui_1_1TextEdit_8c3d822835999b2b0a38c1ef95eca4ff}{
+\index{sfgui::TextEdit@{sfgui::TextEdit}!charDeleted@{charDeleted}}
+\index{charDeleted@{charDeleted}!sfgui::TextEdit@{sfgui::TextEdit}}
+\subsubsection[charDeleted]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::charDeleted (unsigned int {\em pos}, \/  char {\em ch})\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1TextEdit_8c3d822835999b2b0a38c1ef95eca4ff}
+
+
+\hypertarget{classsfgui_1_1TextEdit_c5ff761e3933294b46892db32e62b9f6}{
+\index{sfgui::TextEdit@{sfgui::TextEdit}!deactivated@{deactivated}}
+\index{deactivated@{deactivated}!sfgui::TextEdit@{sfgui::TextEdit}}
+\subsubsection[deactivated]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::deactivated ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1TextEdit_c5ff761e3933294b46892db32e62b9f6}
+
+
+\hypertarget{classsfgui_1_1TextEdit_c009c601675801f2039d8f526e6fc921}{
+\index{sfgui::TextEdit@{sfgui::TextEdit}!activated@{activated}}
+\index{activated@{activated}!sfgui::TextEdit@{sfgui::TextEdit}}
+\subsubsection[activated]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::activated ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1TextEdit_c009c601675801f2039d8f526e6fc921}
+
+
+\hypertarget{classsfgui_1_1TextEdit_cd1f4ab301db3775216a85066859a647}{
+\index{sfgui::TextEdit@{sfgui::TextEdit}!updateTextRect@{updateTextRect}}
+\index{updateTextRect@{updateTextRect}!sfgui::TextEdit@{sfgui::TextEdit}}
+\subsubsection[updateTextRect]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::TextEdit::updateTextRect ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1TextEdit_cd1f4ab301db3775216a85066859a647}
+
+
+
 
 \subsection{Member Data Documentation}
 \hypertarget{classsfgui_1_1TextEdit_08de851a32aa8dd650e33dfcb376bfd8}{
@@ -246,7 +283,14 @@ Show the \hyperlink{classsfgui_1_1TextEdit}{TextEdit} on the parent window
 \label{classsfgui_1_1TextEdit_8ffa5546b2fd4901837b13a118f9beef}
 
 
-If true, user can enter text (textedit has focus), if false, it is disabled \hypertarget{classsfgui_1_1TextEdit_a6d415ef1daf7f9fdf0dec3d71cb8eab}{
+If true, user can enter text (textedit has focus), if false, it is disabled \hypertarget{classsfgui_1_1TextEdit_9392f92ba9efe59f56801ec3c0e52ccb}{
+\index{sfgui::TextEdit@{sfgui::TextEdit}!m\_\-cursorPosition@{m\_\-cursorPosition}}
+\index{m\_\-cursorPosition@{m\_\-cursorPosition}!sfgui::TextEdit@{sfgui::TextEdit}}
+\subsubsection[m\_\-cursorPosition]{\setlength{\rightskip}{0pt plus 5cm}unsigned int {\bf sfgui::TextEdit::m\_\-cursorPosition}\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1TextEdit_9392f92ba9efe59f56801ec3c0e52ccb}
+
+
+Position of the cursor in the string \hypertarget{classsfgui_1_1TextEdit_a6d415ef1daf7f9fdf0dec3d71cb8eab}{
 \index{sfgui::TextEdit@{sfgui::TextEdit}!m\_\-textChangedCallback@{m\_\-textChangedCallback}}
 \index{m\_\-textChangedCallback@{m\_\-textChangedCallback}!sfgui::TextEdit@{sfgui::TextEdit}}
 \subsubsection[m\_\-textChangedCallback]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf sfgui::TextEdit::m\_\-textChangedCallback})(std::string \&)\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
@@ -272,6 +316,13 @@ If true, user can enter text (textedit has focus), if false, it is disabled \hyp
 \index{m\_\-returnPressedCallback@{m\_\-returnPressedCallback}!sfgui::TextEdit@{sfgui::TextEdit}}
 \subsubsection[m\_\-returnPressedCallback]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf sfgui::TextEdit::m\_\-returnPressedCallback})()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
 \label{classsfgui_1_1TextEdit_d86f9eaadf1313214631b2de009abf55}
+
+
+\hypertarget{classsfgui_1_1TextEdit_1538508447c54b9f997fc8a68eb5c097}{
+\index{sfgui::TextEdit@{sfgui::TextEdit}!m\_\-charDeletedCallback@{m\_\-charDeletedCallback}}
+\index{m\_\-charDeletedCallback@{m\_\-charDeletedCallback}!sfgui::TextEdit@{sfgui::TextEdit}}
+\subsubsection[m\_\-charDeletedCallback]{\setlength{\rightskip}{0pt plus 5cm}void($\ast$ {\bf sfgui::TextEdit::m\_\-charDeletedCallback})(unsigned int, char)\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1TextEdit_1538508447c54b9f997fc8a68eb5c097}
 
 
 

@@ -51,27 +51,6 @@ namespace sfgui {
  */
 class Object : public sf::Sprite
 {
-private:
-	/* Callback function called when user click on the button */
-	void (*m_clickCallback)(); ///< Pointer to the click callback function
-	void (*m_mouseHoverCallback)(); /**< Pointer to the callback function called
-					when mouse is hover the button */
-	void generalInit(); 
-protected:
-	sf::String m_text; 
-	sf::Font *m_font;
-	int m_textAlignment;
-	sfgui::Margin m_margin;
-
-	sf::RenderWindow *m_parentRenderWindow; ///< Pointer to the parent sf::RenderWindow
-
-	sf::Image *m_BackgroundImg; ///< Curent background image
-	std::map<int, sf::Image *> m_Images;
-	enum ButtonStates {BackgroundNormal, BackgroundClicked, BackgroundHover}; 
-
-	sf::Event m_Event; ///< Copy of the current sfml event 
-	void updateTextPos();
-
 public:
 	Object(sf::RenderWindow *parentWindow);
 	Object(sf::RenderWindow *parent, std::string themePath);
@@ -100,7 +79,7 @@ public:
 	void Move(float x, float y);
 	void Show();	
 
-	/** Callbacks **/
+	/* Callbacks */
 	void CheckEvent(sf::Event Event);
 	void SetClickCallback(void(*)());
 	void SetMouseHoverCallback(void(*)());
@@ -108,6 +87,27 @@ public:
 	void Clicked(); 
 	void MouseHover();
 	void MouseNotHover();
+
+private:
+	/* Callback function called when user click on the button */
+	void (*m_clickCallback)(); ///< Pointer to the click callback function
+	void (*m_mouseHoverCallback)(); /**< Pointer to the callback function called
+					when mouse is hover the button */
+	void generalInit(); 
+protected:
+	sf::String m_text; 
+	sf::Font *m_font;
+	int m_textAlignment;
+	sfgui::Margin m_margin;
+
+	sf::RenderWindow *m_parentRenderWindow; ///< Pointer to the parent sf::RenderWindow
+
+	sf::Image *m_BackgroundImg; ///< Curent background image
+	std::map<int, sf::Image *> m_Images;
+	enum ButtonStates {BackgroundNormal, BackgroundClicked, BackgroundHover}; 
+
+	sf::Event m_Event; ///< Copy of the current sfml event 
+	void updateTextPos();
 };
 }
 

@@ -11,7 +11,7 @@ Inheritance diagram for sfgui::Object:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=149pt]{classsfgui_1_1Object__inherit__graph}
+\includegraphics[width=163pt]{classsfgui_1_1Object__inherit__graph}
 \end{center}
 \end{figure}
 Collaboration diagram for sfgui::Object:\nopagebreak
@@ -65,6 +65,8 @@ void \hyperlink{classsfgui_1_1Object_db61eb19249fbbd28462cc79ca17b738}{SetTextBo
 void \hyperlink{classsfgui_1_1Object_664c57bd35504a7d00963980d68dd022}{SetPosition} (float x, float y)
 \item 
 void \hyperlink{classsfgui_1_1Object_70b15fba99da515808d3da7d8042f458}{Move} (float x, float y)
+\item 
+void \hyperlink{classsfgui_1_1Object_cdf7f9b5f731e49e0e13e55de704805d}{Show} ()
 \item 
 void \hyperlink{classsfgui_1_1Object_cd9dbf2abe79e04c22f281bccb8bdb0e}{CheckEvent} (sf::Event Event)
 \item 
@@ -192,27 +194,7 @@ Construct a graphic object which uses a custom theme instead of the default one.
 Delete all the pointers, free the image map... 
 
 \subsection{Member Function Documentation}
-\hypertarget{classsfgui_1_1Object_d2750b3d51a3a208739ed6c0c57df6aa}{
-\index{sfgui::Object@{sfgui::Object}!generalInit@{generalInit}}
-\index{generalInit@{generalInit}!sfgui::Object@{sfgui::Object}}
-\subsubsection[generalInit]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::generalInit ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
-\label{classsfgui_1_1Object_d2750b3d51a3a208739ed6c0c57df6aa}
-
-
-
-
-Initialise the parts shared by all constructors 
-
-Reimplemented in \hyperlink{classsfgui_1_1Button_59849e58ed4c46061d71f7172cab4e4e}{sfgui::Button}.\hypertarget{classsfgui_1_1Object_27d9eb8b653f263f76b612cd77512321}{
-\index{sfgui::Object@{sfgui::Object}!updateTextPos@{updateTextPos}}
-\index{updateTextPos@{updateTextPos}!sfgui::Object@{sfgui::Object}}
-\subsubsection[updateTextPos]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::updateTextPos ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
-\label{classsfgui_1_1Object_27d9eb8b653f263f76b612cd77512321}
-
-
-
-
-This function is called internally when the position of the button is changed, when text changed (...) to adapt the text position so that it stays to the right alignment \hypertarget{classsfgui_1_1Object_96e00c4db6358d27ad806c0053e343a1}{
+\hypertarget{classsfgui_1_1Object_96e00c4db6358d27ad806c0053e343a1}{
 \index{sfgui::Object@{sfgui::Object}!SetTheme@{SetTheme}}
 \index{SetTheme@{SetTheme}!sfgui::Object@{sfgui::Object}}
 \subsubsection[SetTheme]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTheme (std::string {\em dir})}}
@@ -223,7 +205,7 @@ This function is called internally when the position of the button is changed, w
 
 Load a background theme from a directory containing the right png images : \begin{itemize}
 \item button.png is the normal background \item button\_\-clicked.png is the clicked background \item button\_\-hover.png is the background showed when mouse is above the button \end{itemize}
-{\bf Throws : }It throw a \hyperlink{classsfgui_1_1Error}{sfgui::Error} object if there is an error (generally when loading the picture). \hypertarget{classsfgui_1_1Object_b3477443fde0d86be5e32f5c1dcd7b01}{
+\hypertarget{classsfgui_1_1Object_b3477443fde0d86be5e32f5c1dcd7b01}{
 \index{sfgui::Object@{sfgui::Object}!SetBackground@{SetBackground}}
 \index{SetBackground@{SetBackground}!sfgui::Object@{sfgui::Object}}
 \subsubsection[SetBackground]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetBackground (int {\em background})}}
@@ -248,7 +230,9 @@ Set a background from an image which is already loaded int this object. {\bf Thr
 
 
 
-Set the button text. \hypertarget{classsfgui_1_1Object_070ede7cda0e7b3cab312aac5013a206}{
+Set the button text. 
+
+Reimplemented in \hyperlink{classsfgui_1_1TextEdit_c6f06a7dc81611a50226e10287e87e1e}{sfgui::TextEdit}.\hypertarget{classsfgui_1_1Object_070ede7cda0e7b3cab312aac5013a206}{
 \index{sfgui::Object@{sfgui::Object}!GetText@{GetText}}
 \index{GetText@{GetText}!sfgui::Object@{sfgui::Object}}
 \subsubsection[GetText]{\setlength{\rightskip}{0pt plus 5cm}std::string sfgui::Object::GetText ()}}
@@ -373,18 +357,29 @@ Set the button position. Adjust the text position to keep the text in the choose
 
 
 
-Move the button and adjust the text position \hypertarget{classsfgui_1_1Object_cd9dbf2abe79e04c22f281bccb8bdb0e}{
+Move the button and adjust the text position \hypertarget{classsfgui_1_1Object_cdf7f9b5f731e49e0e13e55de704805d}{
+\index{sfgui::Object@{sfgui::Object}!Show@{Show}}
+\index{Show@{Show}!sfgui::Object@{sfgui::Object}}
+\subsubsection[Show]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::Show ()}}
+\label{classsfgui_1_1Object_cdf7f9b5f731e49e0e13e55de704805d}
+
+
+
+
+Display the object on the parent window 
+
+Reimplemented in \hyperlink{classsfgui_1_1Checkbox_0028c58d4579845c1bdf3cae7ec9af5a}{sfgui::Checkbox}, and \hyperlink{classsfgui_1_1TextEdit_1ee03247816213b34caaff365b160de0}{sfgui::TextEdit}.\hypertarget{classsfgui_1_1Object_cd9dbf2abe79e04c22f281bccb8bdb0e}{
 \index{sfgui::Object@{sfgui::Object}!CheckEvent@{CheckEvent}}
 \index{CheckEvent@{CheckEvent}!sfgui::Object@{sfgui::Object}}
 \subsubsection[CheckEvent]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::CheckEvent (sf::Event {\em Event})}}
 \label{classsfgui_1_1Object_cd9dbf2abe79e04c22f281bccb8bdb0e}
 
 
-Callbacks 
+
 
 Call the callbacks functions if needed on the given Event. 
 
-Reimplemented in \hyperlink{classsfgui_1_1TextEdit_af6d4be3633d3eb8bcc7a1007e324da8}{sfgui::TextEdit}.\hypertarget{classsfgui_1_1Object_d3d20a4cccde599748db724236ca0826}{
+Reimplemented in \hyperlink{classsfgui_1_1Checkbox_d618a9010bef60b8ea2f11f893320fb8}{sfgui::Checkbox}, and \hyperlink{classsfgui_1_1TextEdit_af6d4be3633d3eb8bcc7a1007e324da8}{sfgui::TextEdit}.\hypertarget{classsfgui_1_1Object_d3d20a4cccde599748db724236ca0826}{
 \index{sfgui::Object@{sfgui::Object}!SetClickCallback@{SetClickCallback}}
 \index{SetClickCallback@{SetClickCallback}!sfgui::Object@{sfgui::Object}}
 \subsubsection[SetClickCallback]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetClickCallback (void($\ast$)() {\em clickCallBack})}}
@@ -411,7 +406,9 @@ Set a pointer to the callback function called when the mouse is hover the button
 
 
 
-Manage the mouse events. \hypertarget{classsfgui_1_1Object_da7f84701d318ce93fe59cc2f571eaf2}{
+Manage the mouse events. 
+
+Reimplemented in \hyperlink{classsfgui_1_1Checkbox_a49cffa3e2bef0e96105cd9a9103e294}{sfgui::Checkbox}.\hypertarget{classsfgui_1_1Object_da7f84701d318ce93fe59cc2f571eaf2}{
 \index{sfgui::Object@{sfgui::Object}!Clicked@{Clicked}}
 \index{Clicked@{Clicked}!sfgui::Object@{sfgui::Object}}
 \subsubsection[Clicked]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::Clicked ()}}
@@ -420,7 +417,9 @@ Manage the mouse events. \hypertarget{classsfgui_1_1Object_da7f84701d318ce93fe59
 
 
 
-Call the click callback function. It's automatically called by checkEvent, but you can also call it yourself if needed. \hypertarget{classsfgui_1_1Object_68d1941ad05b3d0bdf2ba85702c04cc0}{
+Call the click callback function. It's automatically called by checkEvent, but you can also call it yourself if needed. 
+
+Reimplemented in \hyperlink{classsfgui_1_1Checkbox_9dc5f05d2f6d960d9fd50c77be3b7d6f}{sfgui::Checkbox}.\hypertarget{classsfgui_1_1Object_68d1941ad05b3d0bdf2ba85702c04cc0}{
 \index{sfgui::Object@{sfgui::Object}!MouseHover@{MouseHover}}
 \index{MouseHover@{MouseHover}!sfgui::Object@{sfgui::Object}}
 \subsubsection[MouseHover]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::MouseHover ()}}
@@ -438,7 +437,27 @@ Called when the mouse is above the button \hypertarget{classsfgui_1_1Object_2457
 
 
 
-Called when the mouse is not above the button. It restores the default button theme 
+Called when the mouse is not above the button. It restores the default button theme \hypertarget{classsfgui_1_1Object_d2750b3d51a3a208739ed6c0c57df6aa}{
+\index{sfgui::Object@{sfgui::Object}!generalInit@{generalInit}}
+\index{generalInit@{generalInit}!sfgui::Object@{sfgui::Object}}
+\subsubsection[generalInit]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::generalInit ()\hspace{0.3cm}{\tt  \mbox{[}private\mbox{]}}}}
+\label{classsfgui_1_1Object_d2750b3d51a3a208739ed6c0c57df6aa}
+
+
+
+
+Initialise the parts shared by all constructors 
+
+Reimplemented in \hyperlink{classsfgui_1_1Button_59849e58ed4c46061d71f7172cab4e4e}{sfgui::Button}.\hypertarget{classsfgui_1_1Object_27d9eb8b653f263f76b612cd77512321}{
+\index{sfgui::Object@{sfgui::Object}!updateTextPos@{updateTextPos}}
+\index{updateTextPos@{updateTextPos}!sfgui::Object@{sfgui::Object}}
+\subsubsection[updateTextPos]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::updateTextPos ()\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Object_27d9eb8b653f263f76b612cd77512321}
+
+
+
+
+This function is called internally when the position of the button is changed, when text changed (...) to adapt the text position so that it stays to the right alignment 
 
 \subsection{Member Data Documentation}
 \hypertarget{classsfgui_1_1Object_5917de9750aa3c8d282899ee83f835b4}{

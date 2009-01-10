@@ -31,6 +31,7 @@
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#8a7d7ae20a88b7ef8a104f7e6c8596ce9befc9dbae9107e3e7546af33a139df9">BackgroundHover</a> enum value</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#8a7d7ae20a88b7ef8a104f7e6c8596cee8211d79a1f35d08db2b31a914bddc38">BackgroundNormal</a> enum value</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#8a7d7ae20a88b7ef8a104f7e6c8596ce">ButtonStates</a> enum name</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#8c3d822835999b2b0a38c1ef95eca4ff">charDeleted</a>(unsigned int, char)</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#af6d4be3633d3eb8bcc7a1007e324da8">CheckEvent</a>(sf::Event Event)</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#da7f84701d318ce93fe59cc2f571eaf2">Clicked</a>()</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#49b0919fd6c43c35913f8a46a6788270">Deactivate</a>()</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td></td></tr>
@@ -42,6 +43,8 @@
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#a6fae4cfa68982563c49b8b13b11966b">GetTextSize</a>()</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#9cf910f9fca635f595d6a8963d7e30d1">m_activatedCallback</a></td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#08225eee55352c02435d14e1bce24dbe">m_BackgroundImg</a></td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#1538508447c54b9f997fc8a68eb5c097">m_charDeletedCallback</a></td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td><code> [private]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#9392f92ba9efe59f56801ec3c0e52ccb">m_cursorPosition</a></td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#bfa97d7c95f54cc91600375242fe1ea6">m_deactivatedCallback</a></td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#bd45c91f926c930806870ce8acbb955e">m_Event</a></td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td><code> [protected]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#20ec4624e3d9b8e3cebeb71ec97fd104">m_font</a></td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td><code> [protected]</code></td></tr>
@@ -63,13 +66,13 @@
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#58afd20cc7cec80bf02603cc5e47143a">Resize</a>(float, float)</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#68bda298b3563eb960e77c3712664db8">SetActivatedCallback</a>(void(*)())</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#b3477443fde0d86be5e32f5c1dcd7b01">SetBackground</a>(int background)</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#02d743ef07c871b2ce4666083157628c">SetCharDeletedCallback</a>(void(*)(unsigned int, char))</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#d3d20a4cccde599748db724236ca0826">SetClickCallback</a>(void(*)())</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#6d75bcac8949d08513caa72e898e9b43">SetDeactivatedCallback</a>(void(*)())</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#8317dbdf44797dd69de490d4b946ed83">SetMouseHoverCallback</a>(void(*)())</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#664c57bd35504a7d00963980d68dd022">SetPosition</a>(float x, float y)</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#b60f88cc667196bb073091e8878483f4">SetReturnPressedCallback</a>(void(*)())</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#16ffefa7f0c0d6e01275b8a2afa5975e">SetText</a>(std::string &amp;)</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td></td></tr>
-  <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#64c05d85588778a652d11c7a1daf8db0">sfgui::Object::SetText</a>(std::string text)</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td></td></tr>
+  <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#c6f06a7dc81611a50226e10287e87e1e">SetText</a>(std::string)</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#191bba44abbc751fd80e6f19ad6aba5b">SetTextAlignment</a>(int)</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#db61eb19249fbbd28462cc79ca17b738">SetTextBottomMargin</a>(float)</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#2c80f417ea995a6452fcb47740701e1e">SetTextChangedCallback</a>(void(*)(std::string &amp;))</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td></td></tr>
@@ -85,9 +88,10 @@
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#04bf790d96e0014479cc791691ecbade">textChanged</a>()</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#c6f2d938ccf876f05a9a9c47060c6093">TextEdit</a>(sf::RenderWindow *parentWindow)</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#27d9eb8b653f263f76b612cd77512321">updateTextPos</a>()</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td><a class="el" href="classsfgui_1_1TextEdit.html#cd1f4ab301db3775216a85066859a647">updateTextRect</a>()</td><td><a class="el" href="classsfgui_1_1TextEdit.html">sfgui::TextEdit</a></td><td><code> [private]</code></td></tr>
   <tr class="memlist"><td><a class="el" href="classsfgui_1_1Object.html#7d923592a63a854c77ce4edcb21e40ba">~Object</a>()</td><td><a class="el" href="classsfgui_1_1Object.html">sfgui::Object</a></td><td></td></tr>
 </table></div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Jan 4 19:46:43 2009 for SFML Gui by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Jan 10 19:07:06 2009 for SFML Gui by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
 </body>

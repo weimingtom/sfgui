@@ -51,7 +51,7 @@ Collaboration diagram for sfgui::TextEdit:</div>
 <tr><td colspan="2"><br><h2>Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#c6f2d938ccf876f05a9a9c47060c6093">TextEdit</a> (sf::RenderWindow *parentWindow)</td></tr>
 
-<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#16ffefa7f0c0d6e01275b8a2afa5975e">SetText</a> (std::string &amp;)</td></tr>
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#c6f06a7dc81611a50226e10287e87e1e">SetText</a> (std::string)</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#58afd20cc7cec80bf02603cc5e47143a">Resize</a> (float, float)</td></tr>
 
@@ -73,19 +73,27 @@ Collaboration diagram for sfgui::TextEdit:</div>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#6d75bcac8949d08513caa72e898e9b43">SetDeactivatedCallback</a> (void(*)())</td></tr>
 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#02d743ef07c871b2ce4666083157628c">SetCharDeletedCallback</a> (void(*)(unsigned int, char))</td></tr>
+
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#1ee03247816213b34caaff365b160de0">Show</a> ()</td></tr>
 
 <tr><td colspan="2"><br><h2>Private Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#04bf790d96e0014479cc791691ecbade">textChanged</a> ()</td></tr>
 
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#8c3d822835999b2b0a38c1ef95eca4ff">charDeleted</a> (unsigned int, char)</td></tr>
+
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#c5ff761e3933294b46892db32e62b9f6">deactivated</a> ()</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#c009c601675801f2039d8f526e6fc921">activated</a> ()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#cd1f4ab301db3775216a85066859a647">updateTextRect</a> ()</td></tr>
 
 <tr><td colspan="2"><br><h2>Private Attributes</h2></td></tr>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">std::string&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#08de851a32aa8dd650e33dfcb376bfd8">m_stdText</a></td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">bool&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#8ffa5546b2fd4901837b13a118f9beef">m_itemActive</a></td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">unsigned int&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#9392f92ba9efe59f56801ec3c0e52ccb">m_cursorPosition</a></td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#a6d415ef1daf7f9fdf0dec3d71cb8eab">m_textChangedCallback</a> )(std::string &amp;)</td></tr>
 
@@ -94,6 +102,8 @@ Collaboration diagram for sfgui::TextEdit:</div>
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#9cf910f9fca635f595d6a8963d7e30d1">m_activatedCallback</a> )()</td></tr>
 
 <tr><td class="memItemLeft" nowrap align="right" valign="top">void(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#d86f9eaadf1313214631b2de009abf55">m_returnPressedCallback</a> )()</td></tr>
+
+<tr><td class="memItemLeft" nowrap align="right" valign="top">void(*&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="classsfgui_1_1TextEdit.html#1538508447c54b9f997fc8a68eb5c097">m_charDeletedCallback</a> )(unsigned int, char)</td></tr>
 
 </table>
 <hr><a name="_details"></a><h2>Detailed Description</h2>
@@ -126,73 +136,14 @@ If you want to enter text, you must have the item activated. You can activate it
 </div>
 </div><p>
 <hr><h2>Member Function Documentation</h2>
-<a class="anchor" name="04bf790d96e0014479cc791691ecbade"></a><!-- doxytag: member="sfgui::TextEdit::textChanged" ref="04bf790d96e0014479cc791691ecbade" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sfgui::TextEdit::textChanged           </td>
-          <td>(</td>
-          <td class="paramname">          </td>
-          <td>&nbsp;)&nbsp;</td>
-          <td><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>
-
-<p>
-If the text is modified, this function is called. It updates the sf::String on the screen, and it call the textChanged callback (if exists) 
-</div>
-</div><p>
-<a class="anchor" name="c5ff761e3933294b46892db32e62b9f6"></a><!-- doxytag: member="sfgui::TextEdit::deactivated" ref="c5ff761e3933294b46892db32e62b9f6" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sfgui::TextEdit::deactivated           </td>
-          <td>(</td>
-          <td class="paramname">          </td>
-          <td>&nbsp;)&nbsp;</td>
-          <td><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>
-
-</div>
-</div><p>
-<a class="anchor" name="c009c601675801f2039d8f526e6fc921"></a><!-- doxytag: member="sfgui::TextEdit::activated" ref="c009c601675801f2039d8f526e6fc921" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void sfgui::TextEdit::activated           </td>
-          <td>(</td>
-          <td class="paramname">          </td>
-          <td>&nbsp;)&nbsp;</td>
-          <td><code> [private]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>
-
-</div>
-</div><p>
-<a class="anchor" name="16ffefa7f0c0d6e01275b8a2afa5975e"></a><!-- doxytag: member="sfgui::TextEdit::SetText" ref="16ffefa7f0c0d6e01275b8a2afa5975e" args="(std::string &amp;)" -->
+<a class="anchor" name="c6f06a7dc81611a50226e10287e87e1e"></a><!-- doxytag: member="sfgui::TextEdit::SetText" ref="c6f06a7dc81611a50226e10287e87e1e" args="(std::string)" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void sfgui::TextEdit::SetText           </td>
           <td>(</td>
-          <td class="paramtype">std::string &amp;&nbsp;</td>
+          <td class="paramtype">std::string&nbsp;</td>
           <td class="paramname"> <em>text</em>          </td>
           <td>&nbsp;)&nbsp;</td>
           <td></td>
@@ -205,6 +156,8 @@ If the text is modified, this function is called. It updates the sf::String on t
 
 <p>
 Set the text on the <a class="el" href="classsfgui_1_1TextEdit.html" title="A single line text entry.">TextEdit</a> 
+<p>Reimplemented from <a class="el" href="classsfgui_1_1Object.html#64c05d85588778a652d11c7a1daf8db0">sfgui::Object</a>.</p>
+
 </div>
 </div><p>
 <a class="anchor" name="58afd20cc7cec80bf02603cc5e47143a"></a><!-- doxytag: member="sfgui::TextEdit::Resize" ref="58afd20cc7cec80bf02603cc5e47143a" args="(float, float)" -->
@@ -339,9 +292,9 @@ Deactivate the Textedit. Key you press will no longer be added to the <a class="
 <div class="memdoc">
 
 <p>
-Callbacks 
+
 <p>
-Call the callbacks functions if needed on the given Event. 
+Manage the events : call the needed callbacks functions 
 <p>Reimplemented from <a class="el" href="classsfgui_1_1Object.html#cd9dbf2abe79e04c22f281bccb8bdb0e">sfgui::Object</a>.</p>
 
 </div>
@@ -434,6 +387,28 @@ Set the callback called when the <a class="el" href="classsfgui_1_1TextEdit.html
 Set the callback called when the <a class="el" href="classsfgui_1_1TextEdit.html" title="A single line text entry.">TextEdit</a> is deactivated (ie hasn't focus). 
 </div>
 </div><p>
+<a class="anchor" name="02d743ef07c871b2ce4666083157628c"></a><!-- doxytag: member="sfgui::TextEdit::SetCharDeletedCallback" ref="02d743ef07c871b2ce4666083157628c" args="(void(*)(unsigned int, char))" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sfgui::TextEdit::SetCharDeletedCallback           </td>
+          <td>(</td>
+          <td class="paramtype">void(*)(unsigned int, char)&nbsp;</td>
+          <td class="paramname"> <em>callback</em>          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+Set the callback called when a character is deleted in the <a class="el" href="classsfgui_1_1TextEdit.html" title="A single line text entry.">TextEdit</a>. The callbacks is called whith two params : the position of the deleted char, and the char itself 
+</div>
+</div><p>
 <a class="anchor" name="1ee03247816213b34caaff365b160de0"></a><!-- doxytag: member="sfgui::TextEdit::Show" ref="1ee03247816213b34caaff365b160de0" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -453,6 +428,115 @@ Set the callback called when the <a class="el" href="classsfgui_1_1TextEdit.html
 
 <p>
 Show the <a class="el" href="classsfgui_1_1TextEdit.html" title="A single line text entry.">TextEdit</a> on the parent window 
+<p>Reimplemented from <a class="el" href="classsfgui_1_1Object.html#cdf7f9b5f731e49e0e13e55de704805d">sfgui::Object</a>.</p>
+
+</div>
+</div><p>
+<a class="anchor" name="04bf790d96e0014479cc791691ecbade"></a><!-- doxytag: member="sfgui::TextEdit::textChanged" ref="04bf790d96e0014479cc791691ecbade" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sfgui::TextEdit::textChanged           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+<p>
+If the text is modified, this function is called. It updates the sf::String on the screen, and it call the textChanged callback (if exists) 
+</div>
+</div><p>
+<a class="anchor" name="8c3d822835999b2b0a38c1ef95eca4ff"></a><!-- doxytag: member="sfgui::TextEdit::charDeleted" ref="8c3d822835999b2b0a38c1ef95eca4ff" args="(unsigned int, char)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sfgui::TextEdit::charDeleted           </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&nbsp;</td>
+          <td class="paramname"> <em>pos</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&nbsp;</td>
+          <td class="paramname"> <em>ch</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td><td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="c5ff761e3933294b46892db32e62b9f6"></a><!-- doxytag: member="sfgui::TextEdit::deactivated" ref="c5ff761e3933294b46892db32e62b9f6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sfgui::TextEdit::deactivated           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="c009c601675801f2039d8f526e6fc921"></a><!-- doxytag: member="sfgui::TextEdit::activated" ref="c009c601675801f2039d8f526e6fc921" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sfgui::TextEdit::activated           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
+<a class="anchor" name="cd1f4ab301db3775216a85066859a647"></a><!-- doxytag: member="sfgui::TextEdit::updateTextRect" ref="cd1f4ab301db3775216a85066859a647" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void sfgui::TextEdit::updateTextRect           </td>
+          <td>(</td>
+          <td class="paramname">          </td>
+          <td>&nbsp;)&nbsp;</td>
+          <td><code> [private]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
 </div>
 </div><p>
 <hr><h2>Member Data Documentation</h2>
@@ -484,6 +568,21 @@ Show the <a class="el" href="classsfgui_1_1TextEdit.html" title="A single line t
 
 <p>
 If true, user can enter text (textedit has focus), if false, it is disabled 
+</div>
+</div><p>
+<a class="anchor" name="9392f92ba9efe59f56801ec3c0e52ccb"></a><!-- doxytag: member="sfgui::TextEdit::m_cursorPosition" ref="9392f92ba9efe59f56801ec3c0e52ccb" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="classsfgui_1_1TextEdit.html#9392f92ba9efe59f56801ec3c0e52ccb">sfgui::TextEdit::m_cursorPosition</a><code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+Position of the cursor in the string 
 </div>
 </div><p>
 <a class="anchor" name="a6d415ef1daf7f9fdf0dec3d71cb8eab"></a><!-- doxytag: member="sfgui::TextEdit::m_textChangedCallback" ref="a6d415ef1daf7f9fdf0dec3d71cb8eab" args=")(std::string &amp;)" -->
@@ -546,10 +645,25 @@ If true, user can enter text (textedit has focus), if false, it is disabled
 
 </div>
 </div><p>
+<a class="anchor" name="1538508447c54b9f997fc8a68eb5c097"></a><!-- doxytag: member="sfgui::TextEdit::m_charDeletedCallback" ref="1538508447c54b9f997fc8a68eb5c097" args=")(unsigned int, char)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* <a class="el" href="classsfgui_1_1TextEdit.html#1538508447c54b9f997fc8a68eb5c097">sfgui::TextEdit::m_charDeletedCallback</a>)(unsigned int, char)<code> [private]</code>          </td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>
+
+</div>
+</div><p>
 <hr>The documentation for this class was generated from the following files:<ul>
 <li>/home/arnaud/programmation/sfml/sfgui/<a class="el" href="textedit_8hpp.html">textedit.hpp</a><li>/home/arnaud/programmation/sfml/sfgui/<a class="el" href="textedit_8cpp.html">textedit.cpp</a></ul>
 </div>
-<hr size="1"><address style="text-align: right;"><small>Generated on Sun Jan 4 19:46:43 2009 for SFML Gui by&nbsp;
+<hr size="1"><address style="text-align: right;"><small>Generated on Sat Jan 10 19:07:06 2009 for SFML Gui by&nbsp;
 <a href="http://www.doxygen.org/index.html">
 <img src="doxygen.png" alt="doxygen" align="middle" border="0"></a> 1.5.6 </small></address>
 </body>

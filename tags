@@ -4,289 +4,131 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.7	//
-00d4be2d8b013240b29e50ca7599fe55	./doc/html/classObject.html	/^<a class="anchor" name="00d4be2d8b013240b29e50ca7599fe55"><\/a><!-- doxytag: member="Object::SetBackground" ref="00d4be2d8b013240b29e50ca7599fe55" args="(sf::Image &amp;)" -->$/;"	a
-01fb5dcac8bac061999ce661d13f296e	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="01fb5dcac8bac061999ce661d13f296e"><\/a><!-- doxytag: member="sfgui::Object::SetTextSize" ref="01fb5dcac8bac061999ce661d13f296e" args="(float)" -->$/;"	a
-04bf790d96e0014479cc791691ecbade	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="04bf790d96e0014479cc791691ecbade"><\/a><!-- doxytag: member="sfgui::TextEdit::textChanged" ref="04bf790d96e0014479cc791691ecbade" args="()" -->$/;"	a
-05c78461b775a073bed1e218586defd7	./doc/html/classsfgui_1_1Button.html	/^<a class="anchor" name="05c78461b775a073bed1e218586defd7"><\/a><!-- doxytag: member="sfgui::Button::Button" ref="05c78461b775a073bed1e218586defd7" args="(sf::RenderWindow *parentWindow)" -->$/;"	a
-070ede7cda0e7b3cab312aac5013a206	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="070ede7cda0e7b3cab312aac5013a206"><\/a><!-- doxytag: member="sfgui::Object::GetText" ref="070ede7cda0e7b3cab312aac5013a206" args="()" -->$/;"	a
-08225eee55352c02435d14e1bce24dbe	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="08225eee55352c02435d14e1bce24dbe"><\/a><!-- doxytag: member="sfgui::Object::m_BackgroundImg" ref="08225eee55352c02435d14e1bce24dbe" args="" -->$/;"	a
-08de851a32aa8dd650e33dfcb376bfd8	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="08de851a32aa8dd650e33dfcb376bfd8"><\/a><!-- doxytag: member="sfgui::TextEdit::m_stdText" ref="08de851a32aa8dd650e33dfcb376bfd8" args="" -->$/;"	a
-16ffefa7f0c0d6e01275b8a2afa5975e	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="16ffefa7f0c0d6e01275b8a2afa5975e"><\/a><!-- doxytag: member="sfgui::TextEdit::SetText" ref="16ffefa7f0c0d6e01275b8a2afa5975e" args="(std::string &amp;)" -->$/;"	a
-191bba44abbc751fd80e6f19ad6aba5b	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="191bba44abbc751fd80e6f19ad6aba5b"><\/a><!-- doxytag: member="sfgui::Object::SetTextAlignment" ref="191bba44abbc751fd80e6f19ad6aba5b" args="(int)" -->$/;"	a
-1ab360b58e3be2e8385f8e4225508ea4	./doc/html/structsfgui_1_1Margin.html	/^<a class="anchor" name="1ab360b58e3be2e8385f8e4225508ea4"><\/a><!-- doxytag: member="sfgui::Margin::Top" ref="1ab360b58e3be2e8385f8e4225508ea4" args="" -->$/;"	a
-1abd4bc0011cb25fe9ed940e554d6cbb	./doc/html/classObject.html	/^<a class="anchor" name="1abd4bc0011cb25fe9ed940e554d6cbb"><\/a><!-- doxytag: member="Object::SetBackground" ref="1abd4bc0011cb25fe9ed940e554d6cbb" args="(sf::Color &amp;, sf::Color &amp;)" -->$/;"	a
-1b0ca0914bbfa335470cbaef555d9880	./doc/html/classTest.html	/^<a class="anchor" name="1b0ca0914bbfa335470cbaef555d9880"><\/a><!-- doxytag: member="Test::OnEvent" ref="1b0ca0914bbfa335470cbaef555d9880" args="(const sf::Event &amp;)" -->$/;"	a
-1ca186fc94027fe25f106e8741a152c5	./doc/html/classObjectEvent.html	/^<a class="anchor" name="1ca186fc94027fe25f106e8741a152c5"><\/a><!-- doxytag: member="ObjectEvent::ObjectEvent" ref="1ca186fc94027fe25f106e8741a152c5" args="(Object *Obj, sf::Event *Event, sf::RenderWindow *RenderWindow)" -->$/;"	a
-1eca1f2d8b1948d54f6962a303773432	./doc/html/classButton.html	/^<a class="anchor" name="1eca1f2d8b1948d54f6962a303773432"><\/a><!-- doxytag: member="Button::SetPosition" ref="1eca1f2d8b1948d54f6962a303773432" args="(float x, float y)" -->$/;"	a
-1ee03247816213b34caaff365b160de0	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="1ee03247816213b34caaff365b160de0"><\/a><!-- doxytag: member="sfgui::TextEdit::Show" ref="1ee03247816213b34caaff365b160de0" args="()" -->$/;"	a
-203952f38ce3bd68695597fee4b4397b	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="203952f38ce3bd68695597fee4b4397b"><\/a><!-- doxytag: member="sfgui::TextEdit::AddChar" ref="203952f38ce3bd68695597fee4b4397b" args="(char)" -->$/;"	a
-20ec4624e3d9b8e3cebeb71ec97fd104	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="20ec4624e3d9b8e3cebeb71ec97fd104"><\/a><!-- doxytag: member="sfgui::Object::m_font" ref="20ec4624e3d9b8e3cebeb71ec97fd104" args="" -->$/;"	a
-24575661efb4ab88be76eb2e1a4947e6	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="24575661efb4ab88be76eb2e1a4947e6"><\/a><!-- doxytag: member="sfgui::Object::MouseNotHover" ref="24575661efb4ab88be76eb2e1a4947e6" args="()" -->$/;"	a
-27d9eb8b653f263f76b612cd77512321	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="27d9eb8b653f263f76b612cd77512321"><\/a><!-- doxytag: member="sfgui::Object::updateTextPos" ref="27d9eb8b653f263f76b612cd77512321" args="()" -->$/;"	a
-28408aa0cf50c8da37a79215755c01d9	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="28408aa0cf50c8da37a79215755c01d9"><\/a><!-- doxytag: member="sfgui::Object::SetTextLeftMargin" ref="28408aa0cf50c8da37a79215755c01d9" args="(float)" -->$/;"	a
-2a001eb9c3cc8ae54768a850dd345002	./doc/html/classButton.html	/^<a class="anchor" name="2a001eb9c3cc8ae54768a850dd345002"><\/a><!-- doxytag: member="Button::~Button" ref="2a001eb9c3cc8ae54768a850dd345002" args="()" -->$/;"	a
-2acba2e2ab334cd94bf392f26f9207ff	./doc/html/classsfgui_1_1Error.html	/^<a class="anchor" name="2acba2e2ab334cd94bf392f26f9207ff"><\/a><!-- doxytag: member="sfgui::Error::m_phrase" ref="2acba2e2ab334cd94bf392f26f9207ff" args="" -->$/;"	a
-2c80f417ea995a6452fcb47740701e1e	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="2c80f417ea995a6452fcb47740701e1e"><\/a><!-- doxytag: member="sfgui::TextEdit::SetTextChangedCallback" ref="2c80f417ea995a6452fcb47740701e1e" args="(void(*)(std::string &amp;))" -->$/;"	a
-3332575d988f9eee589f57b2ad516593	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="3332575d988f9eee589f57b2ad516593"><\/a><!-- doxytag: member="sfgui::Object::ManageMouse" ref="3332575d988f9eee589f57b2ad516593" args="()" -->$/;"	a
-41801231361e4866d99ce7d4ef32e53d	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="41801231361e4866d99ce7d4ef32e53d"><\/a><!-- doxytag: member="sfgui::Object::SetTextFont" ref="41801231361e4866d99ce7d4ef32e53d" args="(sf::Font &amp;)" -->$/;"	a
-49b0919fd6c43c35913f8a46a6788270	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="49b0919fd6c43c35913f8a46a6788270"><\/a><!-- doxytag: member="sfgui::TextEdit::Deactivate" ref="49b0919fd6c43c35913f8a46a6788270" args="()" -->$/;"	a
-4e1a77ff60e992d02841cd6de1585e2d	./doc/html/classButton.html	/^<a class="anchor" name="4e1a77ff60e992d02841cd6de1585e2d"><\/a><!-- doxytag: member="Button::Move" ref="4e1a77ff60e992d02841cd6de1585e2d" args="(float x, float y)" -->$/;"	a
-4ef3c90c68494a5af8b740694a2a8f48	./doc/html/classObjectEvent.html	/^<a class="anchor" name="4ef3c90c68494a5af8b740694a2a8f48"><\/a><!-- doxytag: member="ObjectEvent::m_Object" ref="4ef3c90c68494a5af8b740694a2a8f48" args="" -->$/;"	a
-4fca8d4a179ac49675fcdde1354a433c	./doc/html/classCheckbox.html	/^<a class="anchor" name="4fca8d4a179ac49675fcdde1354a433c"><\/a><!-- doxytag: member="Checkbox::Checkbox" ref="4fca8d4a179ac49675fcdde1354a433c" args="(sf::RenderWindow *parentWindow, std::string text, bool state=false)" -->$/;"	a
-507af79e039621e6c2dab1af54c8653b	./doc/html/classObjectEvent.html	/^<a class="anchor" name="507af79e039621e6c2dab1af54c8653b"><\/a><!-- doxytag: member="ObjectEvent::runThread" ref="507af79e039621e6c2dab1af54c8653b" args="" -->$/;"	a
-5189b70c8f868718f79c7e119e0b9b32	./doc/html/classsfgui_1_1Button.html	/^<a class="anchor" name="5189b70c8f868718f79c7e119e0b9b32"><\/a><!-- doxytag: member="sfgui::Button::Button" ref="5189b70c8f868718f79c7e119e0b9b32" args="(sf::RenderWindow *parentWindow, std::string themePath)" -->$/;"	a
-518ad23f1c9aab6fd9b346d708c503a8	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="518ad23f1c9aab6fd9b346d708c503a8"><\/a><!-- doxytag: member="sfgui::Object::m_parentRenderWindow" ref="518ad23f1c9aab6fd9b346d708c503a8" args="" -->$/;"	a
-524d038c09c3f5f819d5cae310a591e9	./doc/html/classButton.html	/^<a class="anchor" name="524d038c09c3f5f819d5cae310a591e9"><\/a><!-- doxytag: member="Button::m_text" ref="524d038c09c3f5f819d5cae310a591e9" args="" -->$/;"	a
-52fb2f9dc8a59b60743f7b6cdb829d53	./doc/html/classCheckbox.html	/^<a class="anchor" name="52fb2f9dc8a59b60743f7b6cdb829d53"><\/a><!-- doxytag: member="Checkbox::Checkbox" ref="52fb2f9dc8a59b60743f7b6cdb829d53" args="(sf::RenderWindow *parentWindow)" -->$/;"	a
-58afd20cc7cec80bf02603cc5e47143a	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="58afd20cc7cec80bf02603cc5e47143a"><\/a><!-- doxytag: member="sfgui::TextEdit::Resize" ref="58afd20cc7cec80bf02603cc5e47143a" args="(float, float)" -->$/;"	a
-5917de9750aa3c8d282899ee83f835b4	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="5917de9750aa3c8d282899ee83f835b4"><\/a><!-- doxytag: member="sfgui::Object::m_clickCallback" ref="5917de9750aa3c8d282899ee83f835b4" args=")()" -->$/;"	a
-59849e58ed4c46061d71f7172cab4e4e	./doc/html/classsfgui_1_1Button.html	/^<a class="anchor" name="59849e58ed4c46061d71f7172cab4e4e"><\/a><!-- doxytag: member="sfgui::Button::generalInit" ref="59849e58ed4c46061d71f7172cab4e4e" args="()" -->$/;"	a
-5c69864ed57f567ef9cb85fae234726b	./doc/html/classObjectEvent.html	/^<a class="anchor" name="5c69864ed57f567ef9cb85fae234726b"><\/a><!-- doxytag: member="ObjectEvent::Run" ref="5c69864ed57f567ef9cb85fae234726b" args="()" -->$/;"	a
-5ded1f794f837d393cf30fc8ecfceb37	./doc/html/classObject.html	/^<a class="anchor" name="5ded1f794f837d393cf30fc8ecfceb37"><\/a><!-- doxytag: member="Object::m_Event" ref="5ded1f794f837d393cf30fc8ecfceb37" args="" -->$/;"	a
-5f1d579d8ebba512fb983622552fe40f	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="5f1d579d8ebba512fb983622552fe40f"><\/a><!-- doxytag: member="sfgui::Object::GetTextFont" ref="5f1d579d8ebba512fb983622552fe40f" args="()" -->$/;"	a
-64c05d85588778a652d11c7a1daf8db0	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="64c05d85588778a652d11c7a1daf8db0"><\/a><!-- doxytag: member="sfgui::Object::SetText" ref="64c05d85588778a652d11c7a1daf8db0" args="(std::string text)" -->$/;"	a
-664c57bd35504a7d00963980d68dd022	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="664c57bd35504a7d00963980d68dd022"><\/a><!-- doxytag: member="sfgui::Object::SetPosition" ref="664c57bd35504a7d00963980d68dd022" args="(float x, float y)" -->$/;"	a
-674037d7533f8891a97ed37d600aa1f9	./doc/html/main_8cpp.html	/^<a class="anchor" name="674037d7533f8891a97ed37d600aa1f9"><\/a><!-- doxytag: member="main.cpp::textChangeCallback" ref="674037d7533f8891a97ed37d600aa1f9" args="(std::string &amp;sr)" -->$/;"	a
-68bda298b3563eb960e77c3712664db8	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="68bda298b3563eb960e77c3712664db8"><\/a><!-- doxytag: member="sfgui::TextEdit::SetActivatedCallback" ref="68bda298b3563eb960e77c3712664db8" args="(void(*)())" -->$/;"	a
-68d1941ad05b3d0bdf2ba85702c04cc0	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="68d1941ad05b3d0bdf2ba85702c04cc0"><\/a><!-- doxytag: member="sfgui::Object::MouseHover" ref="68d1941ad05b3d0bdf2ba85702c04cc0" args="()" -->$/;"	a
-68e5f5f024cf7f2db43bd2de010c118c	./doc/html/classObject.html	/^<a class="anchor" name="68e5f5f024cf7f2db43bd2de010c118c"><\/a><!-- doxytag: member="Object::SetClickCallback" ref="68e5f5f024cf7f2db43bd2de010c118c" args="(void(*)())" -->$/;"	a
-6a505d8275fe7965b863d437dd54b195	./doc/html/structsfgui_1_1Margin.html	/^<a class="anchor" name="6a505d8275fe7965b863d437dd54b195"><\/a><!-- doxytag: member="sfgui::Margin::SetMargin" ref="6a505d8275fe7965b863d437dd54b195" args="(float)" -->$/;"	a
-6c3eb411a957d05707d858ded4cd951c	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="6c3eb411a957d05707d858ded4cd951c"><\/a><!-- doxytag: member="sfgui::Object::SetTextTopMargin" ref="6c3eb411a957d05707d858ded4cd951c" args="(float)" -->$/;"	a
-6d0f96eda1f89ba15d34471cfa42a0e4	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="6d0f96eda1f89ba15d34471cfa42a0e4"><\/a><!-- doxytag: member="sfgui::Object::Object" ref="6d0f96eda1f89ba15d34471cfa42a0e4" args="(sf::RenderWindow *parent, std::string themePath)" -->$/;"	a
-6d75bcac8949d08513caa72e898e9b43	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="6d75bcac8949d08513caa72e898e9b43"><\/a><!-- doxytag: member="sfgui::TextEdit::SetDeactivatedCallback" ref="6d75bcac8949d08513caa72e898e9b43" args="(void(*)())" -->$/;"	a
-6d7907f767742dcfd37c1b0c349daa2d	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="6d7907f767742dcfd37c1b0c349daa2d"><\/a><!-- doxytag: member="sfgui::Object::m_Images" ref="6d7907f767742dcfd37c1b0c349daa2d" args="" -->$/;"	a
-70b15fba99da515808d3da7d8042f458	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="70b15fba99da515808d3da7d8042f458"><\/a><!-- doxytag: member="sfgui::Object::Move" ref="70b15fba99da515808d3da7d8042f458" args="(float x, float y)" -->$/;"	a
-7cfb56995f2140319df705fb1b146d36	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="7cfb56995f2140319df705fb1b146d36"><\/a><!-- doxytag: member="sfgui::Object::m_textAlignment" ref="7cfb56995f2140319df705fb1b146d36" args="" -->$/;"	a
-7d923592a63a854c77ce4edcb21e40ba	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="7d923592a63a854c77ce4edcb21e40ba"><\/a><!-- doxytag: member="sfgui::Object::~Object" ref="7d923592a63a854c77ce4edcb21e40ba" args="()" -->$/;"	a
-7e169ba3f26b7585d292bec5a253b8ec	./doc/html/classsfgui_1_1Error.html	/^<a class="anchor" name="7e169ba3f26b7585d292bec5a253b8ec"><\/a><!-- doxytag: member="sfgui::Error::what" ref="7e169ba3f26b7585d292bec5a253b8ec" args="() const " -->$/;"	a
-82e1ba70ec0e2b9327af29764cd666eb	./doc/html/classObject.html	/^<a class="anchor" name="82e1ba70ec0e2b9327af29764cd666eb"><\/a><!-- doxytag: member="Object::SetMouseHoverCallback" ref="82e1ba70ec0e2b9327af29764cd666eb" args="(void(*)())" -->$/;"	a
-8317dbdf44797dd69de490d4b946ed83	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="8317dbdf44797dd69de490d4b946ed83"><\/a><!-- doxytag: member="sfgui::Object::SetMouseHoverCallback" ref="8317dbdf44797dd69de490d4b946ed83" args="(void(*)())" -->$/;"	a
-8342d588d9294226206106e142c30e51	./doc/html/classObject.html	/^<a class="anchor" name="8342d588d9294226206106e142c30e51"><\/a><!-- doxytag: member="Object::Clicked" ref="8342d588d9294226206106e142c30e51" args="()" -->$/;"	a
-88f1c97f50dd466417309f0776dce452	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="88f1c97f50dd466417309f0776dce452"><\/a><!-- doxytag: member="sfgui::Object::SetTextColor" ref="88f1c97f50dd466417309f0776dce452" args="(sf::Color &amp;)" -->$/;"	a
-8991dd4eda96f401e33ee6ae24a46f0c	./doc/html/main_8cpp.html	/^<a class="anchor" name="8991dd4eda96f401e33ee6ae24a46f0c"><\/a><!-- doxytag: member="main.cpp::App" ref="8991dd4eda96f401e33ee6ae24a46f0c" args="(sf::VideoMode(800, 600, 32),&quot;SFML GUI&quot;)" -->$/;"	a
-8a7d7ae20a88b7ef8a104f7e6c8596ce	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="8a7d7ae20a88b7ef8a104f7e6c8596ce"><\/a><!-- doxytag: member="sfgui::Object::ButtonStates" ref="8a7d7ae20a88b7ef8a104f7e6c8596ce" args="" -->$/;"	a
-8a7d7ae20a88b7ef8a104f7e6c8596ce03b529b6f0fee7ab7cc0033441180b67	./doc/html/classsfgui_1_1Object.html	/^<tr><td valign="top"><em><a class="anchor" name="8a7d7ae20a88b7ef8a104f7e6c8596ce03b529b6f0fee7ab7cc0033441180b67"><\/a><!-- doxytag: member="BackgroundClicked" ref="8a7d7ae20a88b7ef8a104f7e6c8596ce03b529b6f0fee7ab7cc0033441180b67" args="" -->BackgroundClicked<\/em>&nbsp;<\/td><td>$/;"	a
-8a7d7ae20a88b7ef8a104f7e6c8596ce9befc9dbae9107e3e7546af33a139df9	./doc/html/classsfgui_1_1Object.html	/^<tr><td valign="top"><em><a class="anchor" name="8a7d7ae20a88b7ef8a104f7e6c8596ce9befc9dbae9107e3e7546af33a139df9"><\/a><!-- doxytag: member="BackgroundHover" ref="8a7d7ae20a88b7ef8a104f7e6c8596ce9befc9dbae9107e3e7546af33a139df9" args="" -->BackgroundHover<\/em>&nbsp;<\/td><td>$/;"	a
-8a7d7ae20a88b7ef8a104f7e6c8596cee8211d79a1f35d08db2b31a914bddc38	./doc/html/classsfgui_1_1Object.html	/^<tr><td valign="top"><em><a class="anchor" name="8a7d7ae20a88b7ef8a104f7e6c8596cee8211d79a1f35d08db2b31a914bddc38"><\/a><!-- doxytag: member="BackgroundNormal" ref="8a7d7ae20a88b7ef8a104f7e6c8596cee8211d79a1f35d08db2b31a914bddc38" args="" -->BackgroundNormal<\/em>&nbsp;<\/td><td>$/;"	a
-8e374c70b7dbaa03b2a3180490789d1d	./doc/html/classObject.html	/^<a class="anchor" name="8e374c70b7dbaa03b2a3180490789d1d"><\/a><!-- doxytag: member="Object::SetBackground" ref="8e374c70b7dbaa03b2a3180490789d1d" args="(std::string)" -->$/;"	a
-8ffa5546b2fd4901837b13a118f9beef	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="8ffa5546b2fd4901837b13a118f9beef"><\/a><!-- doxytag: member="sfgui::TextEdit::m_itemActive" ref="8ffa5546b2fd4901837b13a118f9beef" args="" -->$/;"	a
-94dc6919349ff5ca9f334cce78afbe39	./doc/html/classsfgui_1_1Button.html	/^<a class="anchor" name="94dc6919349ff5ca9f334cce78afbe39"><\/a><!-- doxytag: member="sfgui::Button::Show" ref="94dc6919349ff5ca9f334cce78afbe39" args="()" -->$/;"	a
-96e00c4db6358d27ad806c0053e343a1	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="96e00c4db6358d27ad806c0053e343a1"><\/a><!-- doxytag: member="sfgui::Object::SetTheme" ref="96e00c4db6358d27ad806c0053e343a1" args="(std::string)" -->$/;"	a
-99f2bbfac6c95612322b0f10e607ebe5	./doc/html/classTest.html	/^<a class="anchor" name="99f2bbfac6c95612322b0f10e607ebe5"><\/a><!-- doxytag: member="Test::Test" ref="99f2bbfac6c95612322b0f10e607ebe5" args="()" -->$/;"	a
-9a1b0ae1d8f82924abfa682e59f40eb8	./doc/html/classObjectEvent.html	/^<a class="anchor" name="9a1b0ae1d8f82924abfa682e59f40eb8"><\/a><!-- doxytag: member="ObjectEvent::m_RenderWindow" ref="9a1b0ae1d8f82924abfa682e59f40eb8" args="" -->$/;"	a
-9cf910f9fca635f595d6a8963d7e30d1	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="9cf910f9fca635f595d6a8963d7e30d1"><\/a><!-- doxytag: member="sfgui::TextEdit::m_activatedCallback" ref="9cf910f9fca635f595d6a8963d7e30d1" args=")()" -->$/;"	a
-Activate	./textedit.cpp	/^void sfgui::TextEdit::Activate() {$/;"	f	class:sfgui::TextEdit
-AddChar	./textedit.cpp	/^void sfgui::TextEdit::AddChar(char ch) {$/;"	f	class:sfgui::TextEdit
-BackgroundClicked	./object.hpp	/^	enum ButtonStates {BackgroundNormal, BackgroundClicked, BackgroundHover}; $/;"	e	enum:sfgui::Object::ButtonStates
-BackgroundHover	./object.hpp	/^	enum ButtonStates {BackgroundNormal, BackgroundClicked, BackgroundHover}; $/;"	e	enum:sfgui::Object::ButtonStates
-BackgroundNormal	./object.hpp	/^	enum ButtonStates {BackgroundNormal, BackgroundClicked, BackgroundHover}; $/;"	e	enum:sfgui::Object::ButtonStates
-Bottom	./margin.hpp	/^	float Bottom; \/\/\/< Bottom margin value$/;"	m	struct:sfgui::Margin
-Button	./button.cpp	/^sfgui::Button::Button(sf::RenderWindow *parentWindow) : Object(parentWindow) {$/;"	f	class:sfgui::Button
-Button	./button.cpp	/^sfgui::Button::Button(sf::RenderWindow *parentWindow, std::string themePath) : Object(parentWindow, themePath) {$/;"	f	class:sfgui::Button
-Button	./button.hpp	/^class Button : public Object$/;"	c	namespace:sfgui
-ButtonStates	./object.hpp	/^	enum ButtonStates {BackgroundNormal, BackgroundClicked, BackgroundHover}; $/;"	g	class:sfgui::Object
-Center	./constantes.hpp	/^		Center \/\/\/< Object is centered$/;"	e	enum:sfgui::__anon1
-CheckEvent	./object.cpp	/^void sfgui::Object::CheckEvent(sf::Event Event) {$/;"	f	class:sfgui::Object
-CheckEvent	./textedit.cpp	/^void sfgui::TextEdit::CheckEvent(sf::Event event) {$/;"	f	class:sfgui::TextEdit
-Checkbox	./checkbox.cpp	/^sfgui::Checkbox::Checkbox(sf::RenderWindow *parentWindow) : Object(parentWindow) {$/;"	f	class:sfgui::Checkbox
-Checkbox	./checkbox.cpp	/^sfgui::Checkbox::Checkbox(sf::RenderWindow *parentWindow, std::string text, bool state) : sfgui::Object(parentWindow) {$/;"	f	class:sfgui::Checkbox
-Checkbox	./checkbox.hpp	/^class Checkbox : public sfgui::Object$/;"	c	namespace:sfgui
-Clicked	./object.cpp	/^void sfgui::Object::Clicked() {$/;"	f	class:sfgui::Object
-Deactivate	./textedit.cpp	/^void sfgui::TextEdit::Deactivate() {$/;"	f	class:sfgui::TextEdit
-DelChar	./textedit.cpp	/^void sfgui::TextEdit::DelChar(int pos) {$/;"	f	class:sfgui::TextEdit
-Error	./error.hpp	/^    Error(const char * phrase="") throw() : m_phrase(phrase)$/;"	f	class:sfgui::Error
-Error	./error.hpp	/^class Error: public std::exception$/;"	c	namespace:sfgui
-GetText	./object.cpp	/^std::string sfgui::Object::GetText() {$/;"	f	class:sfgui::Object
-GetTextColor	./object.cpp	/^sf::Color sfgui::Object::GetTextColor() {$/;"	f	class:sfgui::Object
-GetTextFont	./object.cpp	/^sf::Font sfgui::Object::GetTextFont() {$/;"	f	class:sfgui::Object
-GetTextSize	./object.cpp	/^float sfgui::Object::GetTextSize() {$/;"	f	class:sfgui::Object
-Left	./constantes.hpp	/^	enum { Left, \/\/\/< Object is on the left$/;"	e	enum:sfgui::__anon1
-Left	./margin.hpp	/^	float Left; \/\/\/< Left margin value$/;"	m	struct:sfgui::Margin
-ManageMouse	./object.cpp	/^void sfgui::Object::ManageMouse() {$/;"	f	class:sfgui::Object
-Margin	./margin.hpp	/^struct Margin$/;"	s	namespace:sfgui
-MouseHover	./object.cpp	/^void sfgui::Object::MouseHover() {$/;"	f	class:sfgui::Object
-MouseNotHover	./object.cpp	/^void sfgui::Object::MouseNotHover() {$/;"	f	class:sfgui::Object
-Move	./object.cpp	/^void sfgui::Object::Move(float x, float y) {$/;"	f	class:sfgui::Object
-Object	./object.cpp	/^sfgui::Object::Object(sf::RenderWindow *parentWindow) : m_parentRenderWindow(parentWindow) {$/;"	f	class:sfgui::Object
-Object	./object.cpp	/^sfgui::Object::Object(sf::RenderWindow *parentWindow, std::string themePath) : m_parentRenderWindow(parentWindow) {$/;"	f	class:sfgui::Object
-Object	./object.hpp	/^class Object : public sf::Sprite$/;"	c	namespace:sfgui
-Resize	./textedit.cpp	/^void sfgui::TextEdit::Resize(float w, float h) {$/;"	f	class:sfgui::TextEdit
-Right	./constantes.hpp	/^		Right, \/\/\/< Object is on the right $/;"	e	enum:sfgui::__anon1
-Right	./margin.hpp	/^	float Right; \/\/\/< Right margin value$/;"	m	struct:sfgui::Margin
-SetActivatedCallback	./textedit.cpp	/^void sfgui::TextEdit::SetActivatedCallback(void(*activatedCallback)()) {$/;"	f	class:sfgui::TextEdit
-SetBackground	./object.cpp	/^void sfgui::Object::SetBackground(int background) {$/;"	f	class:sfgui::Object
-SetCharDeletedCallback	./textedit.cpp	/^void sfgui::TextEdit::SetCharDeletedCallback(void(*callback)(unsigned int, char)) {$/;"	f	class:sfgui::TextEdit
-SetClickCallback	./object.cpp	/^void sfgui::Object::SetClickCallback(void(*clickCallBack)()) {$/;"	f	class:sfgui::Object
-SetDeactivatedCallback	./textedit.cpp	/^void sfgui::TextEdit::SetDeactivatedCallback(void(*deactivatedCallback)()) {$/;"	f	class:sfgui::TextEdit
-SetMargin	./margin.cpp	/^void sfgui::Margin::SetMargin(float margin) {$/;"	f	class:sfgui::Margin
-SetMouseHoverCallback	./object.cpp	/^void sfgui::Object::SetMouseHoverCallback(void(*mouseHoverCallback)()) {$/;"	f	class:sfgui::Object
-SetPosition	./object.cpp	/^void sfgui::Object::SetPosition(float x, float y) {$/;"	f	class:sfgui::Object
-SetReturnPressedCallback	./textedit.cpp	/^void sfgui::TextEdit::SetReturnPressedCallback(void(*returnPressedCallback)()) {$/;"	f	class:sfgui::TextEdit
-SetText	./object.cpp	/^void sfgui::Object::SetText(std::string text) {$/;"	f	class:sfgui::Object
-SetText	./textedit.cpp	/^void sfgui::TextEdit::SetText(std::string &text) {$/;"	f	class:sfgui::TextEdit
-SetTextAlignment	./object.cpp	/^void sfgui::Object::SetTextAlignment(int al) {$/;"	f	class:sfgui::Object
-SetTextBottomMargin	./object.cpp	/^void sfgui::Object::SetTextBottomMargin(float margin) {$/;"	f	class:sfgui::Object
-SetTextChangedCallback	./textedit.cpp	/^void sfgui::TextEdit::SetTextChangedCallback(void(*textChangedCallback)(std::string &)) {$/;"	f	class:sfgui::TextEdit
-SetTextColor	./object.cpp	/^void sfgui::Object::SetTextColor(sf::Color &color) {$/;"	f	class:sfgui::Object
-SetTextFont	./object.cpp	/^void sfgui::Object::SetTextFont(sf::Font &font) {$/;"	f	class:sfgui::Object
-SetTextLeftMargin	./object.cpp	/^void sfgui::Object::SetTextLeftMargin(float margin) {$/;"	f	class:sfgui::Object
-SetTextMargin	./object.cpp	/^void sfgui::Object::SetTextMargin(float margin) {$/;"	f	class:sfgui::Object
-SetTextRightMargin	./object.cpp	/^void sfgui::Object::SetTextRightMargin(float margin) {$/;"	f	class:sfgui::Object
-SetTextSize	./object.cpp	/^void sfgui::Object::SetTextSize(float size) {$/;"	f	class:sfgui::Object
-SetTextTopMargin	./object.cpp	/^void sfgui::Object::SetTextTopMargin(float margin) {$/;"	f	class:sfgui::Object
-SetTheme	./object.cpp	/^void sfgui::Object::SetTheme(std::string dir) {$/;"	f	class:sfgui::Object
-Show	./checkbox.cpp	/^void sfgui::Checkbox::Show() {$/;"	f	class:sfgui::Checkbox
-Show	./object.cpp	/^void sfgui::Object::Show() {$/;"	f	class:sfgui::Object
-Show	./textedit.cpp	/^void sfgui::TextEdit::Show() {$/;"	f	class:sfgui::TextEdit
-Sprite	./main.cpp	/^sfgui::Button Sprite(&App,"data\/button-test\/");$/;"	v
-TextEdit	./textedit.cpp	/^sfgui::TextEdit::TextEdit(sf::RenderWindow *parentWindow) : Object(parentWindow) {$/;"	f	class:sfgui::TextEdit
-TextEdit	./textedit.hpp	/^class TextEdit : public sfgui::Object {$/;"	c	namespace:sfgui
-Top	./margin.hpp	/^	float Top; \/\/\/< Top margin value$/;"	m	struct:sfgui::Margin
-__BUTTON_HPP__	./button.hpp	24;"	d
-__CHECKBOX_HPP__	./checkbox.hpp	33;"	d
-__CONSTANTES_HPP__	./constantes.hpp	35;"	d
-__ERROR_HPP__	./error.hpp	2;"	d
-__MARGIN_HPP__	./margin.hpp	33;"	d
-__OBJECT_HPP__	./object.hpp	24;"	d
-__TEXTEDIT_HPP__	./textedit.hpp	24;"	d
-_details	./doc/html/checkbox_8hpp.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/classButton.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/classCPlayer.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/classCheckbox.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/classObject.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/classObjectEvent.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/classsfgui_1_1Button.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/classsfgui_1_1Object.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/classsfgui_1_1TextEdit.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/constantes_8hpp.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/margin_8hpp.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/namespaceThis.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/namespacesfgui.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/structsfgui_1_1Margin.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-_details	./doc/html/test_8hpp.html	/^<hr><a name="_details"><\/a><h2>Detailed Description<\/h2>$/;"	a
-a6d415ef1daf7f9fdf0dec3d71cb8eab	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="a6d415ef1daf7f9fdf0dec3d71cb8eab"><\/a><!-- doxytag: member="sfgui::TextEdit::m_textChangedCallback" ref="a6d415ef1daf7f9fdf0dec3d71cb8eab" args=")(std::string &amp;)" -->$/;"	a
-a6fae4cfa68982563c49b8b13b11966b	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="a6fae4cfa68982563c49b8b13b11966b"><\/a><!-- doxytag: member="sfgui::Object::GetTextSize" ref="a6fae4cfa68982563c49b8b13b11966b" args="()" -->$/;"	a
-a8afe2c64c045d58821a6af77803c630	./doc/html/classObject.html	/^<a class="anchor" name="a8afe2c64c045d58821a6af77803c630"><\/a><!-- doxytag: member="Object::m_parentRenderWindow" ref="a8afe2c64c045d58821a6af77803c630" args="" -->$/;"	a
-aa81f5ed57ee0bca860654241a16e325	./doc/html/classObject.html	/^<a class="anchor" name="aa81f5ed57ee0bca860654241a16e325"><\/a><!-- doxytag: member="Object::SetBackground" ref="aa81f5ed57ee0bca860654241a16e325" args="(sf::Color &amp;)" -->$/;"	a
-activated	./textedit.cpp	/^void sfgui::TextEdit::activated() {$/;"	f	class:sfgui::TextEdit
-af6d4be3633d3eb8bcc7a1007e324da8	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="af6d4be3633d3eb8bcc7a1007e324da8"><\/a><!-- doxytag: member="sfgui::TextEdit::CheckEvent" ref="af6d4be3633d3eb8bcc7a1007e324da8" args="(sf::Event Event)" -->$/;"	a
-b26d3ace4076898316d25c7d056ab80f	./doc/html/classObject.html	/^<a class="anchor" name="b26d3ace4076898316d25c7d056ab80f"><\/a><!-- doxytag: member="Object::m_mouseHoverCallback" ref="b26d3ace4076898316d25c7d056ab80f" args=")()" -->$/;"	a
-b3477443fde0d86be5e32f5c1dcd7b01	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="b3477443fde0d86be5e32f5c1dcd7b01"><\/a><!-- doxytag: member="sfgui::Object::SetBackground" ref="b3477443fde0d86be5e32f5c1dcd7b01" args="(int background)" -->$/;"	a
-b60f88cc667196bb073091e8878483f4	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="b60f88cc667196bb073091e8878483f4"><\/a><!-- doxytag: member="sfgui::TextEdit::SetReturnPressedCallback" ref="b60f88cc667196bb073091e8878483f4" args="(void(*)())" -->$/;"	a
-b63c033215c2f6f1d64645e3c6f0153b	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="b63c033215c2f6f1d64645e3c6f0153b"><\/a><!-- doxytag: member="sfgui::Object::m_text" ref="b63c033215c2f6f1d64645e3c6f0153b" args="" -->$/;"	a
-b68977125b45e872852613463037cebb	./doc/html/classObject.html	/^<a class="anchor" name="b68977125b45e872852613463037cebb"><\/a><!-- doxytag: member="Object::CheckEvent" ref="b68977125b45e872852613463037cebb" args="(sf::Event Event)" -->$/;"	a
-b7afeee103f0cfc0c045effa8527a4b4	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="b7afeee103f0cfc0c045effa8527a4b4"><\/a><!-- doxytag: member="sfgui::Object::m_margin" ref="b7afeee103f0cfc0c045effa8527a4b4" args="" -->$/;"	a
-bcb2c6712035ac5e759315d67dced077	./doc/html/main_8cpp.html	/^<a class="anchor" name="bcb2c6712035ac5e759315d67dced077"><\/a><!-- doxytag: member="main.cpp::App" ref="bcb2c6712035ac5e759315d67dced077" args="" -->$/;"	a
-bcd256e053ae8f13a5c7f919f79c03c9	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="bcd256e053ae8f13a5c7f919f79c03c9"><\/a><!-- doxytag: member="sfgui::TextEdit::Activate" ref="bcd256e053ae8f13a5c7f919f79c03c9" args="()" -->$/;"	a
-bd45c91f926c930806870ce8acbb955e	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="bd45c91f926c930806870ce8acbb955e"><\/a><!-- doxytag: member="sfgui::Object::m_Event" ref="bd45c91f926c930806870ce8acbb955e" args="" -->$/;"	a
-bfa97d7c95f54cc91600375242fe1ea6	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="bfa97d7c95f54cc91600375242fe1ea6"><\/a><!-- doxytag: member="sfgui::TextEdit::m_deactivatedCallback" ref="bfa97d7c95f54cc91600375242fe1ea6" args=")()" -->$/;"	a
-c009c601675801f2039d8f526e6fc921	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="c009c601675801f2039d8f526e6fc921"><\/a><!-- doxytag: member="sfgui::TextEdit::activated" ref="c009c601675801f2039d8f526e6fc921" args="()" -->$/;"	a
-c03cec5b97d4a2038c6f75d7b679e997	./doc/html/classObjectEvent.html	/^<a class="anchor" name="c03cec5b97d4a2038c6f75d7b679e997"><\/a><!-- doxytag: member="ObjectEvent::m_Event" ref="c03cec5b97d4a2038c6f75d7b679e997" args="" -->$/;"	a
-c1fb2fa4a3def96157510f0828c598ac	./doc/html/classObjectEvent.html	/^<a class="anchor" name="c1fb2fa4a3def96157510f0828c598ac"><\/a><!-- doxytag: member="ObjectEvent::manageMouse" ref="c1fb2fa4a3def96157510f0828c598ac" args="()" -->$/;"	a
-c5ff761e3933294b46892db32e62b9f6	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="c5ff761e3933294b46892db32e62b9f6"><\/a><!-- doxytag: member="sfgui::TextEdit::deactivated" ref="c5ff761e3933294b46892db32e62b9f6" args="()" -->$/;"	a
-c6f2d938ccf876f05a9a9c47060c6093	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="c6f2d938ccf876f05a9a9c47060c6093"><\/a><!-- doxytag: member="sfgui::TextEdit::TextEdit" ref="c6f2d938ccf876f05a9a9c47060c6093" args="(sf::RenderWindow *parentWindow)" -->$/;"	a
-cd9dbf2abe79e04c22f281bccb8bdb0e	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="cd9dbf2abe79e04c22f281bccb8bdb0e"><\/a><!-- doxytag: member="sfgui::Object::CheckEvent" ref="cd9dbf2abe79e04c22f281bccb8bdb0e" args="(sf::Event Event)" -->$/;"	a
-cefe027e1cec4c9de78b851bb42e2e66	./doc/html/classObject.html	/^<a class="anchor" name="cefe027e1cec4c9de78b851bb42e2e66"><\/a><!-- doxytag: member="Object::Object" ref="cefe027e1cec4c9de78b851bb42e2e66" args="(sf::RenderWindow *parentWindow)" -->$/;"	a
-charDeleted	./textedit.cpp	/^void sfgui::TextEdit::charDeleted(unsigned int pos, char ch) {$/;"	f	class:sfgui::TextEdit
-clickedCallBack	./main.cpp	/^void clickedCallBack() {$/;"	f
-d2750b3d51a3a208739ed6c0c57df6aa	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="d2750b3d51a3a208739ed6c0c57df6aa"><\/a><!-- doxytag: member="sfgui::Object::generalInit" ref="d2750b3d51a3a208739ed6c0c57df6aa" args="()" -->$/;"	a
-d353628cfc37903c31e07f9179c7407f	./doc/html/classObject.html	/^<a class="anchor" name="d353628cfc37903c31e07f9179c7407f"><\/a><!-- doxytag: member="Object::ManageMouse" ref="d353628cfc37903c31e07f9179c7407f" args="()" -->$/;"	a
-d3669e5b85439868eb7738f6d5a409ef	./doc/html/classObject.html	/^<a class="anchor" name="d3669e5b85439868eb7738f6d5a409ef"><\/a><!-- doxytag: member="Object::MouseHover" ref="d3669e5b85439868eb7738f6d5a409ef" args="()" -->$/;"	a
-d3d20a4cccde599748db724236ca0826	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="d3d20a4cccde599748db724236ca0826"><\/a><!-- doxytag: member="sfgui::Object::SetClickCallback" ref="d3d20a4cccde599748db724236ca0826" args="(void(*)())" -->$/;"	a
-d402c73e8bfc7b7883700ce2d6c0b7b1	./doc/html/classsfgui_1_1Error.html	/^<a class="anchor" name="d402c73e8bfc7b7883700ce2d6c0b7b1"><\/a><!-- doxytag: member="sfgui::Error::Error" ref="d402c73e8bfc7b7883700ce2d6c0b7b1" args="(const char *phrase=&quot;&quot;)" -->$/;"	a
-d86f9eaadf1313214631b2de009abf55	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="d86f9eaadf1313214631b2de009abf55"><\/a><!-- doxytag: member="sfgui::TextEdit::m_returnPressedCallback" ref="d86f9eaadf1313214631b2de009abf55" args=")()" -->$/;"	a
-d934287161965254cb6109828987724d	./doc/html/classObjectEvent.html	/^<a class="anchor" name="d934287161965254cb6109828987724d"><\/a><!-- doxytag: member="ObjectEvent::~ObjectEvent" ref="d934287161965254cb6109828987724d" args="()" -->$/;"	a
-da7f84701d318ce93fe59cc2f571eaf2	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="da7f84701d318ce93fe59cc2f571eaf2"><\/a><!-- doxytag: member="sfgui::Object::Clicked" ref="da7f84701d318ce93fe59cc2f571eaf2" args="()" -->$/;"	a
-db61eb19249fbbd28462cc79ca17b738	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="db61eb19249fbbd28462cc79ca17b738"><\/a><!-- doxytag: member="sfgui::Object::SetTextBottomMargin" ref="db61eb19249fbbd28462cc79ca17b738" args="(float)" -->$/;"	a
-dc95dab7bac1c41d0cebff1268f80c22	./doc/html/classsfgui_1_1TextEdit.html	/^<a class="anchor" name="dc95dab7bac1c41d0cebff1268f80c22"><\/a><!-- doxytag: member="sfgui::TextEdit::DelChar" ref="dc95dab7bac1c41d0cebff1268f80c22" args="(int)" -->$/;"	a
-dcea61673771a680fc47e4b838c2a59e	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="dcea61673771a680fc47e4b838c2a59e"><\/a><!-- doxytag: member="sfgui::Object::SetTextRightMargin" ref="dcea61673771a680fc47e4b838c2a59e" args="(float)" -->$/;"	a
-ddff61a2d47a7b25e05aa5b6311417ea	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="ddff61a2d47a7b25e05aa5b6311417ea"><\/a><!-- doxytag: member="sfgui::Object::m_mouseHoverCallback" ref="ddff61a2d47a7b25e05aa5b6311417ea" args=")()" -->$/;"	a
-deactivated	./textedit.cpp	/^void sfgui::TextEdit::deactivated() {$/;"	f	class:sfgui::TextEdit
-df734af2a7ca4ad600fe8bff51ed06cc	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="df734af2a7ca4ad600fe8bff51ed06cc"><\/a><!-- doxytag: member="sfgui::Object::GetTextColor" ref="df734af2a7ca4ad600fe8bff51ed06cc" args="()" -->$/;"	a
-e27547f223b15252190703b02631fe6e	./doc/html/classButton.html	/^<a class="anchor" name="e27547f223b15252190703b02631fe6e"><\/a><!-- doxytag: member="Button::SetText" ref="e27547f223b15252190703b02631fe6e" args="(std::string text)" -->$/;"	a
-e66f6b31b5ad750f1fe042a706a4e3d4	./doc/html/main_8cpp.html	/^<a class="anchor" name="e66f6b31b5ad750f1fe042a706a4e3d4"><\/a><!-- doxytag: member="main.cpp::main" ref="e66f6b31b5ad750f1fe042a706a4e3d4" args="()" -->$/;"	a
-e8f5483f459e46687bd01e6f9977afd3	./doc/html/classObject.html	/^<a class="anchor" name="e8f5483f459e46687bd01e6f9977afd3"><\/a><!-- doxytag: member="Object::~Object" ref="e8f5483f459e46687bd01e6f9977afd3" args="()" -->$/;"	a
-e961607134fe49c270e312f3107bf569	./doc/html/classObject.html	/^<a class="anchor" name="e961607134fe49c270e312f3107bf569"><\/a><!-- doxytag: member="Object::m_BackgroundImg" ref="e961607134fe49c270e312f3107bf569" args="" -->$/;"	a
-eb5dc1523ca4a12aea9be762abbeadda	./doc/html/classButton.html	/^<a class="anchor" name="eb5dc1523ca4a12aea9be762abbeadda"><\/a><!-- doxytag: member="Button::Show" ref="eb5dc1523ca4a12aea9be762abbeadda" args="()" -->$/;"	a
-ed969f0aaa542b462035e828757f4313	./doc/html/namespacesfgui.html	/^<a class="anchor" name="ed969f0aaa542b462035e828757f4313"><\/a><!-- doxytag: member="sfgui::@0" ref="ed969f0aaa542b462035e828757f4313" args="" -->$/;"	a
-ed969f0aaa542b462035e828757f43130172869b534ad2378e28e388342699cc	./doc/html/namespacesfgui.html	/^<tr><td valign="top"><em><a class="anchor" name="ed969f0aaa542b462035e828757f43130172869b534ad2378e28e388342699cc"><\/a><!-- doxytag: member="Center" ref="ed969f0aaa542b462035e828757f43130172869b534ad2378e28e388342699cc" args="" -->Center<\/em>&nbsp;<\/td><td>$/;"	a
-ed969f0aaa542b462035e828757f431328ce9405120beac8fae51bc232aeabec	./doc/html/namespacesfgui.html	/^<tr><td valign="top"><em><a class="anchor" name="ed969f0aaa542b462035e828757f431328ce9405120beac8fae51bc232aeabec"><\/a><!-- doxytag: member="Left" ref="ed969f0aaa542b462035e828757f431328ce9405120beac8fae51bc232aeabec" args="" -->Left<\/em>&nbsp;<\/td><td>$/;"	a
-ed969f0aaa542b462035e828757f4313d4fbbcf5a5a40412eeb0175f82c85b3f	./doc/html/namespacesfgui.html	/^<tr><td valign="top"><em><a class="anchor" name="ed969f0aaa542b462035e828757f4313d4fbbcf5a5a40412eeb0175f82c85b3f"><\/a><!-- doxytag: member="Right" ref="ed969f0aaa542b462035e828757f4313d4fbbcf5a5a40412eeb0175f82c85b3f" args="" -->Right<\/em>&nbsp;<\/td><td>$/;"	a
-f03d0a10a3f8f71c58f56cf896e95f82	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="f03d0a10a3f8f71c58f56cf896e95f82"><\/a><!-- doxytag: member="sfgui::Object::Object" ref="f03d0a10a3f8f71c58f56cf896e95f82" args="(sf::RenderWindow *parentWindow)" -->$/;"	a
-f71c39eb2dfd2eb76e9be9e5dad606d9	./doc/html/classsfgui_1_1Object.html	/^<a class="anchor" name="f71c39eb2dfd2eb76e9be9e5dad606d9"><\/a><!-- doxytag: member="sfgui::Object::SetTextMargin" ref="f71c39eb2dfd2eb76e9be9e5dad606d9" args="(float)" -->$/;"	a
-f7caaefc35c7091fcaab49a102394239	./doc/html/classObject.html	/^<a class="anchor" name="f7caaefc35c7091fcaab49a102394239"><\/a><!-- doxytag: member="Object::m_clickCallback" ref="f7caaefc35c7091fcaab49a102394239" args=")()" -->$/;"	a
-f803adbf034e7b365b563ac1c837bf60	./doc/html/classButton.html	/^<a class="anchor" name="f803adbf034e7b365b563ac1c837bf60"><\/a><!-- doxytag: member="Button::Button" ref="f803adbf034e7b365b563ac1c837bf60" args="(sf::RenderWindow *parentWindow)" -->$/;"	a
-f9b744e36bb7d913b20959f7c9516fa6	./doc/html/structsfgui_1_1Margin.html	/^<a class="anchor" name="f9b744e36bb7d913b20959f7c9516fa6"><\/a><!-- doxytag: member="sfgui::Margin::Bottom" ref="f9b744e36bb7d913b20959f7c9516fa6" args="" -->$/;"	a
-fb2a732879909cf082f89002c0f03981	./doc/html/classsfgui_1_1Error.html	/^<a class="anchor" name="fb2a732879909cf082f89002c0f03981"><\/a><!-- doxytag: member="sfgui::Error::~Error" ref="fb2a732879909cf082f89002c0f03981" args="()" -->$/;"	a
-fb33e4fdf2cfb177910c34fd0a19694d	./doc/html/main_8cpp.html	/^<a class="anchor" name="fb33e4fdf2cfb177910c34fd0a19694d"><\/a><!-- doxytag: member="main.cpp::clickedCallBack" ref="fb33e4fdf2cfb177910c34fd0a19694d" args="()" -->$/;"	a
-fb75f9e4550f4eb5d26c6af936f7e098	./doc/html/structsfgui_1_1Margin.html	/^<a class="anchor" name="fb75f9e4550f4eb5d26c6af936f7e098"><\/a><!-- doxytag: member="sfgui::Margin::Left" ref="fb75f9e4550f4eb5d26c6af936f7e098" args="" -->$/;"	a
-fc881fdc9cf9352370716c9240eecd4f	./doc/html/classObjectEvent.html	/^<a class="anchor" name="fc881fdc9cf9352370716c9240eecd4f"><\/a><!-- doxytag: member="ObjectEvent::Stop" ref="fc881fdc9cf9352370716c9240eecd4f" args="()" -->$/;"	a
-fd57748d0bd0f5fa35d765052d281169	./doc/html/classButton.html	/^<a class="anchor" name="fd57748d0bd0f5fa35d765052d281169"><\/a><!-- doxytag: member="Button::getText" ref="fd57748d0bd0f5fa35d765052d281169" args="()" -->$/;"	a
-fef8bae507f9cc00a42f442256062b66	./doc/html/structsfgui_1_1Margin.html	/^<a class="anchor" name="fef8bae507f9cc00a42f442256062b66"><\/a><!-- doxytag: member="sfgui::Margin::Right" ref="fef8bae507f9cc00a42f442256062b66" args="" -->$/;"	a
-generalInit	./button.cpp	/^void sfgui::Button::generalInit() {$/;"	f	class:sfgui::Button
-generalInit	./object.cpp	/^void sfgui::Object::generalInit() {$/;"	f	class:sfgui::Object
-index_a	./doc/html/functions.html	/^<h3><a class="anchor" name="index_a">- a -<\/a><\/h3><ul>$/;"	a
-index_a	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_a">- a -<\/a><\/h3><ul>$/;"	a
-index_b	./doc/html/functions.html	/^<h3><a class="anchor" name="index_b">- b -<\/a><\/h3><ul>$/;"	a
-index_b	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_b">- b -<\/a><\/h3><ul>$/;"	a
-index_c	./doc/html/functions.html	/^<h3><a class="anchor" name="index_c">- c -<\/a><\/h3><ul>$/;"	a
-index_c	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_c">- c -<\/a><\/h3><ul>$/;"	a
-index_d	./doc/html/functions.html	/^<h3><a class="anchor" name="index_d">- d -<\/a><\/h3><ul>$/;"	a
-index_d	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_d">- d -<\/a><\/h3><ul>$/;"	a
-index_e	./doc/html/functions.html	/^<h3><a class="anchor" name="index_e">- e -<\/a><\/h3><ul>$/;"	a
-index_e	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_e">- e -<\/a><\/h3><ul>$/;"	a
-index_g	./doc/html/functions.html	/^<h3><a class="anchor" name="index_g">- g -<\/a><\/h3><ul>$/;"	a
-index_g	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_g">- g -<\/a><\/h3><ul>$/;"	a
-index_l	./doc/html/functions.html	/^<h3><a class="anchor" name="index_l">- l -<\/a><\/h3><ul>$/;"	a
-index_m	./doc/html/functions.html	/^<h3><a class="anchor" name="index_m">- m -<\/a><\/h3><ul>$/;"	a
-index_m	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_m">- m -<\/a><\/h3><ul>$/;"	a
-index_o	./doc/html/functions.html	/^<h3><a class="anchor" name="index_o">- o -<\/a><\/h3><ul>$/;"	a
-index_o	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_o">- o -<\/a><\/h3><ul>$/;"	a
-index_r	./doc/html/functions.html	/^<h3><a class="anchor" name="index_r">- r -<\/a><\/h3><ul>$/;"	a
-index_r	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_r">- r -<\/a><\/h3><ul>$/;"	a
-index_s	./doc/html/functions.html	/^<h3><a class="anchor" name="index_s">- s -<\/a><\/h3><ul>$/;"	a
-index_s	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_s">- s -<\/a><\/h3><ul>$/;"	a
-index_t	./doc/html/functions.html	/^<h3><a class="anchor" name="index_t">- t -<\/a><\/h3><ul>$/;"	a
-index_t	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_t">- t -<\/a><\/h3><ul>$/;"	a
-index_u	./doc/html/functions.html	/^<h3><a class="anchor" name="index_u">- u -<\/a><\/h3><ul>$/;"	a
-index_u	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_u">- u -<\/a><\/h3><ul>$/;"	a
-index_w	./doc/html/functions.html	/^<h3><a class="anchor" name="index_w">- w -<\/a><\/h3><ul>$/;"	a
-index_w	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_w">- w -<\/a><\/h3><ul>$/;"	a
-index_~	./doc/html/functions.html	/^<h3><a class="anchor" name="index_~">- ~ -<\/a><\/h3><ul>$/;"	a
-index_~	./doc/html/functions_func.html	/^<h3><a class="anchor" name="index_~">- ~ -<\/a><\/h3><ul>$/;"	a
-latex_count	./doc/latex/Makefile	/^	latex_count=5 ; \\$/;"	m
-m_BackgroundImg	./object.hpp	/^	sf::Image *m_BackgroundImg; \/\/\/< Curent background image$/;"	m	class:sfgui::Object
-m_Event	./object.hpp	/^	sf::Event m_Event; \/\/\/< Copy of the current sfml event $/;"	m	class:sfgui::Object
-m_Images	./object.hpp	/^	std::map<int, sf::Image *> m_Images;$/;"	m	class:sfgui::Object
-m_activatedCallback	./textedit.hpp	/^	void (*m_activatedCallback)(); \/\/< Callback called when the TextEdit is activated$/;"	m	class:sfgui::TextEdit
-m_charDeletedCallback	./textedit.hpp	/^	void (*m_charDeletedCallback)(unsigned int, char); \/\/< When a character is deleted, use this callback$/;"	m	class:sfgui::TextEdit
-m_clickCallback	./object.hpp	/^	void (*m_clickCallback)(); \/\/\/< Pointer to the click callback function$/;"	m	class:sfgui::Object
-m_cursorPosition	./textedit.hpp	/^	unsigned int m_cursorPosition; \/**< Position of the cursor in the string **\/$/;"	m	class:sfgui::TextEdit
-m_deactivatedCallback	./textedit.hpp	/^	void (*m_deactivatedCallback)(); \/\/< Callback called when the TextEdit is deactivated$/;"	m	class:sfgui::TextEdit
-m_font	./object.hpp	/^	sf::Font *m_font;$/;"	m	class:sfgui::Object
-m_itemActive	./textedit.hpp	/^	bool m_itemActive; \/**< If true, user can enter text (textedit has focus), if$/;"	m	class:sfgui::TextEdit
-m_margin	./object.hpp	/^	sfgui::Margin m_margin;$/;"	m	class:sfgui::Object
-m_mouseHoverCallback	./object.hpp	/^	void (*m_mouseHoverCallback)(); \/**< Pointer to the callback function called$/;"	m	class:sfgui::Object
-m_parentRenderWindow	./object.hpp	/^	sf::RenderWindow *m_parentRenderWindow; \/\/\/< Pointer to the parent sf::RenderWindow$/;"	m	class:sfgui::Object
-m_phrase	./error.hpp	/^    char const* m_phrase;       \/\/\/< Description of the error$/;"	m	class:sfgui::Error
-m_returnPressedCallback	./textedit.hpp	/^	void (*m_returnPressedCallback)(); \/\/< The return key pressed callback function pointer$/;"	m	class:sfgui::TextEdit
-m_state	./checkbox.hpp	/^		bool m_state; \/\/\/< The curent state of the checkbox (clicked or not)$/;"	m	class:sfgui::Checkbox
-m_stdText	./textedit.hpp	/^	std::string m_stdText;$/;"	m	class:sfgui::TextEdit
-m_text	./object.hpp	/^	sf::String m_text; $/;"	m	class:sfgui::Object
-m_textAlignment	./object.hpp	/^	int m_textAlignment;$/;"	m	class:sfgui::Object
-m_textChangedCallback	./textedit.hpp	/^	void (*m_textChangedCallback)(std::string &); \/\/< The textchanged callback function pointer$/;"	m	class:sfgui::TextEdit
-main	./main.cpp	/^int main() {$/;"	f
-sfgui	./button.hpp	/^namespace sfgui {$/;"	n
-sfgui	./checkbox.hpp	/^namespace sfgui {$/;"	n
-sfgui	./constantes.hpp	/^namespace sfgui {$/;"	n
-sfgui	./error.hpp	/^namespace sfgui {$/;"	n
-sfgui	./margin.hpp	/^namespace sfgui {$/;"	n
-sfgui	./object.hpp	/^namespace sfgui {$/;"	n
-sfgui	./textedit.hpp	/^namespace sfgui {$/;"	n
-textChangeCallback	./main.cpp	/^void textChangeCallback(std::string &sr) {$/;"	f
-textChanged	./textedit.cpp	/^void sfgui::TextEdit::textChanged() {$/;"	f	class:sfgui::TextEdit
-updateTextPos	./object.cpp	/^void sfgui::Object::updateTextPos() {$/;"	f	class:sfgui::Object
-updateTextRect	./textedit.cpp	/^void sfgui::TextEdit::updateTextRect() {$/;"	f	class:sfgui::TextEdit
-what	./error.hpp	/^     virtual const char* what() const throw()$/;"	f	class:sfgui::Error
-~Error	./error.hpp	/^    virtual ~Error() throw()$/;"	f	class:sfgui::Error
-~Object	./object.cpp	/^sfgui::Object::~Object() {$/;"	f	class:sfgui::Object
+Activate	textedit.cpp	/^void sfgui::TextEdit::Activate() {$/;"	f	class:sfgui::TextEdit
+AddChar	textedit.cpp	/^void sfgui::TextEdit::AddChar(char ch) {$/;"	f	class:sfgui::TextEdit
+BackgroundClicked	object.hpp	/^	enum ButtonStates {BackgroundNormal, BackgroundClicked, BackgroundHover}; $/;"	e	enum:sfgui::Object::ButtonStates
+BackgroundHover	object.hpp	/^	enum ButtonStates {BackgroundNormal, BackgroundClicked, BackgroundHover}; $/;"	e	enum:sfgui::Object::ButtonStates
+BackgroundNormal	object.hpp	/^	enum ButtonStates {BackgroundNormal, BackgroundClicked, BackgroundHover}; $/;"	e	enum:sfgui::Object::ButtonStates
+Bottom	margin.hpp	/^	float Bottom; \/\/\/< Bottom margin value$/;"	m	struct:sfgui::Margin
+Button	button.cpp	/^sfgui::Button::Button(sf::RenderWindow *parentWindow) : Object(parentWindow) {$/;"	f	class:sfgui::Button
+Button	button.cpp	/^sfgui::Button::Button(sf::RenderWindow *parentWindow, std::string themePath) : Object(parentWindow, themePath) {$/;"	f	class:sfgui::Button
+Button	button.hpp	/^class Button : public Object$/;"	c	namespace:sfgui
+ButtonStates	object.hpp	/^	enum ButtonStates {BackgroundNormal, BackgroundClicked, BackgroundHover}; $/;"	g	class:sfgui::Object
+Center	constantes.hpp	/^		Center \/\/\/< Object is centered$/;"	e	enum:sfgui::__anon1
+CheckEvent	checkbox.cpp	/^void sfgui::Checkbox::CheckEvent(sf::Event Event) {$/;"	f	class:sfgui::Checkbox
+CheckEvent	object.cpp	/^void sfgui::Object::CheckEvent(sf::Event Event) {$/;"	f	class:sfgui::Object
+CheckEvent	textedit.cpp	/^void sfgui::TextEdit::CheckEvent(sf::Event event) {$/;"	f	class:sfgui::TextEdit
+Checkbox	checkbox.cpp	/^sfgui::Checkbox::Checkbox(sf::RenderWindow *parentWindow) : Object(parentWindow) {$/;"	f	class:sfgui::Checkbox
+Checkbox	checkbox.cpp	/^sfgui::Checkbox::Checkbox(sf::RenderWindow *parentWindow, std::string text, bool state) : sfgui::Object(parentWindow) {$/;"	f	class:sfgui::Checkbox
+Checkbox	checkbox.hpp	/^	class Checkbox : public sfgui::Object$/;"	c	namespace:sfgui
+Clicked	checkbox.cpp	/^void sfgui::Checkbox::Clicked() {$/;"	f	class:sfgui::Checkbox
+Clicked	object.cpp	/^void sfgui::Object::Clicked() {$/;"	f	class:sfgui::Object
+Deactivate	textedit.cpp	/^void sfgui::TextEdit::Deactivate() {$/;"	f	class:sfgui::TextEdit
+DelChar	textedit.cpp	/^void sfgui::TextEdit::DelChar(int pos) {$/;"	f	class:sfgui::TextEdit
+Error	error.hpp	/^    Error(const char * phrase="") throw() : m_phrase(phrase)$/;"	f	class:sfgui::Error
+Error	error.hpp	/^class Error: public std::exception$/;"	c	namespace:sfgui
+GetText	object.cpp	/^std::string sfgui::Object::GetText() {$/;"	f	class:sfgui::Object
+GetTextColor	object.cpp	/^sf::Color sfgui::Object::GetTextColor() {$/;"	f	class:sfgui::Object
+GetTextFont	object.cpp	/^sf::Font sfgui::Object::GetTextFont() {$/;"	f	class:sfgui::Object
+GetTextSize	object.cpp	/^float sfgui::Object::GetTextSize() {$/;"	f	class:sfgui::Object
+IsChecked	checkbox.cpp	/^bool sfgui::Checkbox::IsChecked() {$/;"	f	class:sfgui::Checkbox
+Left	constantes.hpp	/^	enum { Left, \/\/\/< Object is on the left$/;"	e	enum:sfgui::__anon1
+Left	margin.hpp	/^	float Left; \/\/\/< Left margin value$/;"	m	struct:sfgui::Margin
+ManageMouse	checkbox.cpp	/^void sfgui::Checkbox::ManageMouse() {$/;"	f	class:sfgui::Checkbox
+ManageMouse	object.cpp	/^void sfgui::Object::ManageMouse() {$/;"	f	class:sfgui::Object
+Margin	margin.hpp	/^struct Margin$/;"	s	namespace:sfgui
+MouseHover	object.cpp	/^void sfgui::Object::MouseHover() {$/;"	f	class:sfgui::Object
+MouseNotHover	object.cpp	/^void sfgui::Object::MouseNotHover() {$/;"	f	class:sfgui::Object
+Move	object.cpp	/^void sfgui::Object::Move(float x, float y) {$/;"	f	class:sfgui::Object
+Object	object.cpp	/^sfgui::Object::Object(sf::RenderWindow *parentWindow) : m_parentRenderWindow(parentWindow) {$/;"	f	class:sfgui::Object
+Object	object.cpp	/^sfgui::Object::Object(sf::RenderWindow *parentWindow, std::string themePath) : m_parentRenderWindow(parentWindow) {$/;"	f	class:sfgui::Object
+Object	object.hpp	/^class Object : public sf::Sprite$/;"	c	namespace:sfgui
+Resize	textedit.cpp	/^void sfgui::TextEdit::Resize(float w, float h) {$/;"	f	class:sfgui::TextEdit
+Right	constantes.hpp	/^		Right, \/\/\/< Object is on the right $/;"	e	enum:sfgui::__anon1
+Right	margin.hpp	/^	float Right; \/\/\/< Right margin value$/;"	m	struct:sfgui::Margin
+SetActivatedCallback	textedit.cpp	/^void sfgui::TextEdit::SetActivatedCallback(void(*activatedCallback)()) {$/;"	f	class:sfgui::TextEdit
+SetBackground	object.cpp	/^void sfgui::Object::SetBackground(int background) {$/;"	f	class:sfgui::Object
+SetCharDeletedCallback	textedit.cpp	/^void sfgui::TextEdit::SetCharDeletedCallback(void(*callback)(unsigned int, char)) {$/;"	f	class:sfgui::TextEdit
+SetCheckedCallback	checkbox.cpp	/^void sfgui::Checkbox::SetCheckedCallback(void(*checkedCallback)()) {$/;"	f	class:sfgui::Checkbox
+SetClickCallback	object.cpp	/^void sfgui::Object::SetClickCallback(void(*clickCallBack)()) {$/;"	f	class:sfgui::Object
+SetDeactivatedCallback	textedit.cpp	/^void sfgui::TextEdit::SetDeactivatedCallback(void(*deactivatedCallback)()) {$/;"	f	class:sfgui::TextEdit
+SetMargin	margin.cpp	/^void sfgui::Margin::SetMargin(float margin) {$/;"	f	class:sfgui::Margin
+SetMouseHoverCallback	object.cpp	/^void sfgui::Object::SetMouseHoverCallback(void(*mouseHoverCallback)()) {$/;"	f	class:sfgui::Object
+SetPosition	object.cpp	/^void sfgui::Object::SetPosition(float x, float y) {$/;"	f	class:sfgui::Object
+SetReturnPressedCallback	textedit.cpp	/^void sfgui::TextEdit::SetReturnPressedCallback(void(*returnPressedCallback)()) {$/;"	f	class:sfgui::TextEdit
+SetState	checkbox.cpp	/^void sfgui::Checkbox::SetState(bool state) {$/;"	f	class:sfgui::Checkbox
+SetText	object.cpp	/^void sfgui::Object::SetText(std::string text) {$/;"	f	class:sfgui::Object
+SetText	textedit.cpp	/^void sfgui::TextEdit::SetText(std::string text) {$/;"	f	class:sfgui::TextEdit
+SetTextAlignment	object.cpp	/^void sfgui::Object::SetTextAlignment(int al) {$/;"	f	class:sfgui::Object
+SetTextBottomMargin	object.cpp	/^void sfgui::Object::SetTextBottomMargin(float margin) {$/;"	f	class:sfgui::Object
+SetTextChangedCallback	textedit.cpp	/^void sfgui::TextEdit::SetTextChangedCallback(void(*textChangedCallback)(std::string &)) {$/;"	f	class:sfgui::TextEdit
+SetTextColor	object.cpp	/^void sfgui::Object::SetTextColor(sf::Color &color) {$/;"	f	class:sfgui::Object
+SetTextFont	object.cpp	/^void sfgui::Object::SetTextFont(sf::Font &font) {$/;"	f	class:sfgui::Object
+SetTextLeftMargin	object.cpp	/^void sfgui::Object::SetTextLeftMargin(float margin) {$/;"	f	class:sfgui::Object
+SetTextMargin	object.cpp	/^void sfgui::Object::SetTextMargin(float margin) {$/;"	f	class:sfgui::Object
+SetTextRightMargin	object.cpp	/^void sfgui::Object::SetTextRightMargin(float margin) {$/;"	f	class:sfgui::Object
+SetTextSize	object.cpp	/^void sfgui::Object::SetTextSize(float size) {$/;"	f	class:sfgui::Object
+SetTextTopMargin	object.cpp	/^void sfgui::Object::SetTextTopMargin(float margin) {$/;"	f	class:sfgui::Object
+SetTheme	object.cpp	/^void sfgui::Object::SetTheme(std::string dir) {$/;"	f	class:sfgui::Object
+SetUncheckedCallback	checkbox.cpp	/^void sfgui::Checkbox::SetUncheckedCallback(void(*uncheckedCallback)()) {$/;"	f	class:sfgui::Checkbox
+Show	checkbox.cpp	/^void sfgui::Checkbox::Show() {$/;"	f	class:sfgui::Checkbox
+Show	object.cpp	/^void sfgui::Object::Show() {$/;"	f	class:sfgui::Object
+Show	textedit.cpp	/^void sfgui::TextEdit::Show() {$/;"	f	class:sfgui::TextEdit
+Sprite	main.cpp	/^sfgui::Button Sprite(&App,"data\/button-test\/");$/;"	v
+TextEdit	textedit.cpp	/^sfgui::TextEdit::TextEdit(sf::RenderWindow *parentWindow) : Object(parentWindow) {$/;"	f	class:sfgui::TextEdit
+TextEdit	textedit.hpp	/^class TextEdit : public sfgui::Object {$/;"	c	namespace:sfgui
+Top	margin.hpp	/^	float Top; \/\/\/< Top margin value$/;"	m	struct:sfgui::Margin
+__BUTTON_HPP__	button.hpp	24;"	d
+__CHECKBOX_HPP__	checkbox.hpp	33;"	d
+__CONSTANTES_HPP__	constantes.hpp	35;"	d
+__ERROR_HPP__	error.hpp	2;"	d
+__MARGIN_HPP__	margin.hpp	33;"	d
+__OBJECT_HPP__	object.hpp	24;"	d
+__TEXTEDIT_HPP__	textedit.hpp	24;"	d
+activated	textedit.cpp	/^void sfgui::TextEdit::activated() {$/;"	f	class:sfgui::TextEdit
+charDeleted	textedit.cpp	/^void sfgui::TextEdit::charDeleted(unsigned int pos, char ch) {$/;"	f	class:sfgui::TextEdit
+checked	checkbox.cpp	/^void sfgui::Checkbox::checked(){$/;"	f	class:sfgui::Checkbox
+checkedCallback	main.cpp	/^void checkedCallback(){$/;"	f
+deactivated	textedit.cpp	/^void sfgui::TextEdit::deactivated() {$/;"	f	class:sfgui::TextEdit
+generalInit	button.cpp	/^void sfgui::Button::generalInit() {$/;"	f	class:sfgui::Button
+generalInit	object.cpp	/^void sfgui::Object::generalInit() {$/;"	f	class:sfgui::Object
+m_BackgroundImg	object.hpp	/^	sf::Image *m_BackgroundImg; \/\/\/< Curent background image$/;"	m	class:sfgui::Object
+m_Event	object.hpp	/^	sf::Event m_Event; \/\/\/< Copy of the current sfml event $/;"	m	class:sfgui::Object
+m_Images	object.hpp	/^	std::map<int, sf::Image *> m_Images;$/;"	m	class:sfgui::Object
+m_activatedCallback	textedit.hpp	/^	void (*m_activatedCallback)(); \/\/< Callback called when the TextEdit is activated$/;"	m	class:sfgui::TextEdit
+m_charDeletedCallback	textedit.hpp	/^	void (*m_charDeletedCallback)(unsigned int, char); \/\/< When a character is deleted, use this callback$/;"	m	class:sfgui::TextEdit
+m_checkedCallback	checkbox.hpp	/^		void (*m_checkedCallback)(); $/;"	m	class:sfgui::Checkbox
+m_clickCallback	object.hpp	/^	void (*m_clickCallback)(); \/\/\/< Pointer to the click callback function$/;"	m	class:sfgui::Object
+m_cursorPosition	textedit.hpp	/^	unsigned int m_cursorPosition; \/**< Position of the cursor in the string **\/$/;"	m	class:sfgui::TextEdit
+m_deactivatedCallback	textedit.hpp	/^	void (*m_deactivatedCallback)(); \/\/< Callback called when the TextEdit is deactivated$/;"	m	class:sfgui::TextEdit
+m_font	object.hpp	/^	sf::Font *m_font;$/;"	m	class:sfgui::Object
+m_itemActive	textedit.hpp	/^	bool m_itemActive; \/**< If true, user can enter text (textedit has focus), if$/;"	m	class:sfgui::TextEdit
+m_margin	object.hpp	/^	sfgui::Margin m_margin;$/;"	m	class:sfgui::Object
+m_mouseHoverCallback	object.hpp	/^	void (*m_mouseHoverCallback)(); \/**< Pointer to the callback function called$/;"	m	class:sfgui::Object
+m_parentRenderWindow	object.hpp	/^	sf::RenderWindow *m_parentRenderWindow; \/\/\/< Pointer to the parent sf::RenderWindow$/;"	m	class:sfgui::Object
+m_phrase	error.hpp	/^    char const* m_phrase;       \/\/\/< Description of the error$/;"	m	class:sfgui::Error
+m_returnPressedCallback	textedit.hpp	/^	void (*m_returnPressedCallback)(); \/\/< The return key pressed callback function pointer$/;"	m	class:sfgui::TextEdit
+m_state	checkbox.hpp	/^		bool m_state; \/\/\/< The curent state of the checkbox (clicked or not)$/;"	m	class:sfgui::Checkbox
+m_stdText	textedit.hpp	/^	std::string m_stdText;$/;"	m	class:sfgui::TextEdit
+m_text	object.hpp	/^	sf::String m_text; $/;"	m	class:sfgui::Object
+m_textAlignment	object.hpp	/^	int m_textAlignment;$/;"	m	class:sfgui::Object
+m_textChangedCallback	textedit.hpp	/^	void (*m_textChangedCallback)(std::string &); \/\/< The textchanged callback function pointer$/;"	m	class:sfgui::TextEdit
+m_uncheckedCallback	checkbox.hpp	/^		void (*m_uncheckedCallback)();$/;"	m	class:sfgui::Checkbox
+main	main.cpp	/^int main() {$/;"	f
+sfgui	button.hpp	/^namespace sfgui {$/;"	n
+sfgui	checkbox.hpp	/^namespace sfgui {$/;"	n
+sfgui	constantes.hpp	/^namespace sfgui {$/;"	n
+sfgui	error.hpp	/^namespace sfgui {$/;"	n
+sfgui	margin.hpp	/^namespace sfgui {$/;"	n
+sfgui	object.hpp	/^namespace sfgui {$/;"	n
+sfgui	textedit.hpp	/^namespace sfgui {$/;"	n
+textChangeCallback	main.cpp	/^void textChangeCallback(std::string &sr) {$/;"	f
+textChanged	textedit.cpp	/^void sfgui::TextEdit::textChanged() {$/;"	f	class:sfgui::TextEdit
+textDeletedCallback	main.cpp	/^void textDeletedCallback(unsigned int pos, char str) {$/;"	f
+unchecked	checkbox.cpp	/^void sfgui::Checkbox::unchecked() {$/;"	f	class:sfgui::Checkbox
+uncheckedCallback	main.cpp	/^void uncheckedCallback(){$/;"	f
+updateTextPos	object.cpp	/^void sfgui::Object::updateTextPos() {$/;"	f	class:sfgui::Object
+updateTextRect	textedit.cpp	/^void sfgui::TextEdit::updateTextRect() {$/;"	f	class:sfgui::TextEdit
+what	error.hpp	/^     virtual const char* what() const throw()$/;"	f	class:sfgui::Error
+~Error	error.hpp	/^    virtual ~Error() throw()$/;"	f	class:sfgui::Error
+~Object	object.cpp	/^sfgui::Object::~Object() {$/;"	f	class:sfgui::Object

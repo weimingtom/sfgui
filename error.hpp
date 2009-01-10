@@ -4,6 +4,8 @@
 #include <exception>
 
 namespace sfgui {
+/** \brief Error object. Inherited from std::exception
+ */
 class Error: public std::exception
 {
 public:

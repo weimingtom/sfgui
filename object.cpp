@@ -309,7 +309,9 @@ void sfgui::Object::Clicked() {
 }
 void sfgui::Object::MouseHover() {
 	/** Called when the mouse is above the button */
-	SetBackground(BackgroundHover);
+	if(m_Images.count(BackgroundHover)) {
+		SetBackground(BackgroundHover);
+	}
 	if(m_mouseHoverCallback != NULL)
 		(*m_mouseHoverCallback)();
 }

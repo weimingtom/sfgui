@@ -30,7 +30,6 @@
 #include <string>
 
 namespace sfgui {
-
 /**
  * \brief A push button
  *
@@ -41,12 +40,12 @@ namespace sfgui {
  */
 class Button : public Object
 {
-	protected:
-	void generalInit();
-
 	public:
 	Button(sf::RenderWindow *parentWindow);
 	Button(sf::RenderWindow *parentWindow, std::string themePath); 
+
+	protected:
+	void generalInit();
 };
 }
 
