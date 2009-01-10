@@ -30,8 +30,10 @@ sfgui::Checkbox::Checkbox(sf::RenderWindow *parentWindow) : Object(parentWindow)
 	m_uncheckedCallback = NULL;
 }
 void sfgui::Checkbox::Show() {
-	m_parentRenderWindow->Draw(*this);
-	m_parentRenderWindow->Draw(m_text);
+	if (m_isVisible) {
+		m_parentRenderWindow->Draw(*this);
+		m_parentRenderWindow->Draw(m_text);
+	}
 }
 
 sfgui::Checkbox::Checkbox(sf::RenderWindow *parentWindow, std::string text, bool state) : sfgui::Object(parentWindow) {

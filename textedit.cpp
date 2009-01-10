@@ -89,12 +89,19 @@ void sfgui::TextEdit::SetText(std::string text) {
 }
 void sfgui::TextEdit::Show() {
 	/** Show the TextEdit on the parent window */
-	m_parentRenderWindow->Draw(*this);
-	m_parentRenderWindow->Draw(m_text);
+	if (m_isVisible) {
+		m_parentRenderWindow->Draw(*this);
+		m_parentRenderWindow->Draw(m_text);
+	}
 }
 
 
 void sfgui::TextEdit::SetMode(int mode) {
+	/** Set the TextEdit mode : changing the mode change the TextEdit behavior.
+	 * There are actually two modes : TextEdit::ModeNormal and TextEdit::ModePassword.
+	 * <br />In the password mode (TextEdit::ModePassword), the text entered is replaced 
+	 * by the character * in order not to show the text which is entered.
+	 */
 	if(mode == ModePassword) {
 		m_showStars = true;
 		updateTextRect();
@@ -183,7 +190,7 @@ void sfgui::TextEdit::updateTextRect() {
 	//This add characters to m_text until it reach the TextEdit size. 
 	std::string trucatedStrInv;
 	unsigned int i= m_cursorPosition;
-	do {
+	while (i <= m_stdText.size()) {
 		std::cout<<"i : "<<i<<std::endl;
 		if (m_showStars) {
 			std::cout<<"show stars";
@@ -196,7 +203,7 @@ void sfgui::TextEdit::updateTextRect() {
 			break;
 		}
 		i--;
-	} while (i <= m_stdText.size());
+	}
 	//But the resulting text is inversed, so put it in the right order
 	std::string trucatedStr; trucatedStr.reserve(trucatedStrInv.size());
 	for(int i=trucatedStrInv.size(); i>0; i--) {

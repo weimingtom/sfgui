@@ -17,6 +17,7 @@ ButtonStates	object.hpp	/^	enum ButtonStates {BackgroundNormal, BackgroundClicke
 Center	constantes.hpp	/^		Center \/\/\/< Object is centered$/;"	e	enum:sfgui::__anon1
 CheckEvent	checkbox.cpp	/^void sfgui::Checkbox::CheckEvent(sf::Event Event) {$/;"	f	class:sfgui::Checkbox
 CheckEvent	object.cpp	/^void sfgui::Object::CheckEvent(sf::Event Event) {$/;"	f	class:sfgui::Object
+CheckEvent	slider.cpp	/^void Slider::CheckEvent(sf::Event ) {$/;"	f	class:Slider
 CheckEvent	textedit.cpp	/^void sfgui::TextEdit::CheckEvent(sf::Event event) {$/;"	f	class:sfgui::TextEdit
 Checkbox	checkbox.cpp	/^sfgui::Checkbox::Checkbox(sf::RenderWindow *parentWindow) : Object(parentWindow) {$/;"	f	class:sfgui::Checkbox
 Checkbox	checkbox.cpp	/^sfgui::Checkbox::Checkbox(sf::RenderWindow *parentWindow, std::string text, bool state) : sfgui::Object(parentWindow) {$/;"	f	class:sfgui::Checkbox
@@ -37,6 +38,9 @@ Left	margin.hpp	/^	float Left; \/\/\/< Left margin value$/;"	m	struct:sfgui::Mar
 ManageMouse	checkbox.cpp	/^void sfgui::Checkbox::ManageMouse() {$/;"	f	class:sfgui::Checkbox
 ManageMouse	object.cpp	/^void sfgui::Object::ManageMouse() {$/;"	f	class:sfgui::Object
 Margin	margin.hpp	/^struct Margin$/;"	s	namespace:sfgui
+Mode	textedit.hpp	/^	enum Mode { ModePassword, ModeNormal };$/;"	g	class:sfgui::TextEdit
+ModeNormal	textedit.hpp	/^	enum Mode { ModePassword, ModeNormal };$/;"	e	enum:sfgui::TextEdit::Mode
+ModePassword	textedit.hpp	/^	enum Mode { ModePassword, ModeNormal };$/;"	e	enum:sfgui::TextEdit::Mode
 MouseHover	object.cpp	/^void sfgui::Object::MouseHover() {$/;"	f	class:sfgui::Object
 MouseNotHover	object.cpp	/^void sfgui::Object::MouseNotHover() {$/;"	f	class:sfgui::Object
 Move	object.cpp	/^void sfgui::Object::Move(float x, float y) {$/;"	f	class:sfgui::Object
@@ -53,6 +57,7 @@ SetCheckedCallback	checkbox.cpp	/^void sfgui::Checkbox::SetCheckedCallback(void(
 SetClickCallback	object.cpp	/^void sfgui::Object::SetClickCallback(void(*clickCallBack)()) {$/;"	f	class:sfgui::Object
 SetDeactivatedCallback	textedit.cpp	/^void sfgui::TextEdit::SetDeactivatedCallback(void(*deactivatedCallback)()) {$/;"	f	class:sfgui::TextEdit
 SetMargin	margin.cpp	/^void sfgui::Margin::SetMargin(float margin) {$/;"	f	class:sfgui::Margin
+SetMode	textedit.cpp	/^void sfgui::TextEdit::SetMode(int mode) {$/;"	f	class:sfgui::TextEdit
 SetMouseHoverCallback	object.cpp	/^void sfgui::Object::SetMouseHoverCallback(void(*mouseHoverCallback)()) {$/;"	f	class:sfgui::Object
 SetPosition	object.cpp	/^void sfgui::Object::SetPosition(float x, float y) {$/;"	f	class:sfgui::Object
 SetReturnPressedCallback	textedit.cpp	/^void sfgui::TextEdit::SetReturnPressedCallback(void(*returnPressedCallback)()) {$/;"	f	class:sfgui::TextEdit
@@ -70,17 +75,21 @@ SetTextRightMargin	object.cpp	/^void sfgui::Object::SetTextRightMargin(float mar
 SetTextSize	object.cpp	/^void sfgui::Object::SetTextSize(float size) {$/;"	f	class:sfgui::Object
 SetTextTopMargin	object.cpp	/^void sfgui::Object::SetTextTopMargin(float margin) {$/;"	f	class:sfgui::Object
 SetTheme	object.cpp	/^void sfgui::Object::SetTheme(std::string dir) {$/;"	f	class:sfgui::Object
+SetToolTip	object.cpp	/^void sfgui::Object::SetToolTip(std::string tooltipMessage) {$/;"	f	class:sfgui::Object
 SetUncheckedCallback	checkbox.cpp	/^void sfgui::Checkbox::SetUncheckedCallback(void(*uncheckedCallback)()) {$/;"	f	class:sfgui::Checkbox
 Show	checkbox.cpp	/^void sfgui::Checkbox::Show() {$/;"	f	class:sfgui::Checkbox
 Show	object.cpp	/^void sfgui::Object::Show() {$/;"	f	class:sfgui::Object
 Show	textedit.cpp	/^void sfgui::TextEdit::Show() {$/;"	f	class:sfgui::TextEdit
+Slider	slider.cpp	/^Slider::Slider(sf::RenderWindow *parent) : sfgui::Object(parent) {$/;"	f	class:Slider
+Slider	slider.hpp	/^class Slider : public sfgui::Object$/;"	c
 Sprite	main.cpp	/^sfgui::Button Sprite(&App,"data\/button-test\/");$/;"	v
 TextEdit	textedit.cpp	/^sfgui::TextEdit::TextEdit(sf::RenderWindow *parentWindow) : Object(parentWindow) {$/;"	f	class:sfgui::TextEdit
 TextEdit	textedit.hpp	/^class TextEdit : public sfgui::Object {$/;"	c	namespace:sfgui
 Top	margin.hpp	/^	float Top; \/\/\/< Top margin value$/;"	m	struct:sfgui::Margin
+_HOME_ARNAUD_PROGRAMMATION_SFML_SFGUI_SLIDER_HPP__	slider.hpp	35;"	d
 __BUTTON_HPP__	button.hpp	24;"	d
 __CHECKBOX_HPP__	checkbox.hpp	33;"	d
-__CONSTANTES_HPP__	constantes.hpp	35;"	d
+__CONSTANTES_HPP__	constantes.hpp	34;"	d
 __ERROR_HPP__	error.hpp	2;"	d
 __MARGIN_HPP__	margin.hpp	33;"	d
 __OBJECT_HPP__	object.hpp	24;"	d
@@ -108,13 +117,17 @@ m_mouseHoverCallback	object.hpp	/^	void (*m_mouseHoverCallback)(); \/**< Pointer
 m_parentRenderWindow	object.hpp	/^	sf::RenderWindow *m_parentRenderWindow; \/\/\/< Pointer to the parent sf::RenderWindow$/;"	m	class:sfgui::Object
 m_phrase	error.hpp	/^    char const* m_phrase;       \/\/\/< Description of the error$/;"	m	class:sfgui::Error
 m_returnPressedCallback	textedit.hpp	/^	void (*m_returnPressedCallback)(); \/\/< The return key pressed callback function pointer$/;"	m	class:sfgui::TextEdit
+m_showStars	textedit.hpp	/^	bool m_showStars; \/**< Used to know if text must be replaced by stars *\/$/;"	m	class:sfgui::TextEdit
 m_state	checkbox.hpp	/^		bool m_state; \/\/\/< The curent state of the checkbox (clicked or not)$/;"	m	class:sfgui::Checkbox
 m_stdText	textedit.hpp	/^	std::string m_stdText;$/;"	m	class:sfgui::TextEdit
 m_text	object.hpp	/^	sf::String m_text; $/;"	m	class:sfgui::Object
 m_textAlignment	object.hpp	/^	int m_textAlignment;$/;"	m	class:sfgui::Object
 m_textChangedCallback	textedit.hpp	/^	void (*m_textChangedCallback)(std::string &); \/\/< The textchanged callback function pointer$/;"	m	class:sfgui::TextEdit
+m_tooltipTextStd	object.hpp	/^	std::string m_tooltipTextStd; \/\/\/< The std text for the tooltip message.$/;"	m	class:sfgui::Object
 m_uncheckedCallback	checkbox.hpp	/^		void (*m_uncheckedCallback)();$/;"	m	class:sfgui::Checkbox
 main	main.cpp	/^int main() {$/;"	f
+maxValue	slider.hpp	/^	int minValue, maxValue;$/;"	m	class:Slider
+minValue	slider.hpp	/^	int minValue, maxValue;$/;"	m	class:Slider
 sfgui	button.hpp	/^namespace sfgui {$/;"	n
 sfgui	checkbox.hpp	/^namespace sfgui {$/;"	n
 sfgui	constantes.hpp	/^namespace sfgui {$/;"	n

@@ -63,7 +63,7 @@ public:
 	std::string GetText();
 	void SetTextColor(sf::Color &);
 	sf::Color GetTextColor();
-	void SetTextSize(float);
+	void SetTextSize(int);
 	float GetTextSize();
 	void SetTextFont(sf::Font &);
 	sf::Font GetTextFont();
@@ -78,6 +78,8 @@ public:
 	void SetPosition(float x, float y);
 	void Move(float x, float y);
 	void Show();	
+	void SetVisible(bool);
+	void Hide();
 
 	/* Callbacks */
 	void CheckEvent(sf::Event Event);
@@ -96,9 +98,11 @@ private:
 	void generalInit(); 
 protected:
 	sf::String m_text; 
+	std::string m_tooltipTextStd; ///< The std text for the tooltip message.
 	sf::Font *m_font;
 	int m_textAlignment;
 	sfgui::Margin m_margin;
+	bool m_isVisible; //If false, the widget is hidden
 
 	sf::RenderWindow *m_parentRenderWindow; ///< Pointer to the parent sf::RenderWindow
 

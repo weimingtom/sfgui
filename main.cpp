@@ -23,6 +23,7 @@
 #include "button.hpp"
 #include "textedit.hpp"
 #include "checkbox.hpp"
+#include "tooltip.hpp"
 #include <iostream>
 
 sf::RenderWindow App(sf::VideoMode(800, 600, 32), "SFML GUI");
@@ -41,19 +42,18 @@ void uncheckedCallback(){
 	std::cout<<"unchecked"<<std::endl;
 }
 int main() {
-
 	// Create the main rendering window
 	sf::Color col(235,235,235);
 
 	// Create the sprite
 	Sprite.SetText("The text");
 	Sprite.Resize(300, 50);
-
 	Sprite.SetPosition(200, 100);
 	Sprite.SetTextAlignment(sfgui::Right);
 	Sprite.SetTextRightMargin(20);
 
 	sfgui::TextEdit But(&App);
+	//But.SetVisible(false);
 	But.SetText("Texte de base");
 	But.SetPosition(100,400);
 	But.SetTextChangedCallback(&textChangeCallback);
@@ -68,6 +68,12 @@ int main() {
 	Chek.SetUncheckedCallback(&uncheckedCallback);
 	Chek.Resize(30,30);
 
+	Tooltip tool(&App);
+	tool.Resize(300, 40);
+	tool.SetPosition(10,10);
+	tool.SetTextSize(15);
+	tool.SetText("Tooltip text");
+
 	// Start game loop
 	while (App.IsOpened())
 	{
@@ -78,6 +84,7 @@ int main() {
 			Sprite.CheckEvent(Event);
 			But.CheckEvent(Event);
 			Chek.CheckEvent(Event);
+			tool.CheckEvent(Event);
 			// Close window : exit
 			if (Event.Type == sf::Event::Closed) {
 				App.Close();
@@ -104,9 +111,11 @@ int main() {
 		Sprite.Show();
 		But.Show();
 		Chek.Show();
+		tool.Show();
 		// Display window contents on screen
 		App.Display();
 	}
 
 	return EXIT_SUCCESS;
 }
+

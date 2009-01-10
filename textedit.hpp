@@ -23,7 +23,7 @@
 #ifndef __TEXTEDIT_HPP__
 #define __TEXTEDIT_HPP__
 
-#include "button.hpp"
+#include "object.hpp"
 
 namespace sfgui {
 

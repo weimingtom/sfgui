@@ -40,7 +40,10 @@ sfgui::Object::Object(sf::RenderWindow *parentWindow, std::string themePath) : m
 void sfgui::Object::generalInit() {
 	/** Initialise the parts shared by all constructors */
 	m_mouseHoverCallback = NULL;
+	m_text.SetSize(30);
+	m_textAlignment = sfgui::Center;
 	m_clickCallback = NULL;
+	m_isVisible = true;
 	m_font = new sf::Font(sf::Font::GetDefaultFont());
 }
 sfgui::Object::~Object() {
@@ -88,17 +91,26 @@ void sfgui::Object::updateTextPos() {
 	SetPosition(GetPosition().x, GetPosition().y);
 }
 void sfgui::Object::Show() {
-	/** Display the object on the parent window */
-	m_parentRenderWindow->Draw(*this);
-	m_parentRenderWindow->Draw(m_text);
+	/** Display the object on the parent window if the Object is visible.
+	 * \see SetVisible*/
+	if (m_isVisible) {
+		m_parentRenderWindow->Draw(*this);
+		m_parentRenderWindow->Draw(m_text);
+	}
+}
+void sfgui::Object::SetVisible(bool state) {
+	/** Set the visibility of the Object : true if visible, false if not
+	 */
+	m_isVisible = state;
 }
 
 void sfgui::Object::SetText(std::string text) {
 	/**
 	 * Set the button text.
 	 */
+	int oldTextSize = m_text.GetSize();
 	m_text = sf::String(text);
-	updateTextPos();
+	sfgui::Object::SetTextSize(oldTextSize);
 }
 std::string sfgui::Object::GetText() {
 	return m_text.GetText();
@@ -120,7 +132,7 @@ void sfgui::Object::SetTextFont(sf::Font &font) {
 sf::Font sfgui::Object::GetTextFont() {
 	return m_text.GetFont();
 }
-void sfgui::Object::SetTextSize(float size) {
+void sfgui::Object::SetTextSize(int size) {
 	/** Set size of the text */
 	m_text.SetSize(size);
 	updateTextPos();

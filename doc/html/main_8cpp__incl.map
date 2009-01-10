@@ -1,7 +1,8 @@
-<area shape="rect" href="$button_8hpp.html" title="button.hpp" alt="" coords="295,161,385,188">
-<area shape="rect" href="$textedit_8hpp.html" title="textedit.hpp" alt="" coords="375,84,473,111">
-<area shape="rect" href="$checkbox_8hpp.html" title="Class which provides checkbox buttons." alt="" coords="453,161,563,188">
-<area shape="rect" href="$object_8hpp.html" title="object.hpp" alt="" coords="459,239,547,265">
-<area shape="rect" href="$margin_8hpp.html" title="A simple struct for margin." alt="" coords="173,316,267,343">
-<area shape="rect" href="$constantes_8hpp.html" title="constantes.hpp" alt="" coords="291,316,411,343">
-<area shape="rect" href="$error_8hpp.html" title="error.hpp" alt="" coords="595,316,675,343">
+<area shape="rect" href="$button_8hpp.html" title="button.hpp" alt="" coords="225,84,316,111">
+<area shape="rect" href="$textedit_8hpp.html" title="textedit.hpp" alt="" coords="340,84,439,111">
+<area shape="rect" href="$checkbox_8hpp.html" title="Class which provides checkbox buttons." alt="" coords="463,84,572,111">
+<area shape="rect" href="$tooltip_8hpp.html" title="tooltip.hpp" alt="" coords="596,84,684,111">
+<area shape="rect" href="$object_8hpp.html" title="object.hpp" alt="" coords="459,161,547,188">
+<area shape="rect" href="$margin_8hpp.html" title="A simple struct for margin." alt="" coords="317,239,411,265">
+<area shape="rect" href="$constantes_8hpp.html" title="constantes.hpp" alt="" coords="5,239,125,265">
+<area shape="rect" href="$error_8hpp.html" title="error.hpp" alt="" coords="595,239,675,265">

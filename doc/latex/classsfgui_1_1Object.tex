@@ -11,7 +11,7 @@ Inheritance diagram for sfgui::Object:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=193pt]{classsfgui_1_1Object__inherit__graph}
+\includegraphics[width=400pt]{classsfgui_1_1Object__inherit__graph}
 \end{center}
 \end{figure}
 Collaboration diagram for sfgui::Object:\nopagebreak
@@ -42,7 +42,7 @@ void \hyperlink{classsfgui_1_1Object_88f1c97f50dd466417309f0776dce452}{SetTextCo
 \item 
 sf::Color \hyperlink{classsfgui_1_1Object_df734af2a7ca4ad600fe8bff51ed06cc}{GetTextColor} ()
 \item 
-void \hyperlink{classsfgui_1_1Object_01fb5dcac8bac061999ce661d13f296e}{SetTextSize} (float)
+void \hyperlink{classsfgui_1_1Object_6aba72276a557c90fef974478e88a04d}{SetTextSize} (int)
 \item 
 float \hyperlink{classsfgui_1_1Object_a6fae4cfa68982563c49b8b13b11966b}{GetTextSize} ()
 \item 
@@ -67,6 +67,10 @@ void \hyperlink{classsfgui_1_1Object_664c57bd35504a7d00963980d68dd022}{SetPositi
 void \hyperlink{classsfgui_1_1Object_70b15fba99da515808d3da7d8042f458}{Move} (float x, float y)
 \item 
 void \hyperlink{classsfgui_1_1Object_cdf7f9b5f731e49e0e13e55de704805d}{Show} ()
+\item 
+void \hyperlink{classsfgui_1_1Object_c5d4f50f3d8712f098915cee5fc4ad41}{SetVisible} (bool)
+\item 
+void \hyperlink{classsfgui_1_1Object_e4711d5359ca3b756c9d4e063890cf16}{Hide} ()
 \item 
 void \hyperlink{classsfgui_1_1Object_cd9dbf2abe79e04c22f281bccb8bdb0e}{CheckEvent} (sf::Event Event)
 \item 
@@ -100,11 +104,15 @@ void \hyperlink{classsfgui_1_1Object_27d9eb8b653f263f76b612cd77512321}{updateTex
 \item 
 sf::String \hyperlink{classsfgui_1_1Object_b63c033215c2f6f1d64645e3c6f0153b}{m\_\-text}
 \item 
+std::string \hyperlink{classsfgui_1_1Object_d54c76d28fac3a92b8b97f1758a75685}{m\_\-tooltipTextStd}
+\begin{CompactList}\small\item\em The std text for the tooltip message. \item\end{CompactList}\item 
 sf::Font $\ast$ \hyperlink{classsfgui_1_1Object_20ec4624e3d9b8e3cebeb71ec97fd104}{m\_\-font}
 \item 
 int \hyperlink{classsfgui_1_1Object_7cfb56995f2140319df705fb1b146d36}{m\_\-textAlignment}
 \item 
 \hyperlink{structsfgui_1_1Margin}{sfgui::Margin} \hyperlink{classsfgui_1_1Object_b7afeee103f0cfc0c045effa8527a4b4}{m\_\-margin}
+\item 
+bool \hyperlink{classsfgui_1_1Object_105c5d17fb896da439156e5c198e5bb2}{m\_\-isVisible}
 \item 
 sf::RenderWindow $\ast$ \hyperlink{classsfgui_1_1Object_518ad23f1c9aab6fd9b346d708c503a8}{m\_\-parentRenderWindow}
 \begin{CompactList}\small\item\em Pointer to the parent sf::RenderWindow. \item\end{CompactList}\item 
@@ -253,11 +261,11 @@ Reimplemented in \hyperlink{classsfgui_1_1TextEdit_c6f06a7dc81611a50226e10287e87
 \label{classsfgui_1_1Object_df734af2a7ca4ad600fe8bff51ed06cc}
 
 
-\hypertarget{classsfgui_1_1Object_01fb5dcac8bac061999ce661d13f296e}{
+\hypertarget{classsfgui_1_1Object_6aba72276a557c90fef974478e88a04d}{
 \index{sfgui::Object@{sfgui::Object}!SetTextSize@{SetTextSize}}
 \index{SetTextSize@{SetTextSize}!sfgui::Object@{sfgui::Object}}
-\subsubsection[SetTextSize]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTextSize (float {\em size})}}
-\label{classsfgui_1_1Object_01fb5dcac8bac061999ce661d13f296e}
+\subsubsection[SetTextSize]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetTextSize (int {\em size})}}
+\label{classsfgui_1_1Object_6aba72276a557c90fef974478e88a04d}
 
 
 
@@ -366,9 +374,27 @@ Move the button and adjust the text position \hypertarget{classsfgui_1_1Object_c
 
 
 
-Display the object on the parent window 
+Display the object on the parent window if the \hyperlink{classsfgui_1_1Object}{Object} is visible. \begin{Desc}
+\item[See also:]\hyperlink{classsfgui_1_1Object_c5d4f50f3d8712f098915cee5fc4ad41}{SetVisible} \end{Desc}
 
-Reimplemented in \hyperlink{classsfgui_1_1Checkbox_0028c58d4579845c1bdf3cae7ec9af5a}{sfgui::Checkbox}, and \hyperlink{classsfgui_1_1TextEdit_1ee03247816213b34caaff365b160de0}{sfgui::TextEdit}.\hypertarget{classsfgui_1_1Object_cd9dbf2abe79e04c22f281bccb8bdb0e}{
+
+Reimplemented in \hyperlink{classsfgui_1_1Checkbox_0028c58d4579845c1bdf3cae7ec9af5a}{sfgui::Checkbox}, and \hyperlink{classsfgui_1_1TextEdit_1ee03247816213b34caaff365b160de0}{sfgui::TextEdit}.\hypertarget{classsfgui_1_1Object_c5d4f50f3d8712f098915cee5fc4ad41}{
+\index{sfgui::Object@{sfgui::Object}!SetVisible@{SetVisible}}
+\index{SetVisible@{SetVisible}!sfgui::Object@{sfgui::Object}}
+\subsubsection[SetVisible]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::SetVisible (bool {\em state})}}
+\label{classsfgui_1_1Object_c5d4f50f3d8712f098915cee5fc4ad41}
+
+
+
+
+Set the visibility of the \hyperlink{classsfgui_1_1Object}{Object} : true if visible, false if not \hypertarget{classsfgui_1_1Object_e4711d5359ca3b756c9d4e063890cf16}{
+\index{sfgui::Object@{sfgui::Object}!Hide@{Hide}}
+\index{Hide@{Hide}!sfgui::Object@{sfgui::Object}}
+\subsubsection[Hide]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::Hide ()}}
+\label{classsfgui_1_1Object_e4711d5359ca3b756c9d4e063890cf16}
+
+
+\hypertarget{classsfgui_1_1Object_cd9dbf2abe79e04c22f281bccb8bdb0e}{
 \index{sfgui::Object@{sfgui::Object}!CheckEvent@{CheckEvent}}
 \index{CheckEvent@{CheckEvent}!sfgui::Object@{sfgui::Object}}
 \subsubsection[CheckEvent]{\setlength{\rightskip}{0pt plus 5cm}void sfgui::Object::CheckEvent (sf::Event {\em Event})}}
@@ -483,6 +509,15 @@ Pointer to the callback function called when mouse is hover the button \hypertar
 \label{classsfgui_1_1Object_b63c033215c2f6f1d64645e3c6f0153b}
 
 
+\hypertarget{classsfgui_1_1Object_d54c76d28fac3a92b8b97f1758a75685}{
+\index{sfgui::Object@{sfgui::Object}!m\_\-tooltipTextStd@{m\_\-tooltipTextStd}}
+\index{m\_\-tooltipTextStd@{m\_\-tooltipTextStd}!sfgui::Object@{sfgui::Object}}
+\subsubsection[m\_\-tooltipTextStd]{\setlength{\rightskip}{0pt plus 5cm}std::string {\bf sfgui::Object::m\_\-tooltipTextStd}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Object_d54c76d28fac3a92b8b97f1758a75685}
+
+
+The std text for the tooltip message. 
+
 \hypertarget{classsfgui_1_1Object_20ec4624e3d9b8e3cebeb71ec97fd104}{
 \index{sfgui::Object@{sfgui::Object}!m\_\-font@{m\_\-font}}
 \index{m\_\-font@{m\_\-font}!sfgui::Object@{sfgui::Object}}
@@ -502,6 +537,13 @@ Pointer to the callback function called when mouse is hover the button \hypertar
 \index{m\_\-margin@{m\_\-margin}!sfgui::Object@{sfgui::Object}}
 \subsubsection[m\_\-margin]{\setlength{\rightskip}{0pt plus 5cm}{\bf sfgui::Margin} {\bf sfgui::Object::m\_\-margin}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
 \label{classsfgui_1_1Object_b7afeee103f0cfc0c045effa8527a4b4}
+
+
+\hypertarget{classsfgui_1_1Object_105c5d17fb896da439156e5c198e5bb2}{
+\index{sfgui::Object@{sfgui::Object}!m\_\-isVisible@{m\_\-isVisible}}
+\index{m\_\-isVisible@{m\_\-isVisible}!sfgui::Object@{sfgui::Object}}
+\subsubsection[m\_\-isVisible]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf sfgui::Object::m\_\-isVisible}\hspace{0.3cm}{\tt  \mbox{[}protected\mbox{]}}}}
+\label{classsfgui_1_1Object_105c5d17fb896da439156e5c198e5bb2}
 
 
 \hypertarget{classsfgui_1_1Object_518ad23f1c9aab6fd9b346d708c503a8}{
