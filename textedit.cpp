@@ -170,31 +170,30 @@ void sfgui::TextEdit::SetCharDeletedCallback(void(*callback)(unsigned int, char)
 void sfgui::TextEdit::updateTextRect() {
 	//XXX : A little heavy, if someone have a better idea, please contact me...
 	//This add characters to m_text until it reach the TextEdit size. 
-	
-	std::cout	<< "ouf" << std::endl;
 	std::string trucatedStrInv;
-	for(int i=m_stdText.size(); i>=0; i--) {
+	unsigned int i= m_cursorPosition;
+	do {
+		std::cout<<"i : "<<i<<std::endl;
 		trucatedStrInv.push_back(m_stdText[i]);
 		m_text.SetText(trucatedStrInv);
 		if(m_text.GetRect().GetWidth() >= GetSize().x-(m_margin.Right+m_margin.Left+5)) {
 			break;
 		}
-	}
+		i--;
+	} while (i <= m_stdText.size());
 	//But the resulting text is inversed, so put it in the right order
 	std::string trucatedStr; trucatedStr.reserve(trucatedStrInv.size());
 	for(int i=trucatedStrInv.size(); i>0; i--) {
 		trucatedStr.push_back(trucatedStrInv[i]);
 	}
 	m_text.SetText(trucatedStr);
-
-	std::cout	<< "bon, alors ?" << std::endl;
 	updateTextPos();
 }
 void sfgui::TextEdit::textChanged() {
 	/** If the text is modified, this function is called. It updates the sf::String on the screen,
 	 * and it call the textChanged callback (if exists) */
 	updateTextRect();
-	
+
 	//Call the callback function
 	if(m_textChangedCallback != NULL) {
 		(*m_textChangedCallback)(m_stdText);
